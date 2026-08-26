@@ -70,7 +70,7 @@ export function SectionHeading({
   light?: boolean;
 }) {
   return (
-    <div className="mx-auto mb-10 max-w-2xl text-center">
+    <div data-reveal className="mx-auto mb-10 max-w-2xl text-center">
       <h2
         className={`font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight sm:text-4xl ${
           light ? "text-white" : "text-[var(--color-foreground)]"

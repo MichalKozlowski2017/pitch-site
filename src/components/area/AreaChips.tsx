@@ -5,13 +5,18 @@ export function AreaChips({ client }: SectionProps) {
   const { area } = client;
 
   return (
-    <section id="obszar" className="bg-[var(--color-background)] py-16 sm:py-24">
+    <section
+      id="obszar"
+      data-reveal-group
+      className="bg-[var(--color-background)] py-16 sm:py-24"
+    >
       <Container>
         <SectionHeading title={area.title} subtitle={area.subtitle} />
         <div className="flex flex-wrap justify-center gap-2">
           {area.places.map((place) => (
             <span
               key={place}
+              data-reveal
               className="border border-black/10 bg-[var(--color-surface)] px-4 py-2 text-sm text-[var(--color-foreground)]"
             >
               {place}

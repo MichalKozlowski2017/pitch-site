@@ -5,10 +5,14 @@ export function ContactSimple({ client }: SectionProps) {
   const { business, contact, hero } = client;
 
   return (
-    <section id="kontakt" className="bg-[var(--color-surface)] py-16 sm:py-24">
+    <section
+      id="kontakt"
+      data-reveal-group
+      className="bg-[var(--color-surface)] py-16 sm:py-24"
+    >
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-end">
-          <div>
+          <div data-reveal>
             <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-4xl">
               {contact.title}
             </h2>
@@ -23,7 +27,10 @@ export function ContactSimple({ client }: SectionProps) {
               className="mt-8"
             />
           </div>
-          <dl className="space-y-4 border border-black/5 bg-[var(--color-background)] p-6 text-sm">
+          <dl
+            data-reveal
+            className="space-y-4 border border-black/5 bg-[var(--color-background)] p-6 text-sm"
+          >
             <div>
               <dt className="text-[var(--color-muted-foreground)]">Telefon</dt>
               <dd className="mt-1 font-semibold text-[var(--color-foreground)]">

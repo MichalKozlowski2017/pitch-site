@@ -30,3 +30,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Hide motion targets until GSAP runs (skipped when reduced-motion). */
+@media (prefers-reduced-motion: no-preference) {
+  [data-hero-item],
+  [data-reveal],
+  [data-usp-num] {
+    opacity: 0;
+  }
+
+  [data-hero-media] {
+    transform: scale(1.1);
+    transform-origin: center center;
+  }
+}

@@ -5,13 +5,18 @@ export function ServicesGrid({ client }: SectionProps) {
   const { services } = client;
 
   return (
-    <section id="uslugi" className="bg-[var(--color-background)] py-16 sm:py-24">
+    <section
+      id="uslugi"
+      data-reveal-group
+      className="bg-[var(--color-background)] py-16 sm:py-24"
+    >
       <Container>
         <SectionHeading title={services.title} subtitle={services.subtitle} />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.items.map((service) => (
             <article
               key={service.title}
+              data-reveal
               className="border border-black/5 bg-[var(--color-surface)] p-6"
             >
               <span

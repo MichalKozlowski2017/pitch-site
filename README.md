@@ -49,6 +49,7 @@ W `client.json` zmień np.:
 
 ## Stack
 
-- Next.js 16, React 19, Tailwind 4, Zod 4
+- Next.js 16, React 19, Tailwind 4, Zod 4, GSAP (ScrollTrigger)
 - Fonty: Syne (display) + Manrope (body)
 - Zdjęcia remote: `images.unsplash.com` (demo); produkcja → `public/images/`
+- Motion: [`LandingMotion`](src/components/motion/LandingMotion.tsx) — hero entrance + scroll reveal (`data-reveal` / `data-hero-item`)

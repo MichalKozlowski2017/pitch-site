@@ -6,13 +6,18 @@ export function ReviewsCards({ client }: SectionProps) {
   if (reviews.items.length === 0) return null;
 
   return (
-    <section id="opinie" className="bg-[var(--color-background)] py-16 sm:py-24">
+    <section
+      id="opinie"
+      data-reveal-group
+      className="bg-[var(--color-background)] py-16 sm:py-24"
+    >
       <Container>
         <SectionHeading title={reviews.title} subtitle={reviews.subtitle} />
         <div className="grid gap-5 md:grid-cols-3">
           {reviews.items.map((review) => (
             <blockquote
               key={`${review.author}-${review.text.slice(0, 24)}`}
+              data-reveal
               className="flex flex-col border border-black/5 bg-[var(--color-surface)] p-6"
             >
               <StarRating rating={review.rating} />

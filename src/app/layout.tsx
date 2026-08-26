@@ -40,6 +40,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         className="flex min-h-full flex-col font-[family-name:var(--font-body)]"
         style={themeStyleVars(client)}
       >
+        <noscript>
+          <style>{`[data-hero-item],[data-reveal],[data-usp-num]{opacity:1!important}[data-hero-media]{transform:none!important}`}</style>
+        </noscript>
         {children}
       </body>
     </html>
