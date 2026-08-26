@@ -1,180 +1,168 @@
 {
   "business": {
-    "name": "Hydraulik Nowak",
-    "tagline": "Awaryjne i planowe usługi hydrauliczne",
-    "description": "Lokalny hydraulik z Krakowa. Szybki dojazd, uczciwa wycena i czysta robota — od drobnych napraw po kompleksowe instalacje.",
-    "location": "Kraków i okolice",
-    "phone": "+48 600 100 200",
-    "email": "kontakt@hydraulik-nowak.example",
-    "whatsapp": "+48600100200",
-    "hours": "Pn–Sb 7:00–20:00"
+    "name": "Effect Nails",
+    "tagline": "Stylizacja paznokci dłoni i stóp w centrum Kielc",
+    "description": "Effect Nails to stylizacja paznokci Moniki w centrum Kielc. Hybryda, żel, przedłużanie, pedicure i artystyczne zdobienia — w spokojnej atmosferze, na wysterylizowanych narzędziach i profesjonalnym sprzęcie.",
+    "location": "Centrum Kielc, ul. Spacerowa",
+    "phone": "+48 784 988 009",
+    "whatsapp": "+48784988009",
+    "logo": "/images/effect-nails-kielce/logo.svg"
   },
   "seo": {
-    "title": "Hydraulik Nowak — Kraków | Szybki dojazd 24h",
-    "description": "Hydraulik Kraków: awarie, wymiana baterii, instalacje CO i kanalizacja. Opinie klientów z Google. Zadzwoń — wycena bez zobowiązań."
+    "title": "Effect Nails Kielce — manicure hybrydowy, żel, przedłużanie | Spacerowa",
+    "description": "Stylizacja paznokci w centrum Kielc (ul. Spacerowa). Przedłużanie od 140 zł, uzupełnienie 120 zł, hybryda i pedicure hybrydowy 100 zł. Sterylizacja narzędzi. Zadzwoń: 784 988 009."
   },
   "theme": {
-    "primary": "#0B3D2E",
-    "primaryForeground": "#F4F7F5",
-    "accent": "#E8A317",
-    "background": "#EEF2F0",
-    "foreground": "#14201A",
-    "muted": "#DFE6E2",
-    "mutedForeground": "#5A655E",
+    "primary": "#2C2426",
+    "primaryForeground": "#FFF8F9",
+    "accent": "#C48B9F",
+    "background": "#FAF6F4",
+    "foreground": "#2C2426",
+    "muted": "#EFE6E4",
+    "mutedForeground": "#6E6366",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
-    { "label": "Dlaczego my", "href": "#dlaczego" },
-    { "label": "Opinie", "href": "#opinie" },
-    { "label": "Realizacje", "href": "#realizacje" },
+    { "label": "Dlaczego Effect", "href": "#dlaczego" },
+    { "label": "Portfolio", "href": "#realizacje" },
+    { "label": "Lokalizacja", "href": "#obszar" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "headline": "Hydraulik w Krakowie, który przyjeżdża, gdy trzeba",
-    "subheadline": "Awarie, wymiany i instalacje — dojazd tego samego dnia w Krakowie i okolicach. Jasna wycena przed startem prac.",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+    "headline": "Paznokcie, które robią wrażenie — nie tylko na zdjęciu",
+    "subheadline": "Hybryda, żel, przedłużanie i zdobienia artystyczne w centrum Kielc. Czysto, precyzyjnie, na wysterylizowanych narzędziach — umów termin jednym telefonem.",
+    "image": "/images/effect-nails-kielce/01-neon-french.jpg",
     "ctaPrimary": {
-      "label": "Zadzwoń teraz",
-      "href": "tel:+48600100200"
+      "label": "Zadzwoń: 784 988 009",
+      "href": "tel:+48784988009"
     },
     "ctaSecondary": {
       "label": "WhatsApp",
-      "href": "https://wa.me/48600100200"
+      "href": "https://wa.me/48784988009"
     }
   },
   "services": {
-    "title": "Usługi",
-    "subtitle": "Od nagłej awarii po zaplanowaną modernizację instalacji.",
+    "title": "Usługi i cennik",
+    "subtitle": "Przejrzyste ceny — wiesz, za co płacisz, zanim usiądziesz przy stoliku. Zapisy telefonicznie lub na WhatsApp.",
     "items": [
       {
-        "title": "Awarie i przecieki",
-        "description": "Szybka diagnoza i uszczelnienie. Dojazd w trybie pilnym w Krakowie."
+        "title": "Przedłużanie paznokci",
+        "description": "140 zł — przedłużanie z dbałością o kształt, długość i trwałość. Idealne, gdy chcesz efekt „wow” od razu."
       },
       {
-        "title": "Łazienki i kuchnie",
-        "description": "Wymiana baterii, syfonów, podłączenia AGD, modernizacja podejść."
+        "title": "Uzupełnienie",
+        "description": "120 zł — uzupełnienie stylizacji, żeby odrost wyglądał naturalnie, a paznokieć trzymał formę między wizytami."
       },
       {
-        "title": "Instalacje CO i woda",
-        "description": "Nowe instalacje, wymiana rur, odpowietrzanie, przeglądy sezonowe."
+        "title": "Manicure hybrydowy",
+        "description": "100 zł — hybryda na dłoniach: gładka powierzchnia, czysta skórka i kolor, który nie odpryskuje po dwóch dniach."
       },
       {
-        "title": "Kanalizacja",
-        "description": "Udrożnienia, kamery inspekcyjne, drobne naprawy odpływów."
+        "title": "Pedicure hybrydowy",
+        "description": "100 zł — stylizacja stóp hybrydą. Dbamy o wygląd i komfort — latem i poza sezonem."
+      },
+      {
+        "title": "Manicure żelowy",
+        "description": "Żel na naturalnej płytce lub w zestawieniu z przedłużaniem — równa, trwała powierzchnia pod kolor i art."
+      },
+      {
+        "title": "Zdobienia artystyczne",
+        "description": "French, neon, ombre, kwiaty, cyrkonie, geometria — wzór dobieramy do okazji, ubrania i tego, co lubisz."
       }
     ]
   },
   "usp": {
-    "title": "Dlaczego klienci dzwonią ponownie",
-    "subtitle": "Bez ściemy, bez ukrytych kosztów — tak jak w ogłoszeniu, tylko w wygodniejszej formie.",
+    "title": "Dlaczego klientki wracają do Effect Nails",
+    "subtitle": "Nie chodzi tylko o kolor — o higienę, lokalizację i efekt, który widać z bliska.",
     "items": [
       {
-        "title": "Jasna wycena z góry",
-        "description": "Zanim zaczniemy prace, wiesz ile zapłacisz. Bez niespodzianek na fakturze."
+        "title": "Centrum Kielc, ul. Spacerowa",
+        "description": "Wygodnie dotrzesz z centrum i okolic. Stylizacja dłoni i stóp bez marnowania pół dnia na dojazd na obrzeża."
       },
       {
-        "title": "Czysto po sobie",
-        "description": "Zabezpieczamy mieszkanie i sprzątamy stanowisko — zostawiamy porządek."
+        "title": "Sterylizacja to standard, nie dodatek",
+        "description": "Wszystkie narzędzia przechodzą proces sterylizacji. Pracujemy na profesjonalnym sprzęcie — Twój komfort i bezpieczeństwo są priorytetem."
       },
       {
-        "title": "Gwarancja na robociznę",
-        "description": "Stoimy za swoją pracą. Jeśli coś wymaga poprawki — wracamy."
+        "title": "Efekt dopasowany do Ciebie",
+        "description": "Od delikatnego nude po odważny art. Przed pracą ustalamy kształt, długość i styl — żebyś wyszła zadowolona, nie „prawie OK”."
+      },
+      {
+        "title": "Jasny cennik z góry",
+        "description": "Przedłużanie 140 zł, uzupełnienie 120 zł, hybryda dłoni i pedicure hybrydowy po 100 zł. Bez niespodzianek na koniec wizyty."
       }
     ]
   },
   "reviews": {
-    "title": "Opinie z Google",
-    "subtitle": "Prawdziwe recenzje klientów — bez wymyślonych gwiazdek.",
-    "items": [
-      {
-        "author": "Anna K.",
-        "rating": 5,
-        "text": "Szybki dojazd, konkretna wycena i naprawiony przeciek tego samego dnia. Polecam!",
-        "source": "Google",
-        "date": "2025-11"
-      },
-      {
-        "author": "Marek W.",
-        "rating": 5,
-        "text": "Wymiana baterii i podłączenie zmywarki — czysto, terminowo, bez kombinowania.",
-        "source": "Google",
-        "date": "2025-09"
-      },
-      {
-        "author": "Joanna P.",
-        "rating": 5,
-        "text": "Awaria w sobotę wieczorem, pan Nowak przyjechał i ogarnął temat. Profeska.",
-        "source": "Google",
-        "date": "2025-07"
-      }
-    ]
+    "title": "Opinie",
+    "subtitle": "",
+    "items": []
   },
   "gallery": {
-    "title": "Realizacje",
-    "subtitle": "Wybrane prace — w docelowej wersji wstawimy Twoje zdjęcia z opisem.",
+    "title": "Portfolio stylizacji",
+    "subtitle": "Prawdziwe prace Effect Nails — od codziennego nude po french z charakterem. Przesuwaj i wybierz kierunek na kolejną wizytę.",
     "items": [
       {
-        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Nowoczesna łazienka po modernizacji",
-        "title": "Łazienka — wymiana instalacji",
-        "description": "Nowe podejścia wodne, baterie i szczelna hydroizolacja. Czysto po sobie, bez niespodzianek w wycenie.",
-        "place": "Kraków, Podgórze"
+        "src": "/images/effect-nails-kielce/01-neon-french.jpg",
+        "alt": "French z neonowymi liniami i brokatem",
+        "title": "Neon French",
+        "description": "Przedłużane paznokcie, brokatowa baza i ostre neonowe linie — stylizacja, która przyciąga spojrzenia od pierwszego gestu.",
+        "place": "Effect Nails · Kielce"
       },
       {
-        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Kuchnia — instalacja wodna",
-        "title": "Kuchnia — podłączenia AGD",
-        "description": "Zmywarka, filtr i wymiana syfonu. Prace w jeden dzień, bez wyłączania całej instalacji na dłużej.",
-        "place": "Kraków, Krowodrza"
+        "src": "/images/effect-nails-kielce/06-french-kokardy.jpg",
+        "alt": "Klasyczny french z kokardkami 3D",
+        "title": "French z kokardą",
+        "description": "Klasyczny biały french na nude z drobnym zdobieniem 3D — romantycznie, czysto i bardzo „photo ready”.",
+        "place": "Effect Nails · Kielce"
       },
       {
-        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Prace instalacyjne",
-        "title": "Awaria — uszczelnienie i naprawa",
-        "description": "Szybka diagnoza przecieku, wymiana uszkodzonego odcinka i kontrola ciśnienia przed oddaniem.",
-        "place": "Wieliczka"
+        "src": "/images/effect-nails-kielce/04-black-pink-art.jpg",
+        "alt": "Czarno-różowa stylizacja z cyrkoniami",
+        "title": "Black & blush art",
+        "description": "Głęboka czerń, blush pink, geometria i cyrkonie — kontrast dla osób, które lubią mocniejszy akcent.",
+        "place": "Effect Nails · Kielce"
       },
       {
-        "src": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Narzędzia hydrauliczne na stanowisku",
-        "title": "Instalacja CO — przegląd sezonowy",
-        "description": "Odpowietrzenie, sprawdzenie zaworów i drobne poprawki przed sezonem grzewczym.",
-        "place": "Skawina"
+        "src": "/images/effect-nails-kielce/03-rainbow-french.jpg",
+        "alt": "Kolorowy french ombre",
+        "title": "Rainbow French",
+        "description": "Kolorowe tipsy na brokatowej bazie — zabawa kolorem bez rezygnacji z schludnego frenchowego kształtu.",
+        "place": "Effect Nails · Kielce"
       },
       {
-        "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Serwis instalacji w mieszkaniu",
-        "title": "Wymiana grzejnika",
-        "description": "Demontaż starego grzejnika, nowe zawory i odpowietrzenie obiegu — bez bałaganu w salonie.",
-        "place": "Kraków, Nowa Huta"
+        "src": "/images/effect-nails-kielce/05-pastel-kwiaty.jpg",
+        "alt": "Pastelowy french z kwiatami",
+        "title": "Pastel + kwiaty",
+        "description": "Delikatne pasteli i ręcznie malowane kwiatki — lekka, wiosenna stylizacja na co dzień i na wyjście.",
+        "place": "Effect Nails · Kielce"
       },
       {
-        "src": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Prace przy instalacji wodnej",
-        "title": "Nowa instalacja w remoncie",
-        "description": "Rozprowadzenie wody i kanalizacji pod nową łazienkę — przygotowanie pod glazurnika.",
-        "place": "Zabierzów"
+        "src": "/images/effect-nails-kielce/02-nude-hybryda.jpg",
+        "alt": "Nude hybryda z delikatnym błyskiem",
+        "title": "Nude hybryda",
+        "description": "Czysty, błyszczący nude z subtelnym shimmerem — klasyka biurowa i „zawsze pasuje”.",
+        "place": "Effect Nails · Kielce"
       }
     ]
   },
   "area": {
-    "title": "Obszar działania",
-    "subtitle": "Dojeżdżamy do klientów w Krakowie i okolicznych miejscowościach.",
+    "title": "Kielce i okolice",
+    "subtitle": "Przyjmuję w centrum miasta — wygodnie, jeśli mieszkasz lub pracujesz w Kielcach i okolicach.",
     "places": [
-      "Kraków",
-      "Nowa Huta",
-      "Krowodrza",
-      "Podgórze",
-      "Wieliczka",
-      "Skawina",
-      "Zabierzów",
-      "Niepołomice"
+      "Kielce — centrum",
+      "ul. Spacerowa",
+      "Śródmieście",
+      "Czarnów",
+      "Barwinek",
+      "Bocianek",
+      "powiat kielecki"
     ]
   },
   "contact": {
-    "title": "Umów wizytę",
-    "subtitle": "Zadzwoń lub napisz — odpowiadamy zwykle w ciągu godziny w godzinach pracy."
+    "title": "Zarezerwuj termin u Moniki",
+    "subtitle": "Zadzwoń lub napisz na WhatsApp — krótko napisz, czego potrzebujesz (hybryda, przedłużanie, pedicure), a umówimy dogodny termin."
   },
   "variants": {
     "header": "transparent",
@@ -189,13 +177,13 @@
   },
   "pitch": {
     "enabled": true,
-    "badgeText": "Demo strony przygotowane dla Hydraulik Nowak",
-    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
-    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia i opinii klientów. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
+    "badgeText": "Demo strony dla Effect Nails Kielce (Monika)",
+    "offerHeadline": "Wizytówka online zamiast samego ogłoszenia OLX",
+    "offerBody": "Przygotowaliśmy podgląd strony na podstawie ogłoszenia, cennika i zdjęć z Facebooka. Klientki od razu widzą portfolio, ceny i mogą zadzwonić jednym tapnięciem.",
     "offerBullets": [
-      "Wyglądasz profesjonalnie obok konkurencji z OLX",
-      "Klienci widzą opinie Google i łatwo do Ciebie dzwonią",
-      "Działa na telefonie — tam szuka większość zleceń",
+      "Portfolio stylizacji zamiast samego tekstu na OLX",
+      "Cennik i usługi w czytelnych kaflach",
+      "Wygląd beauty — logo Effect Nails + spójne kolory",
       "Wdrożenie w 24h po akceptacji"
     ],
     "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."

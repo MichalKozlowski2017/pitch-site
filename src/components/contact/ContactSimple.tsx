@@ -1,8 +1,10 @@
 import type { SectionProps } from "@/lib/client-config";
+import { getPhoneHref } from "@/lib/client-config";
 import { Container, CtaPair } from "@/components/shared/ui";
 
 export function ContactSimple({ client }: SectionProps) {
   const { business, contact, hero } = client;
+  const phoneHref = getPhoneHref(business.phone);
 
   return (
     <section
@@ -32,19 +34,29 @@ export function ContactSimple({ client }: SectionProps) {
             className="space-y-4 border border-black/5 bg-[var(--color-background)] p-6 text-sm"
           >
             <div>
-              <dt className="text-[var(--color-muted-foreground)]">Telefon</dt>
+              <dt className="text-[var(--color-muted-foreground)]">Kontakt</dt>
               <dd className="mt-1 font-semibold text-[var(--color-foreground)]">
-                <a href={`tel:${business.phone.replace(/\s/g, "")}`}>
-                  {business.phone}
-                </a>
+                {phoneHref ? (
+                  <a href={phoneHref}>{business.phone}</a>
+                ) : (
+                  <a
+                    href={hero.ctaPrimary.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {business.phone}
+                  </a>
+                )}
               </dd>
             </div>
-            <div>
-              <dt className="text-[var(--color-muted-foreground)]">E-mail</dt>
-              <dd className="mt-1 font-semibold text-[var(--color-foreground)]">
-                <a href={`mailto:${business.email}`}>{business.email}</a>
-              </dd>
-            </div>
+            {business.email ? (
+              <div>
+                <dt className="text-[var(--color-muted-foreground)]">E-mail</dt>
+                <dd className="mt-1 font-semibold text-[var(--color-foreground)]">
+                  <a href={`mailto:${business.email}`}>{business.email}</a>
+                </dd>
+              </div>
+            ) : null}
             <div>
               <dt className="text-[var(--color-muted-foreground)]">Lokalizacja</dt>
               <dd className="mt-1 font-semibold text-[var(--color-foreground)]">

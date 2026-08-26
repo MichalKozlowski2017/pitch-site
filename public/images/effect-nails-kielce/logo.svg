@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none" role="img" aria-label="Effect Nails">
+  <text x="0" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="600" letter-spacing="0.04em" fill="#2C2426">Effect</text>
+  <text x="118" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="400" letter-spacing="0.12em" fill="#C48B9F">Nails</text>
+  <line x1="0" y1="48" x2="72" y2="48" stroke="#C48B9F" stroke-width="1.5"/>
+  <text x="0" y="60" font-family="system-ui, sans-serif" font-size="9" letter-spacing="0.28em" fill="#8A7F82">KIELCE</text>
+</svg>

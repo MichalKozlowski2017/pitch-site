@@ -64,9 +64,10 @@ export const clientConfigSchema = z.object({
     description: z.string(),
     location: z.string(),
     phone: z.string(),
-    email: z.string(),
+    email: z.string().optional(),
     whatsapp: z.string().optional(),
     hours: z.string().optional(),
+    logo: z.string().optional(),
   }),
   seo: z.object({
     title: z.string(),
@@ -132,6 +133,13 @@ export const clientConfigSchema = z.object({
 export type ClientConfig = z.infer<typeof clientConfigSchema>;
 export type Variants = z.infer<typeof variantsSchema>;
 export type SectionProps = { client: ClientConfig };
+
+/** tel: only when phone has enough digits; otherwise null (use OLX / CTA link). */
+export function getPhoneHref(phone: string): string | null {
+  const digits = phone.replace(/\D/g, "");
+  if (digits.length >= 9) return `tel:${digits}`;
+  return null;
+}
 
 export function loadClientConfig(): ClientConfig {
   const path = join(process.cwd(), "content", "client.json");
