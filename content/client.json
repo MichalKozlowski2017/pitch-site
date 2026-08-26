@@ -1,0 +1,177 @@
+{
+  "business": {
+    "name": "Hydraulik Nowak",
+    "tagline": "Awaryjne i planowe usługi hydrauliczne",
+    "description": "Lokalny hydraulik z Krakowa. Szybki dojazd, uczciwa wycena i czysta robota — od drobnych napraw po kompleksowe instalacje.",
+    "location": "Kraków i okolice",
+    "phone": "+48 600 100 200",
+    "email": "kontakt@hydraulik-nowak.example",
+    "whatsapp": "+48600100200",
+    "hours": "Pn–Sb 7:00–20:00"
+  },
+  "seo": {
+    "title": "Hydraulik Nowak — Kraków | Szybki dojazd 24h",
+    "description": "Hydraulik Kraków: awarie, wymiana baterii, instalacje CO i kanalizacja. Opinie klientów z Google. Zadzwoń — wycena bez zobowiązań."
+  },
+  "theme": {
+    "primary": "#0B3D2E",
+    "primaryForeground": "#F4F7F5",
+    "accent": "#E8A317",
+    "background": "#EEF2F0",
+    "foreground": "#14201A",
+    "muted": "#DFE6E2",
+    "mutedForeground": "#5A655E",
+    "surface": "#FFFFFF"
+  },
+  "navigation": [
+    { "label": "Usługi", "href": "#uslugi" },
+    { "label": "Dlaczego my", "href": "#dlaczego" },
+    { "label": "Opinie", "href": "#opinie" },
+    { "label": "Realizacje", "href": "#realizacje" },
+    { "label": "Kontakt", "href": "#kontakt" }
+  ],
+  "hero": {
+    "headline": "Hydraulik w Krakowie, który przyjeżdża, gdy trzeba",
+    "subheadline": "Awarie, wymiany i instalacje — dojazd tego samego dnia w Krakowie i okolicach. Jasna wycena przed startem prac.",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+    "ctaPrimary": {
+      "label": "Zadzwoń teraz",
+      "href": "tel:+48600100200"
+    },
+    "ctaSecondary": {
+      "label": "WhatsApp",
+      "href": "https://wa.me/48600100200"
+    }
+  },
+  "services": {
+    "title": "Usługi",
+    "subtitle": "Od nagłej awarii po zaplanowaną modernizację instalacji.",
+    "items": [
+      {
+        "title": "Awarie i przecieki",
+        "description": "Szybka diagnoza i uszczelnienie. Dojazd w trybie pilnym w Krakowie."
+      },
+      {
+        "title": "Łazienki i kuchnie",
+        "description": "Wymiana baterii, syfonów, podłączenia AGD, modernizacja podejść."
+      },
+      {
+        "title": "Instalacje CO i woda",
+        "description": "Nowe instalacje, wymiana rur, odpowietrzanie, przeglądy sezonowe."
+      },
+      {
+        "title": "Kanalizacja",
+        "description": "Udrożnienia, kamery inspekcyjne, drobne naprawy odpływów."
+      }
+    ]
+  },
+  "usp": {
+    "title": "Dlaczego klienci dzwonią ponownie",
+    "subtitle": "Bez ściemy, bez ukrytych kosztów — tak jak w ogłoszeniu, tylko w wygodniejszej formie.",
+    "items": [
+      {
+        "title": "Jasna wycena z góry",
+        "description": "Zanim zaczniemy prace, wiesz ile zapłacisz. Bez niespodzianek na fakturze."
+      },
+      {
+        "title": "Czysto po sobie",
+        "description": "Zabezpieczamy mieszkanie i sprzątamy stanowisko — zostawiamy porządek."
+      },
+      {
+        "title": "Gwarancja na robociznę",
+        "description": "Stoimy za swoją pracą. Jeśli coś wymaga poprawki — wracamy."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Opinie z Google",
+    "subtitle": "Prawdziwe recenzje klientów — bez wymyślonych gwiazdek.",
+    "items": [
+      {
+        "author": "Anna K.",
+        "rating": 5,
+        "text": "Szybki dojazd, konkretna wycena i naprawiony przeciek tego samego dnia. Polecam!",
+        "source": "Google",
+        "date": "2025-11"
+      },
+      {
+        "author": "Marek W.",
+        "rating": 5,
+        "text": "Wymiana baterii i podłączenie zmywarki — czysto, terminowo, bez kombinowania.",
+        "source": "Google",
+        "date": "2025-09"
+      },
+      {
+        "author": "Joanna P.",
+        "rating": 5,
+        "text": "Awaria w sobotę wieczorem, pan Nowak przyjechał i ogarnął temat. Profeska.",
+        "source": "Google",
+        "date": "2025-07"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Realizacje",
+    "subtitle": "Przykładowe prace — w docelowej wersji wstawimy zdjęcia z Twojego portfolio.",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80",
+        "alt": "Nowoczesna łazienka po modernizacji"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=900&q=80",
+        "alt": "Kuchnia — instalacja wodna"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
+        "alt": "Prace instalacyjne"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80",
+        "alt": "Narzędzia hydrauliczne na stanowisku"
+      }
+    ]
+  },
+  "area": {
+    "title": "Obszar działania",
+    "subtitle": "Dojeżdżamy do klientów w Krakowie i okolicznych miejscowościach.",
+    "places": [
+      "Kraków",
+      "Nowa Huta",
+      "Krowodrza",
+      "Podgórze",
+      "Wieliczka",
+      "Skawina",
+      "Zabierzów",
+      "Niepołomice"
+    ]
+  },
+  "contact": {
+    "title": "Umów wizytę",
+    "subtitle": "Zadzwoń lub napisz — odpowiadamy zwykle w ciągu godziny w godzinach pracy."
+  },
+  "variants": {
+    "header": "transparent",
+    "hero": "fullBleedPhoto",
+    "services": "grid",
+    "usp": "list",
+    "reviews": "cards",
+    "gallery": "grid",
+    "area": "chips",
+    "contact": "simple",
+    "footer": "simple"
+  },
+  "pitch": {
+    "enabled": true,
+    "badgeText": "Demo strony przygotowane dla Hydraulik Nowak",
+    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
+    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia i opinii klientów. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
+    "offerBullets": [
+      "Wyglądasz profesjonalnie obok konkurencji z OLX",
+      "Klienci widzą opinie Google i łatwo do Ciebie dzwonią",
+      "Działa na telefonie — tam szuka większość zleceń",
+      "Wdrożenie w 24h po akceptacji"
+    ],
+    "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."
+  }
+}

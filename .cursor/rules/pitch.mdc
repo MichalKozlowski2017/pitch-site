@@ -1,0 +1,19 @@
+---
+description: Pitch-site — landingi OLX, client.json, warianty sekcji
+globs:
+  - content/**
+  - src/components/**
+  - src/lib/client-config.ts
+  - src/app/**
+alwaysApply: true
+---
+
+# Pitch Site
+
+- Dane klienta i wybór layoutu: tylko `content/client.json` (Zod w `src/lib/client-config.ts`).
+- Sekcje renderuj przez `src/components/registry.ts` — nie omijaj registry hardcodem w `page.tsx`.
+- Wspólny kontrakt props: `SectionProps` (`{ client }`).
+- Opinie: wyłącznie prawdziwe; nigdy nie generuj fake reviews.
+- Nowy wygląd = nowy wariant (plik + registry + enum Zod + wpis w `AGENTS.md`).
+- Demo pitch: `pitch.enabled` + `/pitch`; na produkcji wyłącz badge.
+- Przed oddaniem pitcha: sprawdź telefon/CTA, mobile, SEO title/description.

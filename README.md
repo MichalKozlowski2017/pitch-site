@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pitch Site
 
-## Getting Started
+Starter **Next.js (App Router) + TypeScript + Tailwind + Zod** pod spersonalizowane landingi dla lokalnych wykonawców (outreach OLX / Allegro).
 
-First, run the development server:
+## Idea
+
+1. Wklejasz ogłoszenie + dane firmy.
+2. Agent / Ty wypełniacie `content/client.json` i dobieracie **warianty** sekcji.
+3. Wysyłasz preview URL z ofertą wdrożenia w 24h.
+
+## Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Landing: [http://localhost:3000](http://localhost:3000)
+- Oferta pitch: [http://localhost:3000/pitch](http://localhost:3000/pitch)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Konfiguracja klienta
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Edytuj [`content/client.json`](content/client.json):
 
-## Learn More
+- **dane** — firma, SEO, hero, usługi, USP, opinie, galeria, obszar, kontakt, theme
+- **`variants`** — który komponent w danym slocie (np. `hero: "fullBleedPhoto"` vs `"split"`)
 
-To learn more about Next.js, take a look at the following resources:
+Schema i loader: [`src/lib/client-config.ts`](src/lib/client-config.ts).  
+Rejestr wariantów: [`src/components/registry.ts`](src/components/registry.ts).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Szybki test swapu wariantów
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+W `client.json` zmień np.:
 
-## Deploy on Vercel
+```json
+"variants": {
+  "header": "solid",
+  "hero": "split"
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+(zamiast `transparent` + `fullBleedPhoto`) i odśwież stronę.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Dokumentacja dla agentów
+
+- [`AGENTS.md`](AGENTS.md) — workflow, katalog wariantów, dodawanie komponentów
+- [`docs/outreach.md`](docs/outreach.md) — szablon wiadomości + checklista etyki
+- [`.cursor/rules/pitch.mdc`](.cursor/rules/pitch.mdc)
+
+## Stack
+
+- Next.js 16, React 19, Tailwind 4, Zod 4
+- Fonty: Syne (display) + Manrope (body)
+- Zdjęcia remote: `images.unsplash.com` (demo); produkcja → `public/images/`
