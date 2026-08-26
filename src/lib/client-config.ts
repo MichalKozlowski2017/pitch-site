@@ -29,6 +29,9 @@ export const reviewSchema = z.object({
 export const galleryItemSchema = z.object({
   src: z.string(),
   alt: z.string(),
+  title: z.string().optional(),
+  description: z.string().optional(),
+  place: z.string().optional(),
 });
 
 export const themeSchema = z.object({
@@ -48,7 +51,7 @@ export const variantsSchema = z.object({
   services: z.enum(["grid"]),
   usp: z.enum(["list"]),
   reviews: z.enum(["cards"]),
-  gallery: z.enum(["grid"]),
+  gallery: z.enum(["grid", "featuredSlider"]),
   area: z.enum(["chips"]),
   contact: z.enum(["simple"]),
   footer: z.enum(["simple"]),

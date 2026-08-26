@@ -112,23 +112,49 @@
   },
   "gallery": {
     "title": "Realizacje",
-    "subtitle": "Przykładowe prace — w docelowej wersji wstawimy zdjęcia z Twojego portfolio.",
+    "subtitle": "Wybrane prace — w docelowej wersji wstawimy Twoje zdjęcia z opisem.",
     "items": [
       {
-        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80",
-        "alt": "Nowoczesna łazienka po modernizacji"
+        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Nowoczesna łazienka po modernizacji",
+        "title": "Łazienka — wymiana instalacji",
+        "description": "Nowe podejścia wodne, baterie i szczelna hydroizolacja. Czysto po sobie, bez niespodzianek w wycenie.",
+        "place": "Kraków, Podgórze"
       },
       {
-        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=900&q=80",
-        "alt": "Kuchnia — instalacja wodna"
+        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Kuchnia — instalacja wodna",
+        "title": "Kuchnia — podłączenia AGD",
+        "description": "Zmywarka, filtr i wymiana syfonu. Prace w jeden dzień, bez wyłączania całej instalacji na dłużej.",
+        "place": "Kraków, Krowodrza"
       },
       {
-        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
-        "alt": "Prace instalacyjne"
+        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Prace instalacyjne",
+        "title": "Awaria — uszczelnienie i naprawa",
+        "description": "Szybka diagnoza przecieku, wymiana uszkodzonego odcinka i kontrola ciśnienia przed oddaniem.",
+        "place": "Wieliczka"
       },
       {
-        "src": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80",
-        "alt": "Narzędzia hydrauliczne na stanowisku"
+        "src": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Narzędzia hydrauliczne na stanowisku",
+        "title": "Instalacja CO — przegląd sezonowy",
+        "description": "Odpowietrzenie, sprawdzenie zaworów i drobne poprawki przed sezonem grzewczym.",
+        "place": "Skawina"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Serwis instalacji w mieszkaniu",
+        "title": "Wymiana grzejnika",
+        "description": "Demontaż starego grzejnika, nowe zawory i odpowietrzenie obiegu — bez bałaganu w salonie.",
+        "place": "Kraków, Nowa Huta"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Prace przy instalacji wodnej",
+        "title": "Nowa instalacja w remoncie",
+        "description": "Rozprowadzenie wody i kanalizacji pod nową łazienkę — przygotowanie pod glazurnika.",
+        "place": "Zabierzów"
       }
     ]
   },
@@ -156,7 +182,7 @@
     "services": "grid",
     "usp": "list",
     "reviews": "cards",
-    "gallery": "grid",
+    "gallery": "featuredSlider",
     "area": "chips",
     "contact": "simple",
     "footer": "simple"

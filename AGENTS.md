@@ -53,7 +53,8 @@ Uwagi: …
 | services | `grid` | Siatka usług |
 | usp | `list` | Lista USP |
 | reviews | `cards` | Opinie Google |
-| gallery | `grid` | Realizacje |
+| gallery | `grid` | Szybka siatka realizacji |
+| gallery | `featuredSlider` | Duży kadr + opis, thumbs, GSAP |
 | area | `chips` | Miasta |
 | contact | `simple` | Kontakt + CTA |
 | footer | `simple` | Footer |

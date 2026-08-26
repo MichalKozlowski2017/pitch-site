@@ -9,6 +9,7 @@ import { ServicesGrid } from "@/components/services/ServicesGrid";
 import { UspList } from "@/components/usp/UspList";
 import { ReviewsCards } from "@/components/reviews/ReviewsCards";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
+import { GalleryFeaturedSlider } from "@/components/gallery/GalleryFeaturedSlider";
 import { AreaChips } from "@/components/area/AreaChips";
 import { ContactSimple } from "@/components/contact/ContactSimple";
 import { FooterSimple } from "@/components/footer/FooterSimple";
@@ -37,6 +38,7 @@ export const registry: RegistryMap = {
   },
   gallery: {
     grid: GalleryGrid,
+    featuredSlider: GalleryFeaturedSlider,
   },
   area: {
     chips: AreaChips,
@@ -102,6 +104,8 @@ export const variantCatalog = {
   },
   gallery: {
     grid: "Prosta siatka realizacji.",
+    featuredSlider:
+      "Duży kadr + opis realizacji, thumbs i GSAP przy zmianie — gdy masz 3–6 mocnych zdjęć.",
   },
   area: {
     chips: "Chipsy miast / dzielnic.",
