@@ -46,12 +46,16 @@ W `client.json` zmień np.:
 - [`AGENTS.md`](AGENTS.md) — workflow, katalog wariantów, dodawanie komponentów
 - [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — kto dostał pitch, odpowiedź, cena (dedup)
 - [`docs/outreach-tracker.md`](docs/outreach-tracker.md) — jak prowadzić tracker
+- [`docs/README.md`](docs/README.md) — indeks docs, jak dokumentować learnings
+- [`docs/conventions.md`](docs/conventions.md) — zasady techniczne i etyka
+- [`docs/workflow.md`](docs/workflow.md) — od ogłoszenia do wdrożenia
+- [`docs/industries/`](docs/industries/) — playbooki pod branżę (beauty, budowlanka, …)
 - [`docs/outreach.md`](docs/outreach.md) — szablon wiadomości + checklista etyki
 - [`.cursor/rules/pitch.mdc`](.cursor/rules/pitch.mdc)
 
 ## Stack
 
-- Next.js 16, React 19, Tailwind 4, Zod 4, GSAP (ScrollTrigger)
+- Next.js 16, React 19, Tailwind 4, Zod 4, GSAP (ScrollTrigger), Lenis
 - Fonty: Syne (display) + Manrope (body)
 - Zdjęcia remote: `images.unsplash.com` (demo); produkcja → `public/images/`
-- Motion: [`LandingMotion`](src/components/motion/LandingMotion.tsx) — hero entrance + scroll reveal (`data-reveal` / `data-hero-item`)
+- Motion: [`LandingMotion`](src/components/motion/LandingMotion.tsx) — Lenis + hero/pricing reveals + magnetic CTA (`data-reveal` / `data-hero-item` / `data-magnetic`)

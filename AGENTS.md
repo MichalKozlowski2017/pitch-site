@@ -23,6 +23,8 @@ Landing dla lokalnych wykonawców. Treść i wybór layoutu żyją w **`content/
 7. Deploy preview + wiadomość z [`docs/outreach.md`](docs/outreach.md).
 8. Zaktualizuj wiersz w `data/outreach-tracker.csv` (demo / wysłane / odpowiedź / cena).
 
+**Dokumentacja:** [`docs/README.md`](docs/README.md) — konwencje, workflow, playbooki branż (`docs/industries/`). Po pitchu dopisz learnings do właściwego pliku branży.
+
 ## Input — szablon
 
 ```
@@ -40,7 +42,7 @@ Uwagi: …
 - `seo` — title / description
 - `theme` — kolory (CSS variables)
 - `navigation` — linki w headerze
-- `hero` / `services` / `usp` / `reviews` / `gallery` / `area` / `contact` — treść sekcji
+- `hero` / `services` / `usp` / `reviews` / `gallery` / `area` / `faq` / `contact` — treść sekcji
 - `variants` — który komponent w danym slocie
 - `pitch.enabled` — badge demo (wyłącz na produkcji)
 
@@ -53,11 +55,14 @@ Uwagi: …
 | hero | `fullBleedPhoto` | Mocne zdjęcie |
 | hero | `split` | Słabsze zdjęcie / więcej tekstu |
 | services | `grid` | Siatka usług |
+| pricing | `cards` | Cennik (beauty / stałe ceny); bez `pricing` w JSON = ukryte |
 | usp | `list` | Lista USP |
 | reviews | `cards` | Opinie Google |
 | gallery | `grid` | Szybka siatka realizacji |
-| gallery | `featuredSlider` | Duży kadr + opis, thumbs, GSAP |
+| gallery | `featuredSlider` | Duży kadr + opis, thumbs, GSAP — budowlanka |
+| gallery | `fullBleedShowcase` | Wycentrowane cinematic portfolio (beauty) |
 | area | `chips` | Miasta |
+| faq | `accordion` | FAQ; bez `faq` w JSON = ukryte |
 | contact | `simple` | Kontakt + CTA |
 | footer | `simple` | Footer |
 

@@ -1,5 +1,3 @@
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import type { CSSProperties } from "react";
 import { z } from "zod";
 
@@ -34,6 +32,18 @@ export const galleryItemSchema = z.object({
   place: z.string().optional(),
 });
 
+export const pricingItemSchema = z.object({
+  name: z.string(),
+  price: z.string(),
+  description: z.string().optional(),
+  highlight: z.boolean().optional(),
+});
+
+export const faqItemSchema = z.object({
+  question: z.string(),
+  answer: z.string(),
+});
+
 export const themeSchema = z.object({
   primary: z.string(),
   primaryForeground: z.string(),
@@ -49,10 +59,12 @@ export const variantsSchema = z.object({
   header: z.enum(["solid", "transparent"]),
   hero: z.enum(["fullBleedPhoto", "split"]),
   services: z.enum(["grid"]),
+  pricing: z.enum(["cards"]),
   usp: z.enum(["list"]),
   reviews: z.enum(["cards"]),
-  gallery: z.enum(["grid", "featuredSlider"]),
+  gallery: z.enum(["grid", "featuredSlider", "fullBleedShowcase"]),
   area: z.enum(["chips"]),
+  faq: z.enum(["accordion"]),
   contact: z.enum(["simple"]),
   footer: z.enum(["simple"]),
 });
@@ -64,9 +76,10 @@ export const clientConfigSchema = z.object({
     description: z.string(),
     location: z.string(),
     phone: z.string(),
-    email: z.string(),
+    email: z.string().optional(),
     whatsapp: z.string().optional(),
     hours: z.string().optional(),
+    logo: z.string().optional(),
   }),
   seo: z.object({
     title: z.string(),
@@ -94,6 +107,14 @@ export const clientConfigSchema = z.object({
     subtitle: z.string().optional(),
     items: z.array(serviceSchema),
   }),
+  pricing: z
+    .object({
+      title: z.string(),
+      subtitle: z.string().optional(),
+      note: z.string().optional(),
+      items: z.array(pricingItemSchema),
+    })
+    .optional(),
   usp: z.object({
     title: z.string(),
     subtitle: z.string().optional(),
@@ -114,6 +135,13 @@ export const clientConfigSchema = z.object({
     subtitle: z.string().optional(),
     places: z.array(z.string()),
   }),
+  faq: z
+    .object({
+      title: z.string(),
+      subtitle: z.string().optional(),
+      items: z.array(faqItemSchema),
+    })
+    .optional(),
   contact: z.object({
     title: z.string(),
     subtitle: z.string().optional(),
@@ -133,10 +161,11 @@ export type ClientConfig = z.infer<typeof clientConfigSchema>;
 export type Variants = z.infer<typeof variantsSchema>;
 export type SectionProps = { client: ClientConfig };
 
-export function loadClientConfig(): ClientConfig {
-  const path = join(process.cwd(), "content", "client.json");
-  const raw = JSON.parse(readFileSync(path, "utf8")) as unknown;
-  return clientConfigSchema.parse(raw);
+/** tel: only when phone has enough digits; otherwise null (use OLX / CTA link). */
+export function getPhoneHref(phone: string): string | null {
+  const digits = phone.replace(/\D/g, "");
+  if (digits.length >= 9) return `tel:${digits}`;
+  return null;
 }
 
 export function themeStyleVars(client: ClientConfig): CSSProperties {

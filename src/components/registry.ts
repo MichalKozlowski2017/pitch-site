@@ -6,11 +6,14 @@ import { HeaderTransparent } from "@/components/header/HeaderTransparent";
 import { HeroFullBleed } from "@/components/hero/HeroFullBleed";
 import { HeroSplit } from "@/components/hero/HeroSplit";
 import { ServicesGrid } from "@/components/services/ServicesGrid";
+import { PricingCards } from "@/components/pricing/PricingCards";
 import { UspList } from "@/components/usp/UspList";
 import { ReviewsCards } from "@/components/reviews/ReviewsCards";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { GalleryFeaturedSlider } from "@/components/gallery/GalleryFeaturedSlider";
+import { GalleryFullBleedShowcase } from "@/components/gallery/GalleryFullBleedShowcase";
 import { AreaChips } from "@/components/area/AreaChips";
+import { FaqAccordion } from "@/components/faq/FaqAccordion";
 import { ContactSimple } from "@/components/contact/ContactSimple";
 import { FooterSimple } from "@/components/footer/FooterSimple";
 
@@ -30,6 +33,9 @@ export const registry: RegistryMap = {
   services: {
     grid: ServicesGrid,
   },
+  pricing: {
+    cards: PricingCards,
+  },
   usp: {
     list: UspList,
   },
@@ -39,9 +45,13 @@ export const registry: RegistryMap = {
   gallery: {
     grid: GalleryGrid,
     featuredSlider: GalleryFeaturedSlider,
+    fullBleedShowcase: GalleryFullBleedShowcase,
   },
   area: {
     chips: AreaChips,
+  },
+  faq: {
+    accordion: FaqAccordion,
   },
   contact: {
     simple: ContactSimple,
@@ -55,10 +65,12 @@ export const slotOrder = [
   "header",
   "hero",
   "services",
+  "gallery",
+  "pricing",
   "usp",
   "reviews",
-  "gallery",
   "area",
+  "faq",
   "contact",
   "footer",
 ] as const satisfies ReadonlyArray<keyof Variants>;
@@ -96,6 +108,10 @@ export const variantCatalog = {
   services: {
     grid: "Standardowa siatka usług z ogłoszenia.",
   },
+  pricing: {
+    cards:
+      "Cennik w kartach (beauty / usługi ze stałymi cenami). Puste items = sekcja ukryta.",
+  },
   usp: {
     list: "Lista benefitów / USP.",
   },
@@ -105,10 +121,16 @@ export const variantCatalog = {
   gallery: {
     grid: "Prosta siatka realizacji.",
     featuredSlider:
-      "Duży kadr + opis realizacji, thumbs i GSAP przy zmianie — gdy masz 3–6 mocnych zdjęć.",
+      "Duży kadr + opis realizacji, thumbs i GSAP — budowlanka / projekty z opisem.",
+    fullBleedShowcase:
+      "Wycentrowane portfolio cinematic (beauty) — aspect 4:3, crossfade + filmstrip.",
   },
   area: {
     chips: "Chipsy miast / dzielnic.",
+  },
+  faq: {
+    accordion:
+      "FAQ w accordionie. Bez bloku `faq` w JSON albo puste items = sekcja ukryta.",
   },
   contact: {
     simple: "Telefon, mail, godziny + CTA.",

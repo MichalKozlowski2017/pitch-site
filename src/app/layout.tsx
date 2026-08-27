@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Syne } from "next/font/google";
-import { loadClientConfig, themeStyleVars } from "@/lib/client-config";
+import { themeStyleVars } from "@/lib/client-config";
+import { loadClientConfig } from "@/lib/load-client-config";
 import "./globals.css";
 
 const manrope = Manrope({

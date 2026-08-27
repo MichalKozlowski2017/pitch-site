@@ -21,7 +21,7 @@ export function HeroFullBleed({ client }: SectionProps) {
       ) : (
         <div className="absolute inset-0 bg-[var(--color-primary)]" />
       )}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/25" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/25" data-hero-overlay />
       <Container className="relative flex min-h-[88vh] flex-col justify-end pb-16 pt-28 sm:pb-24">
         <p
           data-hero-item
@@ -29,12 +29,11 @@ export function HeroFullBleed({ client }: SectionProps) {
         >
           {business.location}
         </p>
-        <h1
-          data-hero-item
-          className="max-w-3xl font-[family-name:var(--font-display)] text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
-        >
-          {hero.headline}
-        </h1>
+        <div data-hero-item className="overflow-hidden">
+          <h1 className="max-w-3xl font-[family-name:var(--font-display)] text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+            {hero.headline}
+          </h1>
+        </div>
         <p
           data-hero-item
           className="mt-5 max-w-xl text-lg leading-relaxed text-white/85"
@@ -45,6 +44,7 @@ export function HeroFullBleed({ client }: SectionProps) {
           <CtaPair
             primary={hero.ctaPrimary}
             secondary={hero.ctaSecondary}
+            magnetic
             className="mt-8 text-white"
           />
         </div>

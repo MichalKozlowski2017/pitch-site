@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { loadClientConfig } from "@/lib/client-config";
+import { getPhoneHref } from "@/lib/client-config";
+import { loadClientConfig } from "@/lib/load-client-config";
 import { Container, PrimaryButton } from "@/components/shared/ui";
 
 export function generateMetadata(): Metadata {
@@ -13,7 +14,12 @@ export function generateMetadata(): Metadata {
 
 export default function PitchPage() {
   const client = loadClientConfig();
-  const { pitch, business } = client;
+  const { pitch, business, hero } = client;
+  const phoneHref = getPhoneHref(business.phone);
+  const primaryHref = phoneHref ?? hero.ctaPrimary.href;
+  const primaryLabel = phoneHref
+    ? `Zadzwoń: ${business.phone}`
+    : hero.ctaPrimary.label;
 
   return (
     <div className="min-h-full bg-[var(--color-background)] text-[var(--color-foreground)]">
@@ -63,10 +69,7 @@ export default function PitchPage() {
           ) : null}
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <PrimaryButton
-              href={`tel:${business.phone.replace(/\s/g, "")}`}
-              label={`Zadzwoń: ${business.phone}`}
-            />
+            <PrimaryButton href={primaryHref} label={primaryLabel} />
             <Link
               href="/"
               className="inline-flex items-center justify-center rounded-md border border-black/10 px-5 py-3 text-sm font-semibold transition hover:bg-black/5"
