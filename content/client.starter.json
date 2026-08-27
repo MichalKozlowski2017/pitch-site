@@ -26,8 +26,8 @@
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
     { "label": "Realizacje", "href": "#realizacje" },
+    { "label": "Cennik", "href": "#cennik" },
     { "label": "Dlaczego my", "href": "#dlaczego" },
-    { "label": "Opinie", "href": "#opinie" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
@@ -66,6 +66,29 @@
       }
     ]
   },
+  "pricing": {
+    "title": "Cennik",
+    "subtitle": "Orientacyjne ceny z ogłoszenia — dopasuj do klienta.",
+    "note": "Dokładna wycena po kontakcie.",
+    "items": [
+      {
+        "name": "Usługa podstawowa",
+        "price": "od 100 zł",
+        "description": "Krótki opis."
+      },
+      {
+        "name": "Usługa popularna",
+        "price": "od 200 zł",
+        "description": "Krótki opis.",
+        "highlight": true
+      },
+      {
+        "name": "Pakiet / usługa premium",
+        "price": "od 350 zł",
+        "description": "Krótki opis."
+      }
+    ]
+  },
   "usp": {
     "title": "Dlaczego my",
     "subtitle": "3–5 konkretnych powodów z ogłoszenia lub opinii.",
@@ -99,6 +122,20 @@
         "title": "Tytuł realizacji",
         "description": "Krótki opis pracy.",
         "place": "Miasto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Druga realizacja",
+        "title": "Tytuł realizacji 2",
+        "description": "Krótki opis.",
+        "place": "Miasto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Trzecia realizacja",
+        "title": "Tytuł realizacji 3",
+        "description": "Krótki opis.",
+        "place": "Miasto"
       }
     ]
   },
@@ -121,7 +158,7 @@
       },
       {
         "question": "W jakim obszarze działacie?",
-        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w sekcji obszar."
+        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w kontakcie lub FAQ."
       }
     ]
   },
@@ -136,7 +173,7 @@
     "pricing": "cards",
     "usp": "list",
     "reviews": "cards",
-    "gallery": "featuredSlider",
+    "gallery": "fullBleedShowcase",
     "area": "chips",
     "faq": "accordion",
     "contact": "simple",

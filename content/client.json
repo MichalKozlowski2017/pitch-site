@@ -1,255 +1,170 @@
 {
   "business": {
-    "name": "Studio Finezja",
-    "tagline": "Makijaż, strzyżenie i stylizacja włosów — Ursus, Warszawa",
-    "description": "Kameralne studio przy ul. Gierdziejewskiego 7 w Ursusie. Makijaż ślubny i okolicznościowy, fale Hollywood, upięcia, strzyżenia damskie, męskie i dziecięce — na miejscu lub z dojazdem po Warszawie i całej Polsce. Kosmetyki Dior, Lancôme, MAC, Estée Lauder; przy wizycie kawa, herbata i spokojna atmosfera.",
-    "location": "Warszawa, Ursus — ul. Gierdziejewskiego 7, klatka 2, piętro 1 (wejście przy Osteria Piemonte)",
-    "phone": "SMS przez OLX",
-    "hours": "Pn–Czw 7:00–20:00 · Pt–Nd 5:00–19:00 · Niedziela: terminy indywidualne (+25%)"
+    "name": "Nazwa firmy",
+    "tagline": "Krótki opis usługi",
+    "description": "2–3 zdania o firmie — z ogłoszenia OLX, ton naturalny, bez marketingowego bełkotu.",
+    "location": "Miasto i obszar",
+    "phone": "+48 000 000 000",
+    "email": "kontakt@example.pl",
+    "whatsapp": "+48000000000",
+    "hours": "Godziny pracy lub „po umówieniu”"
   },
   "seo": {
-    "title": "Studio Finezja Ursus — makijaż, fryzura, upięcia ślubne | Warszawa",
-    "description": "Makijaż i stylizacja włosów w Ursusie (ul. Gierdziejewskiego 7). Upięcia ślubne, fale Hollywood, pakiety ślubne, dojazd po Warszawie. Kontakt: SMS na OLX."
+    "title": "Nazwa firmy — Miasto | Główna usługa",
+    "description": "Meta opis z miastem, usługą i telefonem. 150–160 znaków."
   },
   "theme": {
-    "primary": "#2A3D34",
-    "primaryForeground": "#FAF7F2",
-    "accent": "#C4A574",
-    "background": "#F9F6F1",
-    "foreground": "#1F2923",
-    "muted": "#E8E2D8",
-    "mutedForeground": "#5C655E",
+    "primary": "#0B3D2E",
+    "primaryForeground": "#F4F7F5",
+    "accent": "#E8A317",
+    "background": "#EEF2F0",
+    "foreground": "#14201A",
+    "muted": "#DFE6E2",
+    "mutedForeground": "#5A655E",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
-    { "label": "Portfolio", "href": "#realizacje" },
+    { "label": "Realizacje", "href": "#realizacje" },
     { "label": "Cennik", "href": "#cennik" },
-    { "label": "Dlaczego Finezja", "href": "#dlaczego" },
+    { "label": "Dlaczego my", "href": "#dlaczego" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "headline": "Fryzura i makijaż, które wyglądają perfekcyjnie — na żywo i na zdjęciu",
-    "subheadline": "Od ślubu i studniówki po fale Hollywood i strzyżenie w kameralnym studio w Ursusie. Premium kosmetyki, indywidualne podejście — na miejscu lub z dojazdem po Warszawie.",
-    "image": "/images/studio-finezja-ursus/02-slub-makijaz.webp",
+    "headline": "Nagłówek z korzyścią dla klienta",
+    "subheadline": "Rozwinięcie — co robisz, gdzie, dlaczego warto zadzwonić. Jedno–dwa zdania.",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
     "ctaPrimary": {
-      "label": "Wyślij SMS na OLX",
-      "href": "https://www.olx.pl/d/oferta/studio-finezja-makijaz-strzyzenie-stylizacja-wlosow-CID4371-IDQG14E.html"
+      "label": "Zadzwoń",
+      "href": "tel:+48000000000"
     },
     "ctaSecondary": {
-      "label": "Zobacz cennik",
-      "href": "#cennik"
+      "label": "WhatsApp",
+      "href": "https://wa.me/48000000000"
     }
   },
   "services": {
     "title": "Usługi",
-    "subtitle": "Makijaż, fryzury okolicznościowe i strzyżenia — w studio lub z dojazdem.",
+    "subtitle": "Skopiuj z ogłoszenia — 4–6 pozycji.",
     "items": [
       {
-        "title": "Makijaż ślubny i okolicznościowy",
-        "description": "Dzienny, wieczorowy i ślubny — z rozświetleniem ramion, dekoltu i pleców. Kosmetyki Chanel, Dior, Lancôme, MAC, NARS."
+        "title": "Usługa 1",
+        "description": "Krótki opis."
       },
       {
-        "title": "Upięcia i fale Hollywood",
-        "description": "Upięcia ślubne, fale, wysoki kucyk, warkocze — od casual po pełny glam. Trwała stylizacja pod cały dzień."
+        "title": "Usługa 2",
+        "description": "Krótki opis."
       },
       {
-        "title": "Strzyżenie i modelowanie",
-        "description": "Damskie, męskie i dziecięce — podcięcia, regeneracja, botox na włosy, prostowanie."
+        "title": "Usługa 3",
+        "description": "Krótki opis."
       },
       {
-        "title": "Pakiety ślubne i na uroczystość",
-        "description": "Makijaż + upięcie w jednym terminie — dla panny młodej, gości weselnych lub sesji zdjęciowej."
-      },
-      {
-        "title": "Dojazd do klientki",
-        "description": "Na terenie Warszawy (+50–100 zł w zależności od miejsca). Zlecenia realizuję też w całej Polsce."
-      },
-      {
-        "title": "Wizyty domowe",
-        "description": "Strzyżenie i stylizacja u osób, które nie mogą wyjść z domu — po wcześniejszym umówieniu."
+        "title": "Usługa 4",
+        "description": "Krótki opis."
       }
     ]
   },
   "pricing": {
     "title": "Cennik",
-    "subtitle": "Orientacyjne widełki z ogłoszenia — dokładną kwotę ustalimy po SMS-ie z opisem usługi.",
-    "note": "Dojazd po Warszawie: +50–100 zł. Niedziela (termin indywidualny): +25% od ceny podstawowej.",
+    "subtitle": "Orientacyjne ceny z ogłoszenia — dopasuj do klienta.",
+    "note": "Dokładna wycena po kontakcie.",
     "items": [
       {
-        "name": "Makeup dzienny",
-        "price": "od 80 zł",
-        "description": "Naturalny makijaż na co dzień lub sesję."
+        "name": "Usługa podstawowa",
+        "price": "od 100 zł",
+        "description": "Krótki opis."
       },
       {
-        "name": "Makeup wieczorowy",
-        "price": "200 zł",
-        "description": "Wyrazisty look na imprezę, studniówkę lub wesele."
+        "name": "Usługa popularna",
+        "price": "od 200 zł",
+        "description": "Krótki opis.",
+        "highlight": true
       },
       {
-        "name": "Fale Hollywood",
-        "price": "100–450 zł",
-        "description": "W zależności od długości i złożoności stylizacji."
-      },
-      {
-        "name": "Upięcie ślubne",
-        "price": "250–650 zł",
-        "description": "Indywidualny projekt fryzury pod suknię i okazję."
-      },
-      {
-        "name": "Makijaż ślubny",
-        "price": "300–600 zł",
-        "description": "Z rozświetleniem ramion, dekoltu i pleców."
-      },
-      {
-        "name": "Pakiet ślubny",
-        "price": "400–700 zł",
-        "highlight": true,
-        "description": "Makijaż + upięcie — kompletna stylizacja na najważniejszy dzień."
-      },
-      {
-        "name": "Pakiet „Gość weselny”",
-        "price": "200–300 zł",
-        "description": "Makijaż i fryzura na uroczystość."
-      },
-      {
-        "name": "Pakiet sesja zdjęciowa",
-        "price": "200 zł",
-        "description": "Stylizacja pod kadr — makijaż i/lub włosy."
+        "name": "Pakiet / usługa premium",
+        "price": "od 350 zł",
+        "description": "Krótki opis."
       }
     ]
   },
   "usp": {
-    "title": "Dlaczego Studio Finezja",
-    "subtitle": "To nie łańcuchowy salon — kameralne studio z dbałością o detal i komfort.",
+    "title": "Dlaczego my",
+    "subtitle": "3–5 konkretnych powodów z ogłoszenia lub opinii.",
     "items": [
       {
-        "title": "Premium kosmetyki",
-        "description": "Do makijażu: Dior, Chanel, Lancôme, MAC, Guerlain, NARS, Estée Lauder. Do włosów: Moroccanoil, Bed Head, Kemon, Osis."
+        "title": "Korzyść 1",
+        "description": "Opis."
       },
       {
-        "title": "Kameralna atmosfera",
-        "description": "Kawa z ekspresu (z mlekiem!), herbata, elektrolity i Rafaello — żebyś czuła się swobodnie przed ważnym wyjściem."
+        "title": "Korzyść 2",
+        "description": "Opis."
       },
       {
-        "title": "Śluby i duże okazje",
-        "description": "Upięcia ślubne, pakiety dla panny młodej i gości — także stylizacja pod sesję i wesele."
-      },
-      {
-        "title": "Studio lub dojazd",
-        "description": "Ursus, ul. Gierdziejewskiego 7 — albo przyjadę do Ciebie w Warszawie i dalej, na terenie całej Polski."
-      },
-      {
-        "title": "Dla każdego",
-        "description": "Strzyżenia damskie, męskie i dziecięce — oraz wizyty domowe, gdy wyjście jest utrudnione."
+        "title": "Korzyść 3",
+        "description": "Opis."
       }
     ]
   },
   "reviews": {
     "title": "Opinie",
-    "subtitle": "Profil OLX bez ocen — nie dodajemy opinii z innych salonów „Finezja” w Polsce.",
+    "subtitle": "Tylko prawdziwe recenzje — bez wypełniaczy.",
     "items": []
   },
   "gallery": {
     "title": "Realizacje",
-    "subtitle": "Upięcia ślubne, fale Hollywood i makijaże z portfolio studia w Ursusie.",
+    "subtitle": "Zdjęcia z ogłoszenia / portfolio klienta.",
     "items": [
       {
-        "src": "/images/studio-finezja-ursus/02-slub-makijaz.webp",
-        "alt": "Makijaż ślubny — naturalny glam",
-        "title": "Makijaż ślubny — glam",
-        "description": "Podkreślone oczy, świeża cera i trwały finish pod cały dzień ceremonii i wesela.",
-        "place": "Studio Finezja, Ursus"
+        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Opis zdjęcia",
+        "title": "Tytuł realizacji",
+        "description": "Krótki opis pracy.",
+        "place": "Miasto"
       },
       {
-        "src": "/images/studio-finezja-ursus/01-slub-upiecie.webp",
-        "alt": "Upięcie ślubne z perłami",
-        "title": "Upięcie ślubne z biżuterią",
-        "description": "Elegancki kok z delikatnymi perłami i luźnymi pasmami przy twarzy.",
-        "place": "Studio Finezja, Ursus"
+        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Druga realizacja",
+        "title": "Tytuł realizacji 2",
+        "description": "Krótki opis.",
+        "place": "Miasto"
       },
       {
-        "src": "/images/studio-finezja-ursus/03-slub-fryzura.webp",
-        "alt": "Para młoda — fryzura i makijaż panny młodej",
-        "title": "Stylizacja ślubna — komplet",
-        "description": "Fryzura i makijaż dopasowane do sukni i światła dnia — trwałe do końca uroczystości.",
-        "place": "Warszawa i okolice"
-      },
-      {
-        "src": "/images/studio-finezja-ursus/05-hollywood-waves.webp",
-        "alt": "Fale Hollywood — miedziane włosy",
-        "title": "Fale Hollywood",
-        "description": "Klasyczne, błyszczące fale — od studniówki po sesję zdjęciową.",
-        "place": "Studio Finezja, Ursus"
-      },
-      {
-        "src": "/images/studio-finezja-ursus/06-upiecie-fale.webp",
-        "alt": "Półupięcie z lokami",
-        "title": "Półupięcie z falami",
-        "description": "Lekkie upięcie z podkręconymi końcami — romantyczny look na wesele lub komunii.",
-        "place": "Studio Finezja, Ursus"
-      },
-      {
-        "src": "/images/studio-finezja-ursus/07-makijaz-wieczorowy.webp",
-        "alt": "Makijaż wieczorowy — smoky eyes",
-        "title": "Makijaż wieczorowy",
-        "description": "Wyraziste oko i elegancki kok — gotowe na imprezę lub sesję.",
-        "place": "Studio Finezja, Ursus"
-      },
-      {
-        "src": "/images/studio-finezja-ursus/08-upiecie-perly.webp",
-        "alt": "Upięcie z perłową ozdobą",
-        "title": "Upięcie okolicznościowe",
-        "description": "Precyzyjne upięcie z ozdobą — dopasowane do kreacji i typu urody.",
-        "place": "Studio Finezja, Ursus"
-      },
-      {
-        "src": "/images/studio-finezja-ursus/04-upiecia-kolaż.webp",
-        "alt": "Kolaż upięć ślubnych",
-        "title": "Upięcia ślubne — portfolio",
-        "description": "Różne style koków i półupięć — od klasycznych po romantyczne z dodatkami.",
-        "place": "Studio Finezja, Ursus"
+        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Trzecia realizacja",
+        "title": "Tytuł realizacji 3",
+        "description": "Krótki opis.",
+        "place": "Miasto"
       }
     ]
   },
+  "area": {
+    "title": "Obszar działania",
+    "subtitle": "Miasta / dzielnice z ogłoszenia.",
+    "places": ["Miasto 1", "Miasto 2", "Okolice"]
+  },
   "faq": {
     "title": "Najczęstsze pytania",
-    "subtitle": "Krótko i konkretnie — najlepiej napisz SMS na OLX z datą i rodzajem usługi.",
+    "subtitle": "5–7 pytań, które klienci naprawdę zadają w branży.",
     "items": [
       {
-        "question": "Jak umówić termin?",
-        "answer": "Najlepiej przez SMS na OLX (profil Febini / Studio Finezja). Podaj datę, godzinę i czego potrzebujesz — makijaż, upięcie, pakiet ślubny lub strzyżenie. Odpowiadam najszybciej tą drogą."
+        "question": "Jak umówić wizytę?",
+        "answer": "Zadzwoń lub napisz — podaj termin i krótko opisz problem. Odpowiadamy zwykle tego samego dnia."
       },
       {
-        "question": "Jak dojechać do studia?",
-        "answer": "ul. Gierdziejewskiego 7, Ursus — klatka 2, piętro 1. Wejście tuż przy restauracji Osteria Piemonte (również przejście między budynkami). Dojazd na zlecenia po Warszawie i w całej Polsce — ustalamy przy rezerwacji."
+        "question": "Czy wycena jest bezpłatna?",
+        "answer": "Tak — przed startem prac mówimy, ile to będzie kosztować. Bez niespodzianek na fakturze."
       },
       {
-        "question": "Czy dojeżdżasz do klientki?",
-        "answer": "Tak — na terenie Warszawy doliczam 50–100 zł w zależności od miejsca. Przyjmuję też zlecenia z dojazdem w całej Polsce — ustalamy szczegóły przy rezerwacji."
-      },
-      {
-        "question": "Czy pracujesz w niedzielę?",
-        "answer": "Tak, ale tylko na indywidualne zamówienia — wtedy do ceny podstawowej doliczane jest 25%."
-      },
-      {
-        "question": "Czy mogę zamówić wizytę u osoby leżącej?",
-        "answer": "Tak — oferuję strzyżenie i stylizację u osób, które nie mogą wyjść z domu. Umówienie po wcześniejszym kontakcie SMS."
-      },
-      {
-        "question": "Jakie kosmetyki używasz?",
-        "answer": "Do makijażu głównie marki premium: Chanel, Estée Lauder, MAC, Lancôme, Guerlain, Dior, NARS. Do włosów m.in. Bed Head, Kemon, Moroccanoil, Osis."
-      },
-      {
-        "question": "Czy to ten sam salon co Finezja w Poznaniu / Tarnowskich Górach?",
-        "answer": "Nie — Studio Finezja w Ursusie (ul. Gierdziejewskiego 7) to niezależna firma prowadzona w Warszawie. Inne salony o podobnej nazwie w Polsce nie są z nami powiązane."
+        "question": "W jakim obszarze działacie?",
+        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w kontakcie lub FAQ."
       }
     ]
   },
   "contact": {
-    "title": "Umów wizytę",
-    "subtitle": "Napisz SMS na OLX — podaj termin i usługę (makijaż, upięcie, pakiet ślubny, strzyżenie). To najszybszy sposób kontaktu."
+    "title": "Kontakt",
+    "subtitle": "Zadzwoń lub napisz — najszybszy sposób na umówienie terminu."
   },
   "variants": {
     "header": "transparent",
@@ -266,13 +181,13 @@
   },
   "pitch": {
     "enabled": true,
-    "badgeText": "Demo strony przygotowane dla Studio Finezja — Ursus",
+    "badgeText": "Demo strony — podgląd oferty",
     "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
-    "offerBody": "Przygotowaliśmy podgląd strony na podstawie ogłoszenia OLX i zdjęć z portfolio. Portfolio, cennik i kontakt w jednym miejscu — łatwiej niż sama kartka na OLX.",
+    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
     "offerBullets": [
-      "Profesjonalny wizerunek obok setek ogłoszeń fryzjerskich",
-      "Cennik i realizacje widoczne od razu — mniej pytań „ile kosztuje?”",
-      "Kontakt SMS/OLX i mapa dojazdu do studia",
+      "Wyglądasz profesjonalnie obok konkurencji z OLX",
+      "Klienci widzą ofertę i łatwo do Ciebie dzwonią",
+      "Działa na telefonie — tam szuka większość zleceń",
       "Wdrożenie w 24h po akceptacji"
     ],
     "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."

@@ -1,4 +1,2 @@
 slug,firma,branza,miasto,telefon,zrodlo_ogloszenia,data_demo,data_wyslania,status,odpowiedzial,odpowiedz_krotka,cena_zaproponowana_pln,cena_finalna_pln,preview_url,git_branch,kanal_kontaktu,notatki
 hydraulik-nowak,Hydraulik Nowak,hydraulika,Kraków,+48600100200,,,,"szablon",n/a,,,,,main,,"Fikcyjny starter w repo — nie lead outreachowy"
-effect-nails-kielce,Effect Nails,beauty / paznokcie,Kielce,+48784988009,,,,demo,nie,,1290,,,pitch/effect-nails-kielce,,"Pitch beauty; preview do uzupełnienia URL po deploy"
-studio-finezja-ursus,Studio Finezja,beauty / fryzura i makijaż,Warszawa (Ursus),,https://www.olx.pl/d/oferta/studio-finezja-makijaz-strzyzenie-stylizacja-wlosow-CID4371-IDQG14E.html,,,demo,nie,,1290,,,pitch/studio-finezja-ursus,OLX/SMS,"ul. Gierdziejewskiego 7; profil Febini; brak tel. publicznie — SMS OLX; nie mylić z Finezja Poznań/TG"
