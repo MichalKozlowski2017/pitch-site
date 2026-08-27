@@ -1,0 +1,158 @@
+{
+  "business": {
+    "name": "Nazwa firmy",
+    "tagline": "Krótki opis usługi",
+    "description": "2–3 zdania o firmie — z ogłoszenia OLX, ton naturalny, bez marketingowego bełkotu.",
+    "location": "Miasto i obszar",
+    "phone": "+48 000 000 000",
+    "email": "kontakt@example.pl",
+    "whatsapp": "+48000000000",
+    "hours": "Godziny pracy lub „po umówieniu”"
+  },
+  "seo": {
+    "title": "Nazwa firmy — Miasto | Główna usługa",
+    "description": "Meta opis z miastem, usługą i telefonem. 150–160 znaków."
+  },
+  "theme": {
+    "primary": "#0B3D2E",
+    "primaryForeground": "#F4F7F5",
+    "accent": "#E8A317",
+    "background": "#EEF2F0",
+    "foreground": "#14201A",
+    "muted": "#DFE6E2",
+    "mutedForeground": "#5A655E",
+    "surface": "#FFFFFF"
+  },
+  "navigation": [
+    { "label": "Usługi", "href": "#uslugi" },
+    { "label": "Realizacje", "href": "#realizacje" },
+    { "label": "Dlaczego my", "href": "#dlaczego" },
+    { "label": "Opinie", "href": "#opinie" },
+    { "label": "FAQ", "href": "#faq" },
+    { "label": "Kontakt", "href": "#kontakt" }
+  ],
+  "hero": {
+    "headline": "Nagłówek z korzyścią dla klienta",
+    "subheadline": "Rozwinięcie — co robisz, gdzie, dlaczego warto zadzwonić. Jedno–dwa zdania.",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+    "ctaPrimary": {
+      "label": "Zadzwoń",
+      "href": "tel:+48000000000"
+    },
+    "ctaSecondary": {
+      "label": "WhatsApp",
+      "href": "https://wa.me/48000000000"
+    }
+  },
+  "services": {
+    "title": "Usługi",
+    "subtitle": "Skopiuj z ogłoszenia — 4–6 pozycji.",
+    "items": [
+      {
+        "title": "Usługa 1",
+        "description": "Krótki opis."
+      },
+      {
+        "title": "Usługa 2",
+        "description": "Krótki opis."
+      },
+      {
+        "title": "Usługa 3",
+        "description": "Krótki opis."
+      },
+      {
+        "title": "Usługa 4",
+        "description": "Krótki opis."
+      }
+    ]
+  },
+  "usp": {
+    "title": "Dlaczego my",
+    "subtitle": "3–5 konkretnych powodów z ogłoszenia lub opinii.",
+    "items": [
+      {
+        "title": "Korzyść 1",
+        "description": "Opis."
+      },
+      {
+        "title": "Korzyść 2",
+        "description": "Opis."
+      },
+      {
+        "title": "Korzyść 3",
+        "description": "Opis."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Opinie",
+    "subtitle": "Tylko prawdziwe recenzje — bez wypełniaczy.",
+    "items": []
+  },
+  "gallery": {
+    "title": "Realizacje",
+    "subtitle": "Zdjęcia z ogłoszenia / portfolio klienta.",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Opis zdjęcia",
+        "title": "Tytuł realizacji",
+        "description": "Krótki opis pracy.",
+        "place": "Miasto"
+      }
+    ]
+  },
+  "area": {
+    "title": "Obszar działania",
+    "subtitle": "Miasta / dzielnice z ogłoszenia.",
+    "places": ["Miasto 1", "Miasto 2", "Okolice"]
+  },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "subtitle": "5–7 pytań, które klienci naprawdę zadają w branży.",
+    "items": [
+      {
+        "question": "Jak umówić wizytę?",
+        "answer": "Zadzwoń lub napisz — podaj termin i krótko opisz problem. Odpowiadamy zwykle tego samego dnia."
+      },
+      {
+        "question": "Czy wycena jest bezpłatna?",
+        "answer": "Tak — przed startem prac mówimy, ile to będzie kosztować. Bez niespodzianek na fakturze."
+      },
+      {
+        "question": "W jakim obszarze działacie?",
+        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w sekcji obszar."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Zadzwoń lub napisz — najszybszy sposób na umówienie terminu."
+  },
+  "variants": {
+    "header": "transparent",
+    "hero": "fullBleedPhoto",
+    "services": "grid",
+    "pricing": "cards",
+    "usp": "list",
+    "reviews": "cards",
+    "gallery": "featuredSlider",
+    "area": "chips",
+    "faq": "accordion",
+    "contact": "simple",
+    "footer": "simple"
+  },
+  "pitch": {
+    "enabled": true,
+    "badgeText": "Demo strony — podgląd oferty",
+    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
+    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
+    "offerBullets": [
+      "Wyglądasz profesjonalnie obok konkurencji z OLX",
+      "Klienci widzą ofertę i łatwo do Ciebie dzwonią",
+      "Działa na telefonie — tam szuka większość zleceń",
+      "Wdrożenie w 24h po akceptacji"
+    ],
+    "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."
+  }
+}
