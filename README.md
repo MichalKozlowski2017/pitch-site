@@ -44,6 +44,10 @@ W `client.json` zmień np.:
 ## Dokumentacja dla agentów
 
 - [`AGENTS.md`](AGENTS.md) — workflow, katalog wariantów, dodawanie komponentów
+- [`docs/README.md`](docs/README.md) — indeks docs, jak dokumentować learnings
+- [`docs/conventions.md`](docs/conventions.md) — zasady techniczne i etyka
+- [`docs/workflow.md`](docs/workflow.md) — od ogłoszenia do wdrożenia
+- [`docs/industries/`](docs/industries/) — playbooki pod branżę (beauty, budowlanka, …)
 - [`docs/outreach.md`](docs/outreach.md) — szablon wiadomości + checklista etyki
 - [`.cursor/rules/pitch.mdc`](.cursor/rules/pitch.mdc)
 

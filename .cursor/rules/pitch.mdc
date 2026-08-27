@@ -15,5 +15,6 @@ alwaysApply: true
 - Wspólny kontrakt props: `SectionProps` (`{ client }`).
 - Opinie: wyłącznie prawdziwe; nigdy nie generuj fake reviews.
 - Nowy wygląd = nowy wariant (plik + registry + enum Zod + wpis w `AGENTS.md`).
+- Playbooki branż i learnings: `docs/industries/` — aktualizuj po każdym pitchu.
 - Demo pitch: `pitch.enabled` + `/pitch`; na produkcji wyłącz badge.
 - Przed oddaniem pitcha: sprawdź telefon/CTA, mobile, SEO title/description.

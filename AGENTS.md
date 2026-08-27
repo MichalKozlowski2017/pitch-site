@@ -21,6 +21,8 @@ Landing dla lokalnych wykonawców. Treść i wybór layoutu żyją w **`content/
 5. `npm run dev` → sprawdź desktop/mobile; ewent. zmień `variants`.
 6. Deploy preview + wiadomość z [`docs/outreach.md`](docs/outreach.md).
 
+**Dokumentacja:** [`docs/README.md`](docs/README.md) — konwencje, workflow, playbooki branż (`docs/industries/`). Po pitchu dopisz learnings do właściwego pliku branży.
+
 ## Input — szablon
 
 ```
