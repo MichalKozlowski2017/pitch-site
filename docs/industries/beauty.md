@@ -41,7 +41,8 @@ Usługi → Portfolio → Cennik → Dlaczego [brand] → FAQ → Kontakt
 - Tło: ciepły off-white (`#FAF6F4`)
 - Primary: ciemny brąz/grafit (`#2C2426`)
 - Accent: dusty rose (`#C48B9F`) — nie neonowy róż
-- Fonty: Syne + Manrope (domyślne startera)
+- Fonty: Syne + Manrope (domyślne startera) — przy pitchu można podmienić parę pod charakter salonu
+- **Logo:** większość leadów bez znaku → wordmark lub monogram (np. inicjał imienia) w SVG, kolory z palety powyżej
 
 ## Copy
 

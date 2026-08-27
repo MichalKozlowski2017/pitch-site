@@ -37,6 +37,7 @@ header (solid lub transparent*) → hero → services → usp → gallery → re
 
 - Zieleń, grafit, pomarańcz akcent (narzędzia, bezpieczeństwo) — dostosuj do logo klienta.
 - Mniej „elegancko-beauty”, więcej solidnie i czytelnie.
+- **Logo:** często brak — monogram firmy lub skrót nazwy w SVG; font solidny, bez ozdobników beauty.
 
 ## Copy
 

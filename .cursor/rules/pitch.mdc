@@ -20,3 +20,4 @@ alwaysApply: true
 - Playbooki branż i learnings: `docs/industries/` — aktualizuj po każdym pitchu.
 - Demo pitch: `pitch.enabled` + `/pitch`; na produkcji wyłącz badge.
 - Przed oddaniem pitcha: sprawdź telefon/CTA, mobile, SEO title/description.
+- Brak logo u klienta: zaprojektuj prosty wordmark/monogram (SVG) + dopasuj theme i fonty — patrz `docs/conventions.md` (Branding).

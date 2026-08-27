@@ -16,7 +16,7 @@ Landing dla lokalnych wykonawców. Treść i wybór layoutu żyją w **`content/
 
 1. Użytkownik wrzuca: link lub treść ogłoszenia OLX/Allegro, nazwę firmy, miasto, telefon, opcjonalnie link Google Business.
 2. **Sprawdź** [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — czy ta firma / telefon / ogłoszenie już jest (unikaj podwójnego pitcha). Instrukcja: [`docs/outreach-tracker.md`](docs/outreach-tracker.md).
-3. Research: opinie Google (tylko prawdziwe), ton komunikacji, czy ma już stronę, mocne zdjęcia.
+3. Research: opinie Google (tylko prawdziwe), ton komunikacji, czy ma już stronę, mocne zdjęcia, **czy ma logo** (jeśli nie — prosty wordmark na demo).
 4. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch`).
 5. Zdjęcia: `public/images/` albo remote (host w `next.config.ts`).
 6. `npm run dev` → sprawdź desktop/mobile; ewent. zmień `variants`.
@@ -72,5 +72,6 @@ Uwagi: …
 
 - Tylko prawdziwe opinie. Zero fake social proof.
 - Nie wymyślaj telefonów / NIP / adresów.
+- **Brak logo:** na każdym pitchu prosty znak (SVG wordmark/monogram) + spójny `theme` i typografia — szczegóły w `docs/conventions.md`.
 - `pitch.enabled: true` na demie; `false` przy wdrożeniu.
 - Schema: `src/lib/client-config.ts` · Render: `LandingSections.tsx`

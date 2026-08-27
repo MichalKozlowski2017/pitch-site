@@ -34,6 +34,7 @@ header → hero → … → contact → footer
 
 - Paleta: …
 - Zdjęcia: portret usługi / realizacje / zespół
+- Logo: własne klienta / brak → prosty SVG wordmark na pitchu (`business.logo`)
 
 ## Moduły must-have
 

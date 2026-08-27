@@ -16,6 +16,7 @@ Uwagi: …
 - Przeczytaj ogłoszenie: usługi, ceny, ton („Pan/Pani”, luzacki, premium).
 - Google Business / FB: **tylko prawdziwe opinie**, zdjęcia, godziny.
 - Czy ma już stronę? Jeśli tak — czego brakuje (cennik, portfolio, mobile).
+- **Logo:** czy klient ma znak (Google, FB, www)? Jeśli nie — zaplanuj prosty wordmark / monogram (patrz [`conventions.md`](conventions.md#branding-logo-i-typografia)).
 - Wybierz branżę → [`industries/`](industries/).
 
 ## 3. Branch i config
@@ -29,6 +30,7 @@ git checkout -b pitch/<slug>
 - Zdjęcia → `public/images/<slug>/`.
 - Ustaw `variants` według playbooka branży.
 - `theme` — kolory pod logo / zdjęcia (beauty: róż/beż; budowa: zieleń/grafit).
+- **Brak logo klienta:** prosty SVG w `public/images/<slug>/logo.svg` + `business.logo`; dopasuj fonty i paletę do branży.
 
 ## 4. Build pitcha
 
