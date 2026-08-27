@@ -62,7 +62,7 @@ export const variantsSchema = z.object({
   pricing: z.enum(["cards"]),
   usp: z.enum(["list"]),
   reviews: z.enum(["cards"]),
-  gallery: z.enum(["grid", "featuredSlider"]),
+  gallery: z.enum(["grid", "featuredSlider", "fullBleedShowcase"]),
   area: z.enum(["chips"]),
   faq: z.enum(["accordion"]),
   contact: z.enum(["simple"]),

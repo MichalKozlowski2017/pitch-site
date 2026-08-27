@@ -11,6 +11,7 @@ import { UspList } from "@/components/usp/UspList";
 import { ReviewsCards } from "@/components/reviews/ReviewsCards";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { GalleryFeaturedSlider } from "@/components/gallery/GalleryFeaturedSlider";
+import { GalleryFullBleedShowcase } from "@/components/gallery/GalleryFullBleedShowcase";
 import { AreaChips } from "@/components/area/AreaChips";
 import { FaqAccordion } from "@/components/faq/FaqAccordion";
 import { ContactSimple } from "@/components/contact/ContactSimple";
@@ -44,6 +45,7 @@ export const registry: RegistryMap = {
   gallery: {
     grid: GalleryGrid,
     featuredSlider: GalleryFeaturedSlider,
+    fullBleedShowcase: GalleryFullBleedShowcase,
   },
   area: {
     chips: AreaChips,
@@ -63,10 +65,10 @@ export const slotOrder = [
   "header",
   "hero",
   "services",
+  "gallery",
   "pricing",
   "usp",
   "reviews",
-  "gallery",
   "area",
   "faq",
   "contact",
@@ -119,7 +121,9 @@ export const variantCatalog = {
   gallery: {
     grid: "Prosta siatka realizacji.",
     featuredSlider:
-      "Duży kadr + opis realizacji, thumbs i GSAP przy zmianie — gdy masz 3–6 mocnych zdjęć.",
+      "Duży kadr + opis realizacji, thumbs i GSAP — budowlanka / projekty z opisem.",
+    fullBleedShowcase:
+      "Wycentrowane portfolio cinematic (beauty) — aspect 4:3, crossfade + filmstrip.",
   },
   area: {
     chips: "Chipsy miast / dzielnic.",

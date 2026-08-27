@@ -24,9 +24,9 @@
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
+    { "label": "Portfolio", "href": "#realizacje" },
     { "label": "Cennik", "href": "#cennik" },
     { "label": "Dlaczego Effect", "href": "#dlaczego" },
-    { "label": "Portfolio", "href": "#realizacje" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
@@ -130,7 +130,7 @@
   },
   "gallery": {
     "title": "Portfolio stylizacji",
-    "subtitle": "Prawdziwe prace Effect Nails — od codziennego nude po french z charakterem. Przesuwaj i wybierz kierunek na kolejną wizytę.",
+    "subtitle": "Prawdziwe prace Effect Nails — od codziennego nude po french z charakterem. Przewijaj strzałkami lub wybierz miniaturę.",
     "items": [
       {
         "src": "/images/effect-nails-kielce/01-neon-french.jpg",
@@ -234,7 +234,7 @@
     "pricing": "cards",
     "usp": "list",
     "reviews": "cards",
-    "gallery": "featuredSlider",
+    "gallery": "fullBleedShowcase",
     "area": "chips",
     "faq": "accordion",
     "contact": "simple",

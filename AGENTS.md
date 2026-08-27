@@ -55,7 +55,8 @@ Uwagi: …
 | usp | `list` | Lista USP |
 | reviews | `cards` | Opinie Google |
 | gallery | `grid` | Szybka siatka realizacji |
-| gallery | `featuredSlider` | Duży kadr + opis, thumbs, GSAP |
+| gallery | `featuredSlider` | Duży kadr + opis, thumbs, GSAP — budowlanka |
+| gallery | `fullBleedShowcase` | Wycentrowane cinematic portfolio (beauty) |
 | area | `chips` | Miasta |
 | faq | `accordion` | FAQ; bez `faq` w JSON = ukryte |
 | contact | `simple` | Kontakt + CTA |
