@@ -1,5 +1,3 @@
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import type { CSSProperties } from "react";
 import { z } from "zod";
 
@@ -41,6 +39,11 @@ export const pricingItemSchema = z.object({
   highlight: z.boolean().optional(),
 });
 
+export const faqItemSchema = z.object({
+  question: z.string(),
+  answer: z.string(),
+});
+
 export const themeSchema = z.object({
   primary: z.string(),
   primaryForeground: z.string(),
@@ -61,6 +64,7 @@ export const variantsSchema = z.object({
   reviews: z.enum(["cards"]),
   gallery: z.enum(["grid", "featuredSlider"]),
   area: z.enum(["chips"]),
+  faq: z.enum(["accordion"]),
   contact: z.enum(["simple"]),
   footer: z.enum(["simple"]),
 });
@@ -131,6 +135,13 @@ export const clientConfigSchema = z.object({
     subtitle: z.string().optional(),
     places: z.array(z.string()),
   }),
+  faq: z
+    .object({
+      title: z.string(),
+      subtitle: z.string().optional(),
+      items: z.array(faqItemSchema),
+    })
+    .optional(),
   contact: z.object({
     title: z.string(),
     subtitle: z.string().optional(),
@@ -155,12 +166,6 @@ export function getPhoneHref(phone: string): string | null {
   const digits = phone.replace(/\D/g, "");
   if (digits.length >= 9) return `tel:${digits}`;
   return null;
-}
-
-export function loadClientConfig(): ClientConfig {
-  const path = join(process.cwd(), "content", "client.json");
-  const raw = JSON.parse(readFileSync(path, "utf8")) as unknown;
-  return clientConfigSchema.parse(raw);
 }
 
 export function themeStyleVars(client: ClientConfig): CSSProperties {

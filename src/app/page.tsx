@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LandingSections } from "@/components/LandingSections";
 import { PitchBadge } from "@/components/shared/PitchBadge";
 import { StickyMobileCta } from "@/components/shared/StickyMobileCta";
-import { loadClientConfig } from "@/lib/client-config";
+import { loadClientConfig } from "@/lib/load-client-config";
 
 export function generateMetadata(): Metadata {
   const client = loadClientConfig();

@@ -11,16 +11,13 @@ export function PricingCards({ client }: SectionProps) {
       data-reveal-group
       className="relative overflow-hidden bg-[var(--color-primary)] py-16 text-[var(--color-primary-foreground)] sm:py-24"
     >
-      {/* Fine diagonal hatch + sparse dots — flat, no glow blobs */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.14]"
         aria-hidden
         style={{
-          backgroundImage: [
-            `url("data:image/svg+xml,${encodeURIComponent(
-              `<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path d='M0 48L48 0' stroke='white' stroke-width='0.6' fill='none'/><circle cx='24' cy='24' r='1.1' fill='white'/></svg>`,
-            )}")`,
-          ].join(","),
+          backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
+            `<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path d='M0 48L48 0' stroke='white' stroke-width='0.6' fill='none'/><circle cx='24' cy='24' r='1.1' fill='white'/></svg>`,
+          )}")`,
           backgroundSize: "48px 48px",
         }}
       />
@@ -37,20 +34,49 @@ export function PricingCards({ client }: SectionProps) {
       <Container className="relative">
         <SectionHeading title={pricing.title} subtitle={pricing.subtitle} light />
 
-        <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {pricing.items.map((item) => (
+        <div
+          data-pricing-grid
+          className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          style={{ perspective: "1200px" }}
+        >
+          {pricing.items.map((item, index) => (
             <article
               key={item.name}
               data-reveal
               data-pricing-card
-              className={`flex flex-col border p-6 transition sm:p-7 ${
+              data-pricing-highlight={item.highlight ? "" : undefined}
+              className={`group relative flex flex-col overflow-hidden border p-6 sm:p-7 ${
                 item.highlight
-                  ? "border-[var(--color-accent)] bg-[var(--color-accent)] text-[var(--color-foreground)] shadow-[0_20px_50px_-28px_rgba(0,0,0,0.55)]"
-                  : "border-white/15 bg-white/5 backdrop-blur-sm hover:border-white/30 hover:bg-white/10"
+                  ? "border-[var(--color-accent)]/80 bg-[var(--color-accent)] text-[var(--color-foreground)]"
+                  : "border-white/12 bg-white/[0.04]"
               }`}
             >
+              <span
+                data-pricing-sheen
+                className="pointer-events-none absolute inset-0 z-[1]"
+                aria-hidden
+              />
+              <span
+                className={`pointer-events-none absolute inset-x-0 top-0 h-px ${
+                  item.highlight
+                    ? "bg-gradient-to-r from-transparent via-white/50 to-transparent"
+                    : "bg-gradient-to-r from-transparent via-white/25 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                }`}
+                aria-hidden
+              />
+
+              <span
+                className={`font-[family-name:var(--font-display)] text-[11px] font-medium tracking-[0.22em] uppercase ${
+                  item.highlight
+                    ? "text-[var(--color-foreground)]/55"
+                    : "text-white/35"
+                }`}
+              >
+                {String(index + 1).padStart(2, "0")}
+              </span>
+
               <h3
-                className={`font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight ${
+                className={`mt-4 font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight ${
                   item.highlight ? "text-[var(--color-foreground)]" : "text-white"
                 }`}
               >
@@ -60,8 +86,8 @@ export function PricingCards({ client }: SectionProps) {
                 <p
                   className={`mt-2 flex-1 text-sm leading-relaxed ${
                     item.highlight
-                      ? "text-[var(--color-foreground)]/75"
-                      : "text-white/70"
+                      ? "text-[var(--color-foreground)]/70"
+                      : "text-white/65"
                   }`}
                 >
                   {item.description}

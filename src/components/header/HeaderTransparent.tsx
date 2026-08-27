@@ -2,10 +2,7 @@ import type { SectionProps } from "@/lib/client-config";
 import { getPhoneHref } from "@/lib/client-config";
 import { Container } from "@/components/shared/ui";
 
-function BrandMark({
-  client,
-  light = false,
-}: SectionProps & { light?: boolean }) {
+function BrandMark({ client }: SectionProps) {
   const { business } = client;
   if (business.logo) {
     return (
@@ -13,13 +10,15 @@ function BrandMark({
       <img
         src={business.logo}
         alt={business.name}
-        className={`h-8 w-auto ${light ? "brightness-0 invert" : ""}`}
+        data-header-logo
+        className="h-8 w-auto"
       />
     );
   }
   return <>{business.name}</>;
 }
 
+/** Overlays full-bleed hero; sticks via CSS `fixed` + `data-header-scrolled` from LandingMotion. */
 export function HeaderTransparent({ client }: SectionProps) {
   const { business, navigation, hero } = client;
   const phoneHref = getPhoneHref(business.phone);
@@ -27,24 +26,25 @@ export function HeaderTransparent({ client }: SectionProps) {
   const ctaLabel = phoneHref ? "Zadzwoń" : hero.ctaPrimary.label;
 
   return (
-    <header className="absolute inset-x-0 top-0 z-40">
-      <Container className="flex h-20 items-center justify-between gap-4">
+    <header data-site-header data-variant="transparent">
+      <Container className="flex items-center justify-between gap-4">
         <a
           href="#top"
-          className="flex items-center gap-2 font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-white drop-shadow"
+          data-header-brand
+          className="flex items-center gap-2 font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight"
         >
-          <BrandMark client={client} light />
+          <BrandMark client={client} />
         </a>
-        <nav className="hidden items-center gap-6 text-sm text-white/90 md:flex">
+        <nav data-header-nav className="hidden items-center gap-6 text-sm md:flex">
           {navigation.map((item) => (
-            <a key={item.href} href={item.href} className="transition hover:text-white">
+            <a key={item.href} href={item.href}>
               {item.label}
             </a>
           ))}
         </nav>
         <a
           href={ctaHref}
-          className="rounded-md bg-[var(--color-accent)] px-3 py-2 text-sm font-semibold text-[var(--color-foreground)]"
+          className="shrink-0 rounded-md bg-[var(--color-accent)] px-3 py-2 text-sm font-semibold text-[var(--color-foreground)]"
           {...(!phoneHref ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         >
           {ctaLabel}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getPhoneHref, loadClientConfig } from "@/lib/client-config";
+import { getPhoneHref } from "@/lib/client-config";
+import { loadClientConfig } from "@/lib/load-client-config";
 import { Container, PrimaryButton } from "@/components/shared/ui";
 
 export function generateMetadata(): Metadata {

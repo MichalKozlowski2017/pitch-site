@@ -27,6 +27,7 @@
     { "label": "Cennik", "href": "#cennik" },
     { "label": "Dlaczego Effect", "href": "#dlaczego" },
     { "label": "Portfolio", "href": "#realizacje" },
+    { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
@@ -188,6 +189,40 @@
       "powiat kielecki"
     ]
   },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "subtitle": "Krótko i konkretnie — zanim zadzwonisz. Resztę doprecyzujemy przy umawianiu terminu.",
+    "items": [
+      {
+        "question": "Ile trzyma się manicure hybrydowy?",
+        "answer": "Zwykle 2–3 tygodnie bez odprysków. Przy zdrowej płytce i codziennej pielęgnacji (oliwka, rękawiczki do chemii domowej) często bliżej 3–4 tygodni. Potem warto zrobić uzupełnienie albo zdjąć stylizację profesjonalnie — nie zrywaj lakieru sama."
+      },
+      {
+        "question": "Czy hybryda niszczy paznokcie?",
+        "answer": "Prawidłowo nałożona i zdjęta — nie. Szkodzą głównie zdzieranie, agresywne piłowanie i zbyt rzadkie wizyty. Dbam o delikatne przygotowanie płytki i sterylne narzędzia, żeby stylizacja była trwała, a paznokieć w dobrej kondycji."
+      },
+      {
+        "question": "Jak przygotować się do wizyty?",
+        "answer": "Wystarczą czyste dłonie. Nie wycinaj skórek i nie zrywaj starej hybrydy w domu. Tuż przed wizytą odpuść tłuste kremy i olejek na paznokcie — utrudniają przyczepność bazy. Jeśli masz wzór z Instagrama lub Pinteresta, wrzuć na telefon — szybciej dogadamy kształt i kolor."
+      },
+      {
+        "question": "Ile trwa wizyta i jak się umówić?",
+        "answer": "Hybryda w jednym kolorze to zwykle około 60–90 minut; zdobienia i przedłużanie zajmują dłużej. Terminy umawiam telefonicznie lub na WhatsApp — napisz, czego potrzebujesz (hybryda, uzupełnienie, przedłużanie, pedicure), a dopasujemy slot."
+      },
+      {
+        "question": "Czy można robić hybrydę w ciąży?",
+        "answer": "Przy prawidłowo przebiegającej ciąży nie ma typowych przeciwwskazań do manicure hybrydowego, o ile salon dba o wentylację i sprawdzone produkty. Zawsze warto zapytać lekarza prowadzącego, jeśli masz wątpliwości — dopasujemy termin i zakres zabiegu."
+      },
+      {
+        "question": "Czy zdejmujesz stylizację z innego salonu?",
+        "answer": "Tak — bezpieczne, profesjonalne zdjęcie cudzej hybrydy lub żelu jest możliwe przed nową stylizacją. Nie zrywaj materiału samodzielnie; damy radę przy wizycie i od razu przejść do świeżego manicure albo przedłużania."
+      },
+      {
+        "question": "Jak dbacie o higienę?",
+        "answer": "Narzędzia są sterylizowane, a stanowisko przygotowywane pod każdą klientkę. To standard, na którym nie oszczędzam — szczególnie przy pracy frezarką i przedłużaniu."
+      }
+    ]
+  },
   "contact": {
     "title": "Zarezerwuj termin u Moniki",
     "subtitle": "Zadzwoń lub napisz na WhatsApp — krótko napisz, czego potrzebujesz (hybryda, przedłużanie, pedicure), a umówimy dogodny termin."
@@ -201,6 +236,7 @@
     "reviews": "cards",
     "gallery": "featuredSlider",
     "area": "chips",
+    "faq": "accordion",
     "contact": "simple",
     "footer": "simple"
   },

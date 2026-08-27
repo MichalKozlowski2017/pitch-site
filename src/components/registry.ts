@@ -12,6 +12,7 @@ import { ReviewsCards } from "@/components/reviews/ReviewsCards";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { GalleryFeaturedSlider } from "@/components/gallery/GalleryFeaturedSlider";
 import { AreaChips } from "@/components/area/AreaChips";
+import { FaqAccordion } from "@/components/faq/FaqAccordion";
 import { ContactSimple } from "@/components/contact/ContactSimple";
 import { FooterSimple } from "@/components/footer/FooterSimple";
 
@@ -47,6 +48,9 @@ export const registry: RegistryMap = {
   area: {
     chips: AreaChips,
   },
+  faq: {
+    accordion: FaqAccordion,
+  },
   contact: {
     simple: ContactSimple,
   },
@@ -64,6 +68,7 @@ export const slotOrder = [
   "reviews",
   "gallery",
   "area",
+  "faq",
   "contact",
   "footer",
 ] as const satisfies ReadonlyArray<keyof Variants>;
@@ -118,6 +123,10 @@ export const variantCatalog = {
   },
   area: {
     chips: "Chipsy miast / dzielnic.",
+  },
+  faq: {
+    accordion:
+      "FAQ w accordionie. Bez bloku `faq` w JSON albo puste items = sekcja ukryta.",
   },
   contact: {
     simple: "Telefon, mail, godziny + CTA.",

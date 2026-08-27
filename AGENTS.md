@@ -38,7 +38,7 @@ Uwagi: …
 - `seo` — title / description
 - `theme` — kolory (CSS variables)
 - `navigation` — linki w headerze
-- `hero` / `services` / `usp` / `reviews` / `gallery` / `area` / `contact` — treść sekcji
+- `hero` / `services` / `usp` / `reviews` / `gallery` / `area` / `faq` / `contact` — treść sekcji
 - `variants` — który komponent w danym slocie
 - `pitch.enabled` — badge demo (wyłącz na produkcji)
 
@@ -57,6 +57,7 @@ Uwagi: …
 | gallery | `grid` | Szybka siatka realizacji |
 | gallery | `featuredSlider` | Duży kadr + opis, thumbs, GSAP |
 | area | `chips` | Miasta |
+| faq | `accordion` | FAQ; bez `faq` w JSON = ukryte |
 | contact | `simple` | Kontakt + CTA |
 | footer | `simple` | Footer |
 
