@@ -7,14 +7,17 @@ export function PrimaryButton({
   href,
   label,
   className = "",
+  magnetic = false,
 }: {
   href: string;
   label: string;
   className?: string;
+  magnetic?: boolean;
 }) {
   return (
     <a
       href={href}
+      data-magnetic={magnetic ? "" : undefined}
       className={`inline-flex items-center justify-center rounded-md bg-[var(--color-accent)] px-5 py-3 text-sm font-semibold text-[var(--color-foreground)] transition hover:brightness-95 ${className}`}
     >
       {label}
@@ -26,14 +29,17 @@ export function SecondaryButton({
   href,
   label,
   className = "",
+  magnetic = false,
 }: {
   href: string;
   label: string;
   className?: string;
+  magnetic?: boolean;
 }) {
   return (
     <a
       href={href}
+      data-magnetic={magnetic ? "" : undefined}
       className={`inline-flex items-center justify-center rounded-md border border-current/20 bg-transparent px-5 py-3 text-sm font-semibold transition hover:bg-black/5 ${className}`}
     >
       {label}
@@ -45,16 +51,26 @@ export function CtaPair({
   primary,
   secondary,
   className = "",
+  magnetic = false,
 }: {
   primary: Cta;
   secondary?: Cta;
   className?: string;
+  magnetic?: boolean;
 }) {
   return (
     <div className={`flex flex-wrap gap-3 ${className}`}>
-      <PrimaryButton href={primary.href} label={primary.label} />
+      <PrimaryButton
+        href={primary.href}
+        label={primary.label}
+        magnetic={magnetic}
+      />
       {secondary ? (
-        <SecondaryButton href={secondary.href} label={secondary.label} />
+        <SecondaryButton
+          href={secondary.href}
+          label={secondary.label}
+          magnetic={magnetic}
+        />
       ) : null}
     </div>
   );

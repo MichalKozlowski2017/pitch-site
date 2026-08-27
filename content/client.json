@@ -24,9 +24,9 @@
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
+    { "label": "Cennik", "href": "#cennik" },
     { "label": "Dlaczego Effect", "href": "#dlaczego" },
     { "label": "Portfolio", "href": "#realizacje" },
-    { "label": "Lokalizacja", "href": "#obszar" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
@@ -43,24 +43,24 @@
     }
   },
   "services": {
-    "title": "Usługi i cennik",
-    "subtitle": "Przejrzyste ceny — wiesz, za co płacisz, zanim usiądziesz przy stoliku. Zapisy telefonicznie lub na WhatsApp.",
+    "title": "Co robię",
+    "subtitle": "Pełna stylizacja dłoni i stóp — od codziennej hybrydy po artystyczne zdobienia.",
     "items": [
       {
         "title": "Przedłużanie paznokci",
-        "description": "140 zł — przedłużanie z dbałością o kształt, długość i trwałość. Idealne, gdy chcesz efekt „wow” od razu."
+        "description": "Przedłużanie z dbałością o kształt, długość i trwałość. Idealne, gdy chcesz efekt „wow” od razu."
       },
       {
         "title": "Uzupełnienie",
-        "description": "120 zł — uzupełnienie stylizacji, żeby odrost wyglądał naturalnie, a paznokieć trzymał formę między wizytami."
+        "description": "Uzupełnienie stylizacji, żeby odrost wyglądał naturalnie, a paznokieć trzymał formę między wizytami."
       },
       {
         "title": "Manicure hybrydowy",
-        "description": "100 zł — hybryda na dłoniach: gładka powierzchnia, czysta skórka i kolor, który nie odpryskuje po dwóch dniach."
+        "description": "Hybryda na dłoniach: gładka powierzchnia, czysta skórka i kolor, który nie odpryskuje po dwóch dniach."
       },
       {
         "title": "Pedicure hybrydowy",
-        "description": "100 zł — stylizacja stóp hybrydą. Dbamy o wygląd i komfort — latem i poza sezonem."
+        "description": "Stylizacja stóp hybrydą. Dbamy o wygląd i komfort — latem i poza sezonem."
       },
       {
         "title": "Manicure żelowy",
@@ -68,7 +68,35 @@
       },
       {
         "title": "Zdobienia artystyczne",
-        "description": "French, neon, ombre, kwiaty, cyrkonie, geometria — wzór dobieramy do okazji, ubrania i tego, co lubisz."
+        "description": "French, neon, ombre, kwiaty, cyrkonie, geometria — wzór dobieramy do okazji i tego, co lubisz."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Cennik",
+    "subtitle": "Jasne ceny z góry — wiesz, za co płacisz, zanim usiądziesz przy stoliku.",
+    "note": "Zdobienia artystyczne wyceniam indywidualnie przy wizycie — zależą od złożoności wzoru. Zapisy telefonicznie lub WhatsApp.",
+    "items": [
+      {
+        "name": "Przedłużanie",
+        "price": "140 zł",
+        "description": "Nowa stylizacja z przedłużeniem",
+        "highlight": true
+      },
+      {
+        "name": "Uzupełnienie",
+        "price": "120 zł",
+        "description": "Odrost i odświeżenie formy"
+      },
+      {
+        "name": "Manicure hybrydowy",
+        "price": "100 zł",
+        "description": "Hybryda na naturalnej płytce"
+      },
+      {
+        "name": "Pedicure hybrydowy",
+        "price": "100 zł",
+        "description": "Stylizacja stóp hybrydą"
       }
     ]
   },
@@ -168,6 +196,7 @@
     "header": "transparent",
     "hero": "fullBleedPhoto",
     "services": "grid",
+    "pricing": "cards",
     "usp": "list",
     "reviews": "cards",
     "gallery": "featuredSlider",

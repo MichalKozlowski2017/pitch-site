@@ -34,6 +34,13 @@ export const galleryItemSchema = z.object({
   place: z.string().optional(),
 });
 
+export const pricingItemSchema = z.object({
+  name: z.string(),
+  price: z.string(),
+  description: z.string().optional(),
+  highlight: z.boolean().optional(),
+});
+
 export const themeSchema = z.object({
   primary: z.string(),
   primaryForeground: z.string(),
@@ -49,6 +56,7 @@ export const variantsSchema = z.object({
   header: z.enum(["solid", "transparent"]),
   hero: z.enum(["fullBleedPhoto", "split"]),
   services: z.enum(["grid"]),
+  pricing: z.enum(["cards"]),
   usp: z.enum(["list"]),
   reviews: z.enum(["cards"]),
   gallery: z.enum(["grid", "featuredSlider"]),
@@ -95,6 +103,14 @@ export const clientConfigSchema = z.object({
     subtitle: z.string().optional(),
     items: z.array(serviceSchema),
   }),
+  pricing: z
+    .object({
+      title: z.string(),
+      subtitle: z.string().optional(),
+      note: z.string().optional(),
+      items: z.array(pricingItemSchema),
+    })
+    .optional(),
   usp: z.object({
     title: z.string(),
     subtitle: z.string().optional(),

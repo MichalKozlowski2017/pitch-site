@@ -18,7 +18,24 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 
 body {
@@ -35,12 +52,17 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   [data-hero-item],
   [data-reveal],
-  [data-usp-num] {
+  [data-usp-num],
+  [data-pricing-price] {
     opacity: 0;
   }
 
   [data-hero-media] {
-    transform: scale(1.1);
+    transform: scale(1.14);
     transform-origin: center center;
+  }
+
+  [data-hero-overlay] {
+    opacity: 0.25;
   }
 }

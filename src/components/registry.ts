@@ -6,6 +6,7 @@ import { HeaderTransparent } from "@/components/header/HeaderTransparent";
 import { HeroFullBleed } from "@/components/hero/HeroFullBleed";
 import { HeroSplit } from "@/components/hero/HeroSplit";
 import { ServicesGrid } from "@/components/services/ServicesGrid";
+import { PricingCards } from "@/components/pricing/PricingCards";
 import { UspList } from "@/components/usp/UspList";
 import { ReviewsCards } from "@/components/reviews/ReviewsCards";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
@@ -29,6 +30,9 @@ export const registry: RegistryMap = {
   },
   services: {
     grid: ServicesGrid,
+  },
+  pricing: {
+    cards: PricingCards,
   },
   usp: {
     list: UspList,
@@ -55,6 +59,7 @@ export const slotOrder = [
   "header",
   "hero",
   "services",
+  "pricing",
   "usp",
   "reviews",
   "gallery",
@@ -95,6 +100,10 @@ export const variantCatalog = {
   },
   services: {
     grid: "Standardowa siatka usług z ogłoszenia.",
+  },
+  pricing: {
+    cards:
+      "Cennik w kartach (beauty / usługi ze stałymi cenami). Puste items = sekcja ukryta.",
   },
   usp: {
     list: "Lista benefitów / USP.",

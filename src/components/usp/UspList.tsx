@@ -8,16 +8,16 @@ export function UspList({ client }: SectionProps) {
     <section
       id="dlaczego"
       data-reveal-group
-      className="bg-[var(--color-primary)] py-16 text-[var(--color-primary-foreground)] sm:py-24"
+      className="bg-[var(--color-background)] py-16 sm:py-24"
     >
       <Container>
-        <SectionHeading title={usp.title} subtitle={usp.subtitle} light />
-        <ol className="mx-auto grid max-w-4xl gap-6">
+        <SectionHeading title={usp.title} subtitle={usp.subtitle} />
+        <ol className="mx-auto grid max-w-4xl gap-0 overflow-hidden border border-black/8 bg-[var(--color-surface)]">
           {usp.items.map((item, index) => (
             <li
               key={item.title}
               data-reveal
-              className="grid gap-3 border-t border-white/15 pt-6 sm:grid-cols-[4rem_1fr] sm:gap-8"
+              className="grid gap-3 border-b border-black/8 p-6 last:border-b-0 sm:grid-cols-[5rem_1fr] sm:gap-8 sm:p-8"
             >
               <span
                 data-usp-num
@@ -26,8 +26,10 @@ export function UspList({ client }: SectionProps) {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <div>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p className="mt-2 text-base leading-relaxed text-white/80">
+                <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold text-[var(--color-foreground)]">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-base leading-relaxed text-[var(--color-muted-foreground)]">
                   {item.description}
                 </p>
               </div>

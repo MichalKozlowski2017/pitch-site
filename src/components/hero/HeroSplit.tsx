@@ -31,6 +31,7 @@ export function HeroSplit({ client }: SectionProps) {
             <CtaPair
               primary={hero.ctaPrimary}
               secondary={hero.ctaSecondary}
+              magnetic
               className="mt-8"
             />
           </div>

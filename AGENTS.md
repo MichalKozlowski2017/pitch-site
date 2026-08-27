@@ -51,6 +51,7 @@ Uwagi: …
 | hero | `fullBleedPhoto` | Mocne zdjęcie |
 | hero | `split` | Słabsze zdjęcie / więcej tekstu |
 | services | `grid` | Siatka usług |
+| pricing | `cards` | Cennik (beauty / stałe ceny); bez `pricing` w JSON = ukryte |
 | usp | `list` | Lista USP |
 | reviews | `cards` | Opinie Google |
 | gallery | `grid` | Szybka siatka realizacji |
