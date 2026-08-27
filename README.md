@@ -44,6 +44,8 @@ W `client.json` zmień np.:
 ## Dokumentacja dla agentów
 
 - [`AGENTS.md`](AGENTS.md) — workflow, katalog wariantów, dodawanie komponentów
+- [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — kto dostał pitch, odpowiedź, cena (dedup)
+- [`docs/outreach-tracker.md`](docs/outreach-tracker.md) — jak prowadzić tracker
 - [`docs/outreach.md`](docs/outreach.md) — szablon wiadomości + checklista etyki
 - [`.cursor/rules/pitch.mdc`](.cursor/rules/pitch.mdc)
 

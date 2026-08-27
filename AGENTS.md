@@ -15,11 +15,13 @@ Landing dla lokalnych wykonawców. Treść i wybór layoutu żyją w **`content/
 ## Workflow: nowe zlecenie / pitch
 
 1. Użytkownik wrzuca: link lub treść ogłoszenia OLX/Allegro, nazwę firmy, miasto, telefon, opcjonalnie link Google Business.
-2. Research: opinie Google (tylko prawdziwe), ton komunikacji, czy ma już stronę, mocne zdjęcia.
-3. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch`).
-4. Zdjęcia: `public/images/` albo remote (host w `next.config.ts`).
-5. `npm run dev` → sprawdź desktop/mobile; ewent. zmień `variants`.
-6. Deploy preview + wiadomość z [`docs/outreach.md`](docs/outreach.md).
+2. **Sprawdź** [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — czy ta firma / telefon / ogłoszenie już jest (unikaj podwójnego pitcha). Instrukcja: [`docs/outreach-tracker.md`](docs/outreach-tracker.md).
+3. Research: opinie Google (tylko prawdziwe), ton komunikacji, czy ma już stronę, mocne zdjęcia.
+4. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch`).
+5. Zdjęcia: `public/images/` albo remote (host w `next.config.ts`).
+6. `npm run dev` → sprawdź desktop/mobile; ewent. zmień `variants`.
+7. Deploy preview + wiadomość z [`docs/outreach.md`](docs/outreach.md).
+8. Zaktualizuj wiersz w `data/outreach-tracker.csv` (demo / wysłane / odpowiedź / cena).
 
 ## Input — szablon
 

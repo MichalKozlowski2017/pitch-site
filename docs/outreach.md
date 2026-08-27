@@ -1,5 +1,10 @@
 # Outreach i etyka
 
+## Tracker firm (nie pitchuj dwa razy)
+
+Przed nowym leadem sprawdź [`data/outreach-tracker.csv`](../data/outreach-tracker.csv) — telefon, firma, link OLX.  
+Instrukcja kolumn i statusów: [`outreach-tracker.md`](outreach-tracker.md).
+
 ## Szablon wiadomości (PL)
 
 Dostosuj imię / firmę / URL. Krótko, konkretnie, bez spamu.

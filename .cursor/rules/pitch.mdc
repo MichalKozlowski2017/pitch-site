@@ -10,6 +10,8 @@ alwaysApply: true
 
 # Pitch Site
 
+- Przed nowym leadem: sprawdź `data/outreach-tracker.csv` (telefon, firma, OLX) — nie pitchuj dwa razy.
+- Po demo / wysyłce: zaktualizuj tracker (`docs/outreach-tracker.md`).
 - Dane klienta i wybór layoutu: tylko `content/client.json` (Zod w `src/lib/client-config.ts`).
 - Sekcje renderuj przez `src/components/registry.ts` — nie omijaj registry hardcodem w `page.tsx`.
 - Wspólny kontrakt props: `SectionProps` (`{ client }`).
