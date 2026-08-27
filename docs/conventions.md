@@ -25,6 +25,19 @@
 - [ ] `npm run build` przechodzi
 - [ ] Preview URL działa
 
+## Rytm sekcji (tło)
+
+**Nie sklejaj dwóch ciemnych sekcji (`primary`) obok siebie** — galeria i cennik zlewają się wizualnie.
+
+| Sekcja | Tło |
+|--------|-----|
+| hero, usługi, realizacje (`fullBleedShowcase`), USP, opinie, kontakt | jasne (`background` / `surface`) |
+| cennik, FAQ | ciemne (`primary`) |
+
+- `fullBleedShowcase` = **jasna sekcja**, ciemny tylko kadr ze zdjęciem (jak `featuredSlider`).
+- Po jasnej galerii → ciemny cennik daje kontrast; opcjonalnie cienka linia / gradient na górze cennika.
+- Kolejność slotów: unikaj `primary` → `primary` bez jasnej przerwy między.
+
 ## Motion (domyślne oczekiwania)
 
 - Lenis smooth scroll + GSAP reveals (`LandingMotion.tsx`)

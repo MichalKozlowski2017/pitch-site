@@ -165,6 +165,13 @@ html[data-header-scrolled="true"]
   opacity: 0;
 }
 
+[data-pricing-price] {
+  font-size: clamp(1.0625rem, 0.9rem + 0.65vw, 1.625rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
 @media (hover: hover) and (pointer: fine) {
   [data-pricing-card]:hover [data-pricing-sheen] {
     opacity: 1;

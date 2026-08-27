@@ -12,6 +12,10 @@ export function PricingCards({ client }: SectionProps) {
       className="relative overflow-hidden bg-[var(--color-primary)] py-16 text-[var(--color-primary-foreground)] sm:py-24"
     >
       <div
+        className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
+        aria-hidden
+      />
+      <div
         className="pointer-events-none absolute inset-0 opacity-[0.14]"
         aria-hidden
         style={{
@@ -97,7 +101,7 @@ export function PricingCards({ client }: SectionProps) {
               )}
               <p
                 data-pricing-price
-                className={`mt-6 font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight sm:text-4xl ${
+                className={`mt-6 font-[family-name:var(--font-display)] font-semibold tabular-nums ${
                   item.highlight
                     ? "text-[var(--color-foreground)]"
                     : "text-[var(--color-accent)]"

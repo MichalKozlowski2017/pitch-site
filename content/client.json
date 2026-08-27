@@ -1,231 +1,255 @@
 {
   "business": {
-    "name": "Effect Nails",
-    "tagline": "Stylizacja paznokci dłoni i stóp w centrum Kielc",
-    "description": "Effect Nails to stylizacja paznokci Moniki w centrum Kielc. Hybryda, żel, przedłużanie, pedicure i artystyczne zdobienia — w spokojnej atmosferze, na wysterylizowanych narzędziach i profesjonalnym sprzęcie.",
-    "location": "Centrum Kielc, ul. Spacerowa",
-    "phone": "+48 784 988 009",
-    "whatsapp": "+48784988009",
-    "logo": "/images/effect-nails-kielce/logo.svg"
+    "name": "Studio Finezja",
+    "tagline": "Makijaż, strzyżenie i stylizacja włosów — Ursus, Warszawa",
+    "description": "Kameralne studio przy ul. Gierdziejewskiego 7 w Ursusie. Makijaż ślubny i okolicznościowy, fale Hollywood, upięcia, strzyżenia damskie, męskie i dziecięce — na miejscu lub z dojazdem po Warszawie i całej Polsce. Kosmetyki Dior, Lancôme, MAC, Estée Lauder; przy wizycie kawa, herbata i spokojna atmosfera.",
+    "location": "Warszawa, Ursus — ul. Gierdziejewskiego 7, klatka 2, piętro 1 (wejście przy Osteria Piemonte)",
+    "phone": "SMS przez OLX",
+    "hours": "Pn–Czw 7:00–20:00 · Pt–Nd 5:00–19:00 · Niedziela: terminy indywidualne (+25%)"
   },
   "seo": {
-    "title": "Effect Nails Kielce — manicure hybrydowy, żel, przedłużanie | Spacerowa",
-    "description": "Stylizacja paznokci w centrum Kielc (ul. Spacerowa). Przedłużanie od 140 zł, uzupełnienie 120 zł, hybryda i pedicure hybrydowy 100 zł. Sterylizacja narzędzi. Zadzwoń: 784 988 009."
+    "title": "Studio Finezja Ursus — makijaż, fryzura, upięcia ślubne | Warszawa",
+    "description": "Makijaż i stylizacja włosów w Ursusie (ul. Gierdziejewskiego 7). Upięcia ślubne, fale Hollywood, pakiety ślubne, dojazd po Warszawie. Kontakt: SMS na OLX."
   },
   "theme": {
-    "primary": "#2C2426",
-    "primaryForeground": "#FFF8F9",
-    "accent": "#C48B9F",
-    "background": "#FAF6F4",
-    "foreground": "#2C2426",
-    "muted": "#EFE6E4",
-    "mutedForeground": "#6E6366",
+    "primary": "#2A3D34",
+    "primaryForeground": "#FAF7F2",
+    "accent": "#C4A574",
+    "background": "#F9F6F1",
+    "foreground": "#1F2923",
+    "muted": "#E8E2D8",
+    "mutedForeground": "#5C655E",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
     { "label": "Portfolio", "href": "#realizacje" },
     { "label": "Cennik", "href": "#cennik" },
-    { "label": "Dlaczego Effect", "href": "#dlaczego" },
+    { "label": "Dlaczego Finezja", "href": "#dlaczego" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "headline": "Paznokcie, które robią wrażenie — nie tylko na zdjęciu",
-    "subheadline": "Hybryda, żel, przedłużanie i zdobienia artystyczne w centrum Kielc. Czysto, precyzyjnie, na wysterylizowanych narzędziach — umów termin jednym telefonem.",
-    "image": "/images/effect-nails-kielce/01-neon-french.jpg",
+    "headline": "Fryzura i makijaż, które wyglądają perfekcyjnie — na żywo i na zdjęciu",
+    "subheadline": "Od ślubu i studniówki po fale Hollywood i strzyżenie w kameralnym studio w Ursusie. Premium kosmetyki, indywidualne podejście — na miejscu lub z dojazdem po Warszawie.",
+    "image": "/images/studio-finezja-ursus/02-slub-makijaz.webp",
     "ctaPrimary": {
-      "label": "Zadzwoń: 784 988 009",
-      "href": "tel:+48784988009"
+      "label": "Wyślij SMS na OLX",
+      "href": "https://www.olx.pl/d/oferta/studio-finezja-makijaz-strzyzenie-stylizacja-wlosow-CID4371-IDQG14E.html"
     },
     "ctaSecondary": {
-      "label": "WhatsApp",
-      "href": "https://wa.me/48784988009"
+      "label": "Zobacz cennik",
+      "href": "#cennik"
     }
   },
   "services": {
-    "title": "Co robię",
-    "subtitle": "Pełna stylizacja dłoni i stóp — od codziennej hybrydy po artystyczne zdobienia.",
+    "title": "Usługi",
+    "subtitle": "Makijaż, fryzury okolicznościowe i strzyżenia — w studio lub z dojazdem.",
     "items": [
       {
-        "title": "Przedłużanie paznokci",
-        "description": "Przedłużanie z dbałością o kształt, długość i trwałość. Idealne, gdy chcesz efekt „wow” od razu."
+        "title": "Makijaż ślubny i okolicznościowy",
+        "description": "Dzienny, wieczorowy i ślubny — z rozświetleniem ramion, dekoltu i pleców. Kosmetyki Chanel, Dior, Lancôme, MAC, NARS."
       },
       {
-        "title": "Uzupełnienie",
-        "description": "Uzupełnienie stylizacji, żeby odrost wyglądał naturalnie, a paznokieć trzymał formę między wizytami."
+        "title": "Upięcia i fale Hollywood",
+        "description": "Upięcia ślubne, fale, wysoki kucyk, warkocze — od casual po pełny glam. Trwała stylizacja pod cały dzień."
       },
       {
-        "title": "Manicure hybrydowy",
-        "description": "Hybryda na dłoniach: gładka powierzchnia, czysta skórka i kolor, który nie odpryskuje po dwóch dniach."
+        "title": "Strzyżenie i modelowanie",
+        "description": "Damskie, męskie i dziecięce — podcięcia, regeneracja, botox na włosy, prostowanie."
       },
       {
-        "title": "Pedicure hybrydowy",
-        "description": "Stylizacja stóp hybrydą. Dbamy o wygląd i komfort — latem i poza sezonem."
+        "title": "Pakiety ślubne i na uroczystość",
+        "description": "Makijaż + upięcie w jednym terminie — dla panny młodej, gości weselnych lub sesji zdjęciowej."
       },
       {
-        "title": "Manicure żelowy",
-        "description": "Żel na naturalnej płytce lub w zestawieniu z przedłużaniem — równa, trwała powierzchnia pod kolor i art."
+        "title": "Dojazd do klientki",
+        "description": "Na terenie Warszawy (+50–100 zł w zależności od miejsca). Zlecenia realizuję też w całej Polsce."
       },
       {
-        "title": "Zdobienia artystyczne",
-        "description": "French, neon, ombre, kwiaty, cyrkonie, geometria — wzór dobieramy do okazji i tego, co lubisz."
+        "title": "Wizyty domowe",
+        "description": "Strzyżenie i stylizacja u osób, które nie mogą wyjść z domu — po wcześniejszym umówieniu."
       }
     ]
   },
   "pricing": {
     "title": "Cennik",
-    "subtitle": "Jasne ceny z góry — wiesz, za co płacisz, zanim usiądziesz przy stoliku.",
-    "note": "Zdobienia artystyczne wyceniam indywidualnie przy wizycie — zależą od złożoności wzoru. Zapisy telefonicznie lub WhatsApp.",
+    "subtitle": "Orientacyjne widełki z ogłoszenia — dokładną kwotę ustalimy po SMS-ie z opisem usługi.",
+    "note": "Dojazd po Warszawie: +50–100 zł. Niedziela (termin indywidualny): +25% od ceny podstawowej.",
     "items": [
       {
-        "name": "Przedłużanie",
-        "price": "140 zł",
-        "description": "Nowa stylizacja z przedłużeniem",
-        "highlight": true
+        "name": "Makeup dzienny",
+        "price": "od 80 zł",
+        "description": "Naturalny makijaż na co dzień lub sesję."
       },
       {
-        "name": "Uzupełnienie",
-        "price": "120 zł",
-        "description": "Odrost i odświeżenie formy"
+        "name": "Makeup wieczorowy",
+        "price": "200 zł",
+        "description": "Wyrazisty look na imprezę, studniówkę lub wesele."
       },
       {
-        "name": "Manicure hybrydowy",
-        "price": "100 zł",
-        "description": "Hybryda na naturalnej płytce"
+        "name": "Fale Hollywood",
+        "price": "100–450 zł",
+        "description": "W zależności od długości i złożoności stylizacji."
       },
       {
-        "name": "Pedicure hybrydowy",
-        "price": "100 zł",
-        "description": "Stylizacja stóp hybrydą"
+        "name": "Upięcie ślubne",
+        "price": "250–650 zł",
+        "description": "Indywidualny projekt fryzury pod suknię i okazję."
+      },
+      {
+        "name": "Makijaż ślubny",
+        "price": "300–600 zł",
+        "description": "Z rozświetleniem ramion, dekoltu i pleców."
+      },
+      {
+        "name": "Pakiet ślubny",
+        "price": "400–700 zł",
+        "highlight": true,
+        "description": "Makijaż + upięcie — kompletna stylizacja na najważniejszy dzień."
+      },
+      {
+        "name": "Pakiet „Gość weselny”",
+        "price": "200–300 zł",
+        "description": "Makijaż i fryzura na uroczystość."
+      },
+      {
+        "name": "Pakiet sesja zdjęciowa",
+        "price": "200 zł",
+        "description": "Stylizacja pod kadr — makijaż i/lub włosy."
       }
     ]
   },
   "usp": {
-    "title": "Dlaczego klientki wracają do Effect Nails",
-    "subtitle": "Nie chodzi tylko o kolor — o higienę, lokalizację i efekt, który widać z bliska.",
+    "title": "Dlaczego Studio Finezja",
+    "subtitle": "To nie łańcuchowy salon — kameralne studio z dbałością o detal i komfort.",
     "items": [
       {
-        "title": "Centrum Kielc, ul. Spacerowa",
-        "description": "Wygodnie dotrzesz z centrum i okolic. Stylizacja dłoni i stóp bez marnowania pół dnia na dojazd na obrzeża."
+        "title": "Premium kosmetyki",
+        "description": "Do makijażu: Dior, Chanel, Lancôme, MAC, Guerlain, NARS, Estée Lauder. Do włosów: Moroccanoil, Bed Head, Kemon, Osis."
       },
       {
-        "title": "Sterylizacja to standard, nie dodatek",
-        "description": "Wszystkie narzędzia przechodzą proces sterylizacji. Pracujemy na profesjonalnym sprzęcie — Twój komfort i bezpieczeństwo są priorytetem."
+        "title": "Kameralna atmosfera",
+        "description": "Kawa z ekspresu (z mlekiem!), herbata, elektrolity i Rafaello — żebyś czuła się swobodnie przed ważnym wyjściem."
       },
       {
-        "title": "Efekt dopasowany do Ciebie",
-        "description": "Od delikatnego nude po odważny art. Przed pracą ustalamy kształt, długość i styl — żebyś wyszła zadowolona, nie „prawie OK”."
+        "title": "Śluby i duże okazje",
+        "description": "Upięcia ślubne, pakiety dla panny młodej i gości — także stylizacja pod sesję i wesele."
       },
       {
-        "title": "Jasny cennik z góry",
-        "description": "Przedłużanie 140 zł, uzupełnienie 120 zł, hybryda dłoni i pedicure hybrydowy po 100 zł. Bez niespodzianek na koniec wizyty."
+        "title": "Studio lub dojazd",
+        "description": "Ursus, ul. Gierdziejewskiego 7 — albo przyjadę do Ciebie w Warszawie i dalej, na terenie całej Polski."
+      },
+      {
+        "title": "Dla każdego",
+        "description": "Strzyżenia damskie, męskie i dziecięce — oraz wizyty domowe, gdy wyjście jest utrudnione."
       }
     ]
   },
   "reviews": {
     "title": "Opinie",
-    "subtitle": "",
+    "subtitle": "Profil OLX bez ocen — nie dodajemy opinii z innych salonów „Finezja” w Polsce.",
     "items": []
   },
   "gallery": {
-    "title": "Portfolio stylizacji",
-    "subtitle": "Prawdziwe prace Effect Nails — od codziennego nude po french z charakterem. Przewijaj strzałkami lub wybierz miniaturę.",
+    "title": "Realizacje",
+    "subtitle": "Upięcia ślubne, fale Hollywood i makijaże z portfolio studia w Ursusie.",
     "items": [
       {
-        "src": "/images/effect-nails-kielce/01-neon-french.jpg",
-        "alt": "French z neonowymi liniami i brokatem",
-        "title": "Neon French",
-        "description": "Przedłużane paznokcie, brokatowa baza i ostre neonowe linie — stylizacja, która przyciąga spojrzenia od pierwszego gestu.",
-        "place": "Effect Nails · Kielce"
+        "src": "/images/studio-finezja-ursus/02-slub-makijaz.webp",
+        "alt": "Makijaż ślubny — naturalny glam",
+        "title": "Makijaż ślubny — glam",
+        "description": "Podkreślone oczy, świeża cera i trwały finish pod cały dzień ceremonii i wesela.",
+        "place": "Studio Finezja, Ursus"
       },
       {
-        "src": "/images/effect-nails-kielce/06-french-kokardy.jpg",
-        "alt": "Klasyczny french z kokardkami 3D",
-        "title": "French z kokardą",
-        "description": "Klasyczny biały french na nude z drobnym zdobieniem 3D — romantycznie, czysto i bardzo „photo ready”.",
-        "place": "Effect Nails · Kielce"
+        "src": "/images/studio-finezja-ursus/01-slub-upiecie.webp",
+        "alt": "Upięcie ślubne z perłami",
+        "title": "Upięcie ślubne z biżuterią",
+        "description": "Elegancki kok z delikatnymi perłami i luźnymi pasmami przy twarzy.",
+        "place": "Studio Finezja, Ursus"
       },
       {
-        "src": "/images/effect-nails-kielce/04-black-pink-art.jpg",
-        "alt": "Czarno-różowa stylizacja z cyrkoniami",
-        "title": "Black & blush art",
-        "description": "Głęboka czerń, blush pink, geometria i cyrkonie — kontrast dla osób, które lubią mocniejszy akcent.",
-        "place": "Effect Nails · Kielce"
+        "src": "/images/studio-finezja-ursus/03-slub-fryzura.webp",
+        "alt": "Para młoda — fryzura i makijaż panny młodej",
+        "title": "Stylizacja ślubna — komplet",
+        "description": "Fryzura i makijaż dopasowane do sukni i światła dnia — trwałe do końca uroczystości.",
+        "place": "Warszawa i okolice"
       },
       {
-        "src": "/images/effect-nails-kielce/03-rainbow-french.jpg",
-        "alt": "Kolorowy french ombre",
-        "title": "Rainbow French",
-        "description": "Kolorowe tipsy na brokatowej bazie — zabawa kolorem bez rezygnacji z schludnego frenchowego kształtu.",
-        "place": "Effect Nails · Kielce"
+        "src": "/images/studio-finezja-ursus/05-hollywood-waves.webp",
+        "alt": "Fale Hollywood — miedziane włosy",
+        "title": "Fale Hollywood",
+        "description": "Klasyczne, błyszczące fale — od studniówki po sesję zdjęciową.",
+        "place": "Studio Finezja, Ursus"
       },
       {
-        "src": "/images/effect-nails-kielce/05-pastel-kwiaty.jpg",
-        "alt": "Pastelowy french z kwiatami",
-        "title": "Pastel + kwiaty",
-        "description": "Delikatne pasteli i ręcznie malowane kwiatki — lekka, wiosenna stylizacja na co dzień i na wyjście.",
-        "place": "Effect Nails · Kielce"
+        "src": "/images/studio-finezja-ursus/06-upiecie-fale.webp",
+        "alt": "Półupięcie z lokami",
+        "title": "Półupięcie z falami",
+        "description": "Lekkie upięcie z podkręconymi końcami — romantyczny look na wesele lub komunii.",
+        "place": "Studio Finezja, Ursus"
       },
       {
-        "src": "/images/effect-nails-kielce/02-nude-hybryda.jpg",
-        "alt": "Nude hybryda z delikatnym błyskiem",
-        "title": "Nude hybryda",
-        "description": "Czysty, błyszczący nude z subtelnym shimmerem — klasyka biurowa i „zawsze pasuje”.",
-        "place": "Effect Nails · Kielce"
+        "src": "/images/studio-finezja-ursus/07-makijaz-wieczorowy.webp",
+        "alt": "Makijaż wieczorowy — smoky eyes",
+        "title": "Makijaż wieczorowy",
+        "description": "Wyraziste oko i elegancki kok — gotowe na imprezę lub sesję.",
+        "place": "Studio Finezja, Ursus"
+      },
+      {
+        "src": "/images/studio-finezja-ursus/08-upiecie-perly.webp",
+        "alt": "Upięcie z perłową ozdobą",
+        "title": "Upięcie okolicznościowe",
+        "description": "Precyzyjne upięcie z ozdobą — dopasowane do kreacji i typu urody.",
+        "place": "Studio Finezja, Ursus"
+      },
+      {
+        "src": "/images/studio-finezja-ursus/04-upiecia-kolaż.webp",
+        "alt": "Kolaż upięć ślubnych",
+        "title": "Upięcia ślubne — portfolio",
+        "description": "Różne style koków i półupięć — od klasycznych po romantyczne z dodatkami.",
+        "place": "Studio Finezja, Ursus"
       }
-    ]
-  },
-  "area": {
-    "title": "Kielce i okolice",
-    "subtitle": "Przyjmuję w centrum miasta — wygodnie, jeśli mieszkasz lub pracujesz w Kielcach i okolicach.",
-    "places": [
-      "Kielce — centrum",
-      "ul. Spacerowa",
-      "Śródmieście",
-      "Czarnów",
-      "Barwinek",
-      "Bocianek",
-      "powiat kielecki"
     ]
   },
   "faq": {
     "title": "Najczęstsze pytania",
-    "subtitle": "Krótko i konkretnie — zanim zadzwonisz. Resztę doprecyzujemy przy umawianiu terminu.",
+    "subtitle": "Krótko i konkretnie — najlepiej napisz SMS na OLX z datą i rodzajem usługi.",
     "items": [
       {
-        "question": "Ile trzyma się manicure hybrydowy?",
-        "answer": "Zwykle 2–3 tygodnie bez odprysków. Przy zdrowej płytce i codziennej pielęgnacji (oliwka, rękawiczki do chemii domowej) często bliżej 3–4 tygodni. Potem warto zrobić uzupełnienie albo zdjąć stylizację profesjonalnie — nie zrywaj lakieru sama."
+        "question": "Jak umówić termin?",
+        "answer": "Najlepiej przez SMS na OLX (profil Febini / Studio Finezja). Podaj datę, godzinę i czego potrzebujesz — makijaż, upięcie, pakiet ślubny lub strzyżenie. Odpowiadam najszybciej tą drogą."
       },
       {
-        "question": "Czy hybryda niszczy paznokcie?",
-        "answer": "Prawidłowo nałożona i zdjęta — nie. Szkodzą głównie zdzieranie, agresywne piłowanie i zbyt rzadkie wizyty. Dbam o delikatne przygotowanie płytki i sterylne narzędzia, żeby stylizacja była trwała, a paznokieć w dobrej kondycji."
+        "question": "Jak dojechać do studia?",
+        "answer": "ul. Gierdziejewskiego 7, Ursus — klatka 2, piętro 1. Wejście tuż przy restauracji Osteria Piemonte (również przejście między budynkami). Dojazd na zlecenia po Warszawie i w całej Polsce — ustalamy przy rezerwacji."
       },
       {
-        "question": "Jak przygotować się do wizyty?",
-        "answer": "Wystarczą czyste dłonie. Nie wycinaj skórek i nie zrywaj starej hybrydy w domu. Tuż przed wizytą odpuść tłuste kremy i olejek na paznokcie — utrudniają przyczepność bazy. Jeśli masz wzór z Instagrama lub Pinteresta, wrzuć na telefon — szybciej dogadamy kształt i kolor."
+        "question": "Czy dojeżdżasz do klientki?",
+        "answer": "Tak — na terenie Warszawy doliczam 50–100 zł w zależności od miejsca. Przyjmuję też zlecenia z dojazdem w całej Polsce — ustalamy szczegóły przy rezerwacji."
       },
       {
-        "question": "Ile trwa wizyta i jak się umówić?",
-        "answer": "Hybryda w jednym kolorze to zwykle około 60–90 minut; zdobienia i przedłużanie zajmują dłużej. Terminy umawiam telefonicznie lub na WhatsApp — napisz, czego potrzebujesz (hybryda, uzupełnienie, przedłużanie, pedicure), a dopasujemy slot."
+        "question": "Czy pracujesz w niedzielę?",
+        "answer": "Tak, ale tylko na indywidualne zamówienia — wtedy do ceny podstawowej doliczane jest 25%."
       },
       {
-        "question": "Czy można robić hybrydę w ciąży?",
-        "answer": "Przy prawidłowo przebiegającej ciąży nie ma typowych przeciwwskazań do manicure hybrydowego, o ile salon dba o wentylację i sprawdzone produkty. Zawsze warto zapytać lekarza prowadzącego, jeśli masz wątpliwości — dopasujemy termin i zakres zabiegu."
+        "question": "Czy mogę zamówić wizytę u osoby leżącej?",
+        "answer": "Tak — oferuję strzyżenie i stylizację u osób, które nie mogą wyjść z domu. Umówienie po wcześniejszym kontakcie SMS."
       },
       {
-        "question": "Czy zdejmujesz stylizację z innego salonu?",
-        "answer": "Tak — bezpieczne, profesjonalne zdjęcie cudzej hybrydy lub żelu jest możliwe przed nową stylizacją. Nie zrywaj materiału samodzielnie; damy radę przy wizycie i od razu przejść do świeżego manicure albo przedłużania."
+        "question": "Jakie kosmetyki używasz?",
+        "answer": "Do makijażu głównie marki premium: Chanel, Estée Lauder, MAC, Lancôme, Guerlain, Dior, NARS. Do włosów m.in. Bed Head, Kemon, Moroccanoil, Osis."
       },
       {
-        "question": "Jak dbacie o higienę?",
-        "answer": "Narzędzia są sterylizowane, a stanowisko przygotowywane pod każdą klientkę. To standard, na którym nie oszczędzam — szczególnie przy pracy frezarką i przedłużaniu."
+        "question": "Czy to ten sam salon co Finezja w Poznaniu / Tarnowskich Górach?",
+        "answer": "Nie — Studio Finezja w Ursusie (ul. Gierdziejewskiego 7) to niezależna firma prowadzona w Warszawie. Inne salony o podobnej nazwie w Polsce nie są z nami powiązane."
       }
     ]
   },
   "contact": {
-    "title": "Zarezerwuj termin u Moniki",
-    "subtitle": "Zadzwoń lub napisz na WhatsApp — krótko napisz, czego potrzebujesz (hybryda, przedłużanie, pedicure), a umówimy dogodny termin."
+    "title": "Umów wizytę",
+    "subtitle": "Napisz SMS na OLX — podaj termin i usługę (makijaż, upięcie, pakiet ślubny, strzyżenie). To najszybszy sposób kontaktu."
   },
   "variants": {
     "header": "transparent",
@@ -242,13 +266,13 @@
   },
   "pitch": {
     "enabled": true,
-    "badgeText": "Demo strony dla Effect Nails Kielce (Monika)",
-    "offerHeadline": "Wizytówka online zamiast samego ogłoszenia OLX",
-    "offerBody": "Przygotowaliśmy podgląd strony na podstawie ogłoszenia, cennika i zdjęć z Facebooka. Klientki od razu widzą portfolio, ceny i mogą zadzwonić jednym tapnięciem.",
+    "badgeText": "Demo strony przygotowane dla Studio Finezja — Ursus",
+    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
+    "offerBody": "Przygotowaliśmy podgląd strony na podstawie ogłoszenia OLX i zdjęć z portfolio. Portfolio, cennik i kontakt w jednym miejscu — łatwiej niż sama kartka na OLX.",
     "offerBullets": [
-      "Portfolio stylizacji zamiast samego tekstu na OLX",
-      "Cennik i usługi w czytelnych kaflach",
-      "Wygląd beauty — logo Effect Nails + spójne kolory",
+      "Profesjonalny wizerunek obok setek ogłoszeń fryzjerskich",
+      "Cennik i realizacje widoczne od razu — mniej pytań „ile kosztuje?”",
+      "Kontakt SMS/OLX i mapa dojazdu do studia",
       "Wdrożenie w 24h po akceptacji"
     ],
     "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."

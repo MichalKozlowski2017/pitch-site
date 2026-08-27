@@ -204,7 +204,7 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
       id="realizacje"
       data-reveal-group
       data-gallery-showcase
-      className="bg-[var(--color-primary)] py-12 text-[var(--color-primary-foreground)] sm:py-16"
+      className="border-b border-black/[0.06] bg-[var(--color-background)] py-12 text-[var(--color-foreground)] sm:py-16"
     >
       <Container>
         <div
@@ -216,7 +216,7 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
               {gallery.title}
             </h2>
             {gallery.subtitle ? (
-              <p className="mt-1.5 text-sm leading-relaxed text-white/65">
+              <p className="mt-1.5 text-sm leading-relaxed text-[var(--color-muted-foreground)]">
                 {gallery.subtitle}
               </p>
             ) : null}
@@ -230,7 +230,7 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
               type="button"
               onClick={goPrev}
               aria-label="Poprzednia stylizacja"
-              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 p-0 backdrop-blur-md transition hover:border-white/40 hover:bg-white/20"
+              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-black/10 bg-[var(--color-surface)] p-0 shadow-sm transition hover:border-[var(--color-primary)]/25 hover:bg-[var(--color-surface)]"
             >
               <NavArrow direction="left" />
             </button>
@@ -238,7 +238,7 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
               type="button"
               onClick={goNext}
               aria-label="Następna stylizacja"
-              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 p-0 backdrop-blur-md transition hover:border-white/40 hover:bg-white/20"
+              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-black/10 bg-[var(--color-surface)] p-0 shadow-sm transition hover:border-[var(--color-primary)]/25 hover:bg-[var(--color-surface)]"
             >
               <NavArrow direction="right" />
             </button>
@@ -247,7 +247,7 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
 
         <div
           ref={stageRef}
-          className="relative aspect-video w-full touch-pan-y bg-[var(--color-foreground)]/20"
+          className="relative aspect-video w-full touch-pan-y overflow-hidden rounded-sm border border-black/[0.08] bg-[var(--color-muted)] shadow-[0_24px_60px_-40px_rgba(0,0,0,0.35)]"
           onMouseEnter={pauseOnHover}
           onMouseLeave={resumeOnHover}
           onFocus={pauseOnHover}
@@ -352,7 +352,7 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
           onMouseEnter={pauseOnHover}
           onMouseLeave={resumeOnHover}
         >
-          <div className="mb-2 flex items-center justify-between gap-3 text-xs text-white/50">
+          <div className="mb-2 flex items-center justify-between gap-3 text-xs text-[var(--color-muted-foreground)]">
             <span>Wybierz stylizację</span>
             <span>
               {index + 1} / {total}
@@ -361,11 +361,11 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
 
           <div className="relative">
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-5 bg-gradient-to-r from-[var(--color-primary)] to-transparent sm:w-8"
+              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-5 bg-gradient-to-r from-[var(--color-background)] to-transparent sm:w-8"
               aria-hidden
             />
             <div
-              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-5 bg-gradient-to-l from-[var(--color-primary)] to-transparent sm:w-8"
+              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-5 bg-gradient-to-l from-[var(--color-background)] to-transparent sm:w-8"
               aria-hidden
             />
 
@@ -409,7 +409,7 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
                       className={`h-0.5 w-full rounded-full transition duration-300 ${
                         active
                           ? "bg-[var(--color-accent)]"
-                          : "bg-white/10 group-hover:bg-white/25"
+                          : "bg-black/10 group-hover:bg-black/20"
                       }`}
                       aria-hidden
                     />

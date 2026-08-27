@@ -130,11 +130,13 @@ export const clientConfigSchema = z.object({
     subtitle: z.string().optional(),
     items: z.array(galleryItemSchema),
   }),
-  area: z.object({
-    title: z.string(),
-    subtitle: z.string().optional(),
-    places: z.array(z.string()),
-  }),
+  area: z
+    .object({
+      title: z.string(),
+      subtitle: z.string().optional(),
+      places: z.array(z.string()),
+    })
+    .optional(),
   faq: z
     .object({
       title: z.string(),

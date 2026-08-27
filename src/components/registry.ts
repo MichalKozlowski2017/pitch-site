@@ -123,10 +123,11 @@ export const variantCatalog = {
     featuredSlider:
       "Duży kadr + opis realizacji, thumbs i GSAP — budowlanka / projekty z opisem.",
     fullBleedShowcase:
-      "Wycentrowane portfolio cinematic (beauty) — aspect 4:3, crossfade + filmstrip.",
+      "Wycentrowane portfolio cinematic (beauty) — jasne tło sekcji, ciemny kadr; nie primary obok cennika.",
   },
   area: {
-    chips: "Chipsy miast / dzielnic.",
+    chips:
+      "Chipsy miast / dzielnic. Bez bloku `area` w JSON lub puste `places` = ukryte (studio z jednym adresem).",
   },
   faq: {
     accordion:

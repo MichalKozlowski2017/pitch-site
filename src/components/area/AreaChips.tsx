@@ -3,7 +3,7 @@ import { Container, SectionHeading } from "@/components/shared/ui";
 
 export function AreaChips({ client }: SectionProps) {
   const { area } = client;
-
+  if (!area || area.places.length === 0) return null;
   return (
     <section
       id="obszar"
