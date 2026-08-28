@@ -26,6 +26,7 @@
 3. **Styl:** czytelny na jasnym i ciemnym tle (header transparent + solid po scrollu). Bez stockowych ikon z branży — lepiej litera, inicjał lub uproszczona nazwa firmy.
 4. **Typografia:** dopasuj charakter marki — domyślnie Syne (display) + Manrope (body); przy pitchu można podmienić parę fontów w `layout.tsx` (beauty: eleganckiej; budowa: solidniej). Graj trackingiem, wagą nagłówka i akcentem kolorystycznym, żeby strona nie wyglądała jak surowy starter.
 5. **Theme:** paleta pod logo / zdjęcia hero — primary, accent i tło spójne z wordmarkiem.
+6. **Favicon:** generuje się automatycznie z `business.name` (inicjał) + `theme.accent` / `theme.primary` (`src/app/icon.tsx`, `apple-icon.tsx`). Na preview i w zakładce widać monogram w kolorach marki — bez ręcznego pliku per pitch.
 
 Bez logo w JSON header pokazuje samą nazwę tekstem — **na demie zawsze staraj się dać `business.logo`**, jeśli klient nie dostarczył własnego.
 

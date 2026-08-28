@@ -95,3 +95,12 @@ Można wkleić do `client.json` i dopasować do salonu:
 - Moduły dodane w trakcie: `pricing.cards`, `faq.accordion`, Lenis, sticky header
 
 **Do następnego beauty pitcha:** od razu `fullBleedShowcase` + pricing + FAQ; pytać o WhatsApp i Booksy.
+
+### Pitch: Lena (manicure/pedicure, Wrocław Pereca)
+
+- Branch: `pitch/lena-manicure-wroclaw`
+- Greenfield — tylko OLX, brak opinii Google → `reviews.items: []`
+- Cennik pełny z OLX (13 pozycji + dodatki w jednej karcie)
+- Logo: monogram „L” + wordmark SVG (brak znaku u klientki)
+- 8 zdjęć portfolio z ogłoszenia OLX
+- WhatsApp dodany (brak w ogłoszeniu, ale standardowy kanał)

@@ -1,164 +1,259 @@
 {
   "business": {
-    "name": "Nazwa firmy",
-    "tagline": "Krótki opis usługi",
-    "description": "2–3 zdania o firmie — z ogłoszenia OLX, ton naturalny, bez marketingowego bełkotu.",
-    "location": "Miasto i obszar",
-    "phone": "+48 000 000 000",
-    "email": "kontakt@example.pl",
-    "whatsapp": "+48000000000",
-    "hours": "Godziny pracy lub „po umówieniu”"
+    "name": "Lena",
+    "tagline": "Manicure i pedicure · Wrocław",
+    "description": "Stylizacja paznokci dłoni i stóp — manicure klasyczny i hybrydowy, przedłużanie żelowe, pedicure oraz zdobienia. Przyjmuję na ul. Pereca we Wrocławiu. Umów wizytę telefonicznie.",
+    "location": "Wrocław, ul. Pereca (Stare Miasto)",
+    "phone": "+48 735 211 196",
+    "whatsapp": "+48735211196",
+    "hours": "Po umówieniu telefonicznym",
+    "logo": "/images/lena-manicure-wroclaw/logo.svg"
   },
   "seo": {
-    "title": "Nazwa firmy — Miasto | Główna usługa",
-    "description": "Meta opis z miastem, usługą i telefonem. 150–160 znaków."
+    "title": "Lena — Manicure i pedicure Wrocław | ul. Pereca",
+    "description": "Manicure hybrydowy, żelowy i pedicure we Wrocławiu na ul. Pereca. Cennik od 70 zł. Zadzwoń: 735 211 196."
   },
   "theme": {
-    "primary": "#0B3D2E",
-    "primaryForeground": "#F4F7F5",
-    "accent": "#E8A317",
-    "background": "#EEF2F0",
-    "foreground": "#14201A",
-    "muted": "#DFE6E2",
-    "mutedForeground": "#5A655E",
+    "primary": "#2C2426",
+    "primaryForeground": "#FAF6F4",
+    "accent": "#C48B9F",
+    "background": "#FAF6F4",
+    "foreground": "#2C2426",
+    "muted": "#EDE4E0",
+    "mutedForeground": "#6B5E60",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
-    { "label": "Realizacje", "href": "#realizacje" },
+    { "label": "Portfolio", "href": "#realizacje" },
     { "label": "Cennik", "href": "#cennik" },
-    { "label": "Dlaczego my", "href": "#dlaczego" },
+    { "label": "Dlaczego Lena", "href": "#dlaczego" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "headline": "Nagłówek z korzyścią dla klienta",
-    "subheadline": "Rozwinięcie — co robisz, gdzie, dlaczego warto zadzwonić. Jedno–dwa zdania.",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+    "headline": "Manicure i pedicure na Pereca",
+    "subheadline": "Hybryda, żel, pedicure — umów się telefonicznie lub przez WhatsApp. Bez skomplikowanej rezerwacji.",
+    "image": "/images/lena-manicure-wroclaw/neon-orange.webp",
     "ctaPrimary": {
-      "label": "Zadzwoń",
-      "href": "tel:+48000000000"
+      "label": "Zadzwoń — 735 211 196",
+      "href": "tel:+48735211196"
     },
     "ctaSecondary": {
       "label": "WhatsApp",
-      "href": "https://wa.me/48000000000"
+      "href": "https://wa.me/48735211196"
     }
   },
   "services": {
     "title": "Usługi",
-    "subtitle": "Skopiuj z ogłoszenia — 4–6 pozycji.",
+    "subtitle": "Manicure, pedicure i stylizacje dopasowane do Twoich oczekiwań.",
     "items": [
       {
-        "title": "Usługa 1",
-        "description": "Krótki opis."
+        "title": "Manicure hybrydowy",
+        "description": "Trwały kolor z połyskiem — idealny na co dzień i na wyjątkowe okazje."
       },
       {
-        "title": "Usługa 2",
-        "description": "Krótki opis."
+        "title": "Manicure klasyczny",
+        "description": "Opracowanie płytki, skórek i lakier klasyczny — szybka odświeżka dłoni."
       },
       {
-        "title": "Usługa 3",
-        "description": "Krótki opis."
+        "title": "Przedłużanie i uzupełnienie żelowe",
+        "description": "Budowa długości i kształtu na formie — od naturalnego po bardziej wyrazisty look."
       },
       {
-        "title": "Usługa 4",
-        "description": "Krótki opis."
+        "title": "Pedicure hybrydowy",
+        "description": "Kompleksowa pielęgnacja stóp z trwałym wykończeniem paznokci."
+      },
+      {
+        "title": "Pedicure klasyczny",
+        "description": "Higieniczne opracowanie stóp i paznokci z lakierem klasycznym."
+      },
+      {
+        "title": "Zdobienia i dodatki",
+        "description": "French, brokat, cyrkonie i masaż nawilżający — dopasowane do stylizacji."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Portfolio",
+    "subtitle": "Wybrane stylizacje — baby boomer, French, żel i zdobienia.",
+    "items": [
+      {
+        "src": "/images/lena-manicure-wroclaw/hero-baby-boomer.webp",
+        "alt": "Manicure baby boomer — delikatny gradient nude do bieli",
+        "title": "Baby boomer",
+        "description": "Miękki gradient od bazy do białego tipu — elegancki, uniwersalny efekt.",
+        "place": "Wrocław"
+      },
+      {
+        "src": "/images/lena-manicure-wroclaw/pedicure-french.webp",
+        "alt": "Pedicure hybrydowy French na stopach",
+        "title": "Pedicure French",
+        "description": "Klasyczny French na paznokciach stóp — różowa baza i biały tip.",
+        "place": "Wrocław"
+      },
+      {
+        "src": "/images/lena-manicure-wroclaw/gel-pink.webp",
+        "alt": "Przedłużenie żelowe w kolorze magenta",
+        "title": "Żel — magenta",
+        "description": "Długie paznokcie żelowe w intensywnym różu z gładkim połyskiem.",
+        "place": "Wrocław"
+      },
+      {
+        "src": "/images/lena-manicure-wroclaw/galaxy-flakes.webp",
+        "alt": "Manicure z czarną bazą i holograficznymi płatkami",
+        "title": "Galaxy flakes",
+        "description": "Czarna baza z wielokolorowymi płatkami — efekt tęczy w świetle.",
+        "place": "Wrocław"
+      },
+      {
+        "src": "/images/lena-manicure-wroclaw/glitter-rhinestone.webp",
+        "alt": "Manicure z brokatem i cyrkoniami",
+        "title": "Brokat i cyrkonie",
+        "description": "Nude z srebrnym brokatem i subtelnymi cyrkoniami na każdym paznokciu.",
+        "place": "Wrocław"
+      },
+      {
+        "src": "/images/lena-manicure-wroclaw/holo-flakes.webp",
+        "alt": "Manicure milky pink z holograficznymi płatkami",
+        "title": "Holo flakes",
+        "description": "Mleczny róż z holograficznymi wstawkami — delikatny blask.",
+        "place": "Wrocław"
+      },
+      {
+        "src": "/images/lena-manicure-wroclaw/neon-orange.webp",
+        "alt": "Manicure w neonowej pomarańczy",
+        "title": "Neon orange",
+        "description": "Wyrazisty, soczysty kolor z lustrzanym top coat.",
+        "place": "Wrocław"
+      },
+      {
+        "src": "/images/lena-manicure-wroclaw/glitter-ombre.webp",
+        "alt": "Manicure glitter ombre z cyrkonem",
+        "title": "Glitter ombre",
+        "description": "Gradient brokatu od tipu z akcentem cyrkonu u nasady.",
+        "place": "Wrocław"
       }
     ]
   },
   "pricing": {
     "title": "Cennik",
-    "subtitle": "Orientacyjne ceny z ogłoszenia — dopasuj do klienta.",
-    "note": "Dokładna wycena po kontakcie.",
+    "subtitle": "Ceny z ogłoszenia — bez ukrytych dopłat.",
+    "note": "Dokładny czas i koszt zależą od stylizacji — zapytaj przy umawianiu wizyty.",
     "items": [
       {
-        "name": "Usługa podstawowa",
-        "price": "od 100 zł",
-        "description": "Krótki opis."
+        "name": "Manicure klasyczny",
+        "price": "70 zł",
+        "description": "Opracowanie + lakier klasyczny."
       },
       {
-        "name": "Usługa popularna",
-        "price": "od 200 zł",
-        "description": "Krótki opis.",
+        "name": "Manicure hybrydowy",
+        "price": "100 zł",
+        "description": "Trwały kolor hybrydowy.",
         "highlight": true
       },
       {
-        "name": "Pakiet / usługa premium",
-        "price": "od 350 zł",
-        "description": "Krótki opis."
+        "name": "Uzupełnienie żelowe",
+        "price": "120 zł",
+        "description": "Uzupełnienie istniejącej stylizacji żelowej."
+      },
+      {
+        "name": "Przedłużenie żelowe — dł. 1",
+        "price": "160 zł",
+        "description": "Budowa długości na formie."
+      },
+      {
+        "name": "Przedłużenie żelowe — dł. 2",
+        "price": "180 zł",
+        "description": "Średnia długość paznokci."
+      },
+      {
+        "name": "Przedłużenie żelowe — dł. 3",
+        "price": "200 zł",
+        "description": "Dłuższa stylizacja żelowa."
+      },
+      {
+        "name": "Pedicure klasyczny",
+        "price": "80 zł",
+        "description": "Pielęgnacja stóp + lakier klasyczny."
+      },
+      {
+        "name": "Pedicure hybrydowy",
+        "price": "120 zł",
+        "description": "Kompleksowy pedicure z hybrydą."
+      },
+      {
+        "name": "Dodatki",
+        "price": "od 5 zł",
+        "description": "French 15 zł · opracowanie stóp 10 zł · naprawa 5 zł · 1 paznokieć 10 zł · masaż 30 zł."
       }
     ]
   },
   "usp": {
-    "title": "Dlaczego my",
-    "subtitle": "3–5 konkretnych powodów z ogłoszenia lub opinii.",
+    "title": "Dlaczego Lena",
+    "subtitle": "Indywidualne podejście i stylizacje dopasowane do Ciebie.",
     "items": [
       {
-        "title": "Korzyść 1",
-        "description": "Opis."
+        "title": "Portfolio mówi samo za siebie",
+        "description": "Od baby boomera i Frencha po żel i zdobienia — zobacz efekty przed wizytą."
       },
       {
-        "title": "Korzyść 2",
-        "description": "Opis."
+        "title": "Przejrzysty cennik",
+        "description": "Wiesz, ile zapłacisz — ceny podane w ogłoszeniu, bez niespodzianek."
       },
       {
-        "title": "Korzyść 3",
-        "description": "Opis."
+        "title": "Dogodna lokalizacja",
+        "description": "Gabinet na ul. Pereca — łatwy dojazd ze Starego Miasta i centrum Wrocławia."
+      },
+      {
+        "title": "Szybki kontakt",
+        "description": "Umówisz wizytę telefonem lub WhatsAppem — bez skomplikowanych formularzy."
       }
     ]
   },
   "reviews": {
     "title": "Opinie",
-    "subtitle": "Tylko prawdziwe recenzje — bez wypełniaczy.",
+    "subtitle": "Opinie klientek — tylko prawdziwe recenzje.",
     "items": []
   },
-  "gallery": {
-    "title": "Realizacje",
-    "subtitle": "Zdjęcia z ogłoszenia / portfolio klienta.",
-    "items": [
-      {
-        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Opis zdjęcia",
-        "title": "Tytuł realizacji",
-        "description": "Krótki opis pracy.",
-        "place": "Miasto"
-      },
-      {
-        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Druga realizacja",
-        "title": "Tytuł realizacji 2",
-        "description": "Krótki opis.",
-        "place": "Miasto"
-      },
-      {
-        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Trzecia realizacja",
-        "title": "Tytuł realizacji 3",
-        "description": "Krótki opis.",
-        "place": "Miasto"
-      }
-    ]
-  },
   "area": {
-    "title": "Obszar działania",
-    "subtitle": "Miasta / dzielnice z ogłoszenia.",
-    "places": ["Miasto 1", "Miasto 2", "Okolice"]
+    "title": "Lokalizacja",
+    "subtitle": "Przyjmuję na ul. Pereca — blisko centrum Wrocławia.",
+    "places": [
+      "Wrocław Stare Miasto",
+      "Śródmieście",
+      "Fabryczna",
+      "Krzyki",
+      "Psie Pole"
+    ]
   },
   "faq": {
     "title": "Najczęstsze pytania",
-    "subtitle": "5–7 pytań, które klienci naprawdę zadają w branży.",
+    "subtitle": "Zanim umówisz wizytę.",
     "items": [
       {
         "question": "Jak umówić wizytę?",
-        "answer": "Zadzwoń lub napisz — podaj termin i krótko opisz problem. Odpowiadamy zwykle tego samego dnia."
+        "answer": "Zadzwoń pod numer 735 211 196 lub napisz na WhatsApp. Podaj preferowany termin i rodzaj stylizacji — odpowiem, kiedy mam wolne."
       },
       {
-        "question": "Czy wycena jest bezpłatna?",
-        "answer": "Tak — przed startem prac mówimy, ile to będzie kosztować. Bez niespodzianek na fakturze."
+        "question": "Ile trzyma się manicure hybrydowy?",
+        "answer": "Przy prawidłowej pielęgnacji hybryda zwykle wytrzymuje 2–3 tygodnie. Żel i przedłużenia mogą trzymać się dłużej — zależy od tempa wzrostu paznokcia i stylu życia."
       },
       {
-        "question": "W jakim obszarze działacie?",
-        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w kontakcie lub FAQ."
+        "question": "Czy hybryda niszczy paznokcie?",
+        "answer": "Przy prawidłowym nałożeniu i ściągnięciu paznokcie pozostają zdrowe. Ważne jest regularne uzupełnianie i unikanie samodzielnego obgryzania stylizacji."
+      },
+      {
+        "question": "Jak przygotować się do wizyty?",
+        "answer": "Przyjdź z czystymi dłońmi lub stopami. Unikaj kremów tuż przed wizytą — utrudniają opracowanie płytki. Jeśli masz starą stylizację, daj znać przy umawianiu."
+      },
+      {
+        "question": "Czy mogę przynieść zdjęcie inspiracji?",
+        "answer": "Tak — pokaż zdjęcie stylizacji, którą chcesz uzyskać. Dobierzemy kolor, kształt i zdobienia do Twoich paznokci."
+      },
+      {
+        "question": "Gdzie dokładnie przyjmujesz?",
+        "answer": "Na ul. Pereca we Wrocławiu (Stare Miasto). Dokładny adres podam przy umawianiu wizyty telefonicznie."
       }
     ]
   },
@@ -182,13 +277,13 @@
   "pitch": {
     "enabled": true,
     "badgeText": "Demo strony — podgląd oferty",
-    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
-    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
+    "offerHeadline": "Masz już tysiące wyświetleń na OLX — dodaj link, który sprzedaje styl",
+    "offerBody": "Przygotowałem podgląd strony z Twoim portfolio i cennikiem. Klientka widzi efekty od razu i dzwoni jednym kliknięciem — bez przeklikiwania ogłoszenia.",
     "offerBullets": [
-      "Wyglądasz profesjonalnie obok konkurencji z OLX",
-      "Klienci widzą ofertę i łatwo do Ciebie dzwonią",
-      "Działa na telefonie — tam szuka większość zleceń",
-      "Wdrożenie w 24h po akceptacji"
+      "Galeria Twoich realizacji zamiast małych miniaturek OLX",
+      "Cennik czytelny na telefonie — klientka wie, ile zapłaci",
+      "Jeden link do wysłania na WhatsApp lub w wiadomości OLX",
+      "Wdrożenie na Twojej domenie w 24h po akceptacji"
     ],
     "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."
   }
