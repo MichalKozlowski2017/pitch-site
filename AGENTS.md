@@ -14,25 +14,25 @@ Landing dla lokalnych wykonawców. Treść i wybór layoutu żyją w **`content/
 
 ## Workflow: nowe zlecenie / pitch
 
-1. Użytkownik wrzuca: link lub treść ogłoszenia OLX/Allegro, nazwę firmy, miasto, telefon, opcjonalnie link Google Business.
-2. **Sprawdź** [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — czy ta firma / telefon / ogłoszenie już jest (unikaj podwójnego pitcha). Instrukcja: [`docs/outreach-tracker.md`](docs/outreach-tracker.md).
-3. Research: opinie Google (tylko prawdziwe), ton komunikacji, czy ma już stronę, mocne zdjęcia, **czy ma logo** (jeśli nie — prosty wordmark na demo).
-4. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch`).
-5. Zdjęcia: `public/images/` albo remote (host w `next.config.ts`).
-6. `npm run dev` → sprawdź desktop/mobile; ewent. zmień `variants`.
-7. Deploy preview + wiadomość z [`docs/outreach.md`](docs/outreach.md).
-8. Zaktualizuj wiersz w `data/outreach-tracker.csv` (demo / wysłane / odpowiedź / cena).
+1. Użytkownik wrzuca: **link** (OLX / Fixly / Oferteo / Maps…) — opcjonalnie nazwa, miasto, telefon.
+2. **Kwalifikacja** — [`docs/lead-qualification.md`](docs/lead-qualification.md): agent ocenia czy `pitch` / `maybe` / `skip` i kąt oferty. Bez `pitch` → nie buduj demo.
+3. **Sprawdź** [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — duplikat telefonu / firmy / URL.
+4. Research: opinie Google (tylko prawdziwe), zdjęcia, jakość istniejącej strony (jeśli jest).
+5. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch` — kąt w copy `/pitch`).
+6. Zdjęcia: `public/images/` albo remote (host w `next.config.ts`).
+7. `npm run dev` → sprawdź desktop/mobile; ewent. zmień `variants`.
+8. Deploy preview + wiadomość z [`docs/outreach.md`](docs/outreach.md).
+9. Zaktualizuj wiersz w `data/outreach-tracker.csv` (demo / wysłane / odpowiedź / cena).
 
 **Dokumentacja:** [`docs/README.md`](docs/README.md) — konwencje, workflow, playbooki branż (`docs/industries/`). Po pitchu dopisz learnings do właściwego pliku branży.
 
 ## Input — szablon
 
 ```
-Ogłoszenie: <link lub tekst>
-Firma: …
-Miasto / obszar: …
+Link: <URL ogłoszenia / profilu>   ← wystarczy; resztę agent wyciąga
+Firma: …                           ← opcjonalnie
+Miasto: …
 Telefon: …
-Google (opcjonalnie): …
 Uwagi: …
 ```
 

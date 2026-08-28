@@ -8,6 +8,7 @@ Agent i człowiek powinni tu wracać **przed** nowym zleceniem i **po** oddaniu 
 | Plik | Kiedy czytać |
 |------|----------------|
 | [`workflow.md`](workflow.md) | Nowe zlecenie, branch, deploy, handover |
+| [`lead-qualification.md`](lead-qualification.md) | **Zanim pitch** — werdykt po wklejeniu linku |
 | [`conventions.md`](conventions.md) | Zawsze — technika, treść, etyka |
 | [`industries/`](industries/) | Dobór wariantów i copy pod branżę |
 | [`outreach.md`](outreach.md) | Wiadomość do klienta + checklista przed wysyłką |

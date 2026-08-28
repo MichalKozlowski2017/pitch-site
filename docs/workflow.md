@@ -13,9 +13,9 @@ Uwagi: …
 
 ## 2. Research (15–30 min)
 
-- Przeczytaj ogłoszenie: usługi, ceny, ton („Pan/Pani”, luzacki, premium).
-- Google Business / FB: **tylko prawdziwe opinie**, zdjęcia, godziny.
-- Czy ma już stronę? Jeśli tak — czego brakuje (cennik, portfolio, mobile).
+- **Kwalifikacja leada** — [`lead-qualification.md`](lead-qualification.md): po wklejeniu linku agent ocenia `pitch` / `maybe` / `skip` i kąt (`greenfield` / `refresh` / `complement`). **Bez `pitch` nie rób demo.**
+- Sprawdź tracker: [`data/outreach-tracker.csv`](../data/outreach-tracker.csv) — telefon, firma, URL.
+- Przeczytaj ogłoszenie: usługi, ceny, ton, **czy ma już stronę i jaką jakość** (nie tylko „czy w ogóle ma”).
 - **Logo:** czy klient ma znak (Google, FB, www)? Jeśli nie — zaplanuj prosty wordmark / monogram (patrz [`conventions.md`](conventions.md#branding-logo-i-typografia)).
 - Wybierz branżę → [`industries/`](industries/).
 
