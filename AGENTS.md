@@ -15,7 +15,7 @@ Landing dla lokalnych wykonawców. Treść i wybór layoutu żyją w **`content/
 ## Workflow: nowe zlecenie / pitch
 
 1. Użytkownik wrzuca: **link** (OLX / Fixly / Oferteo / Maps…) — opcjonalnie nazwa, miasto, telefon.
-2. **Kwalifikacja** — [`docs/lead-qualification.md`](docs/lead-qualification.md) + scoring [`docs/lead-scoring.md`](docs/lead-scoring.md): agent ocenia `pitch` / `maybe` / `skip` (`npm run lead:score -- --file data/leads/<slug>.json`). Bez `pitch` → nie buduj demo.
+2. **Kwalifikacja** — `npm run lead:ingest -- --url <OLX> --phone <tel> --save` ([`docs/lead-scoring.md`](docs/lead-scoring.md)): auto-fetch, zdjęcia, analiza, werdykt. Bez `pitch` → nie buduj demo.
 3. **Sprawdź** [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — duplikat telefonu / firmy / URL.
 4. Research: opinie Google (tylko prawdziwe), zdjęcia, jakość istniejącej strony (jeśli jest).
 5. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch` — kąt w copy `/pitch`).

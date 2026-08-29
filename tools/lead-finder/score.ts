@@ -5,6 +5,7 @@ import type {
   LeadInput,
   LeadScoreResult,
   OnlinePresence,
+  PhotoAnalysis,
   PitchAngle,
   Research,
   Verdict,
@@ -78,20 +79,29 @@ function scoreContact(input: LeadInput): { score: number; rationale: string } {
 
 function scoreListingContent(input: LeadInput): { score: number; rationale: string } {
   const { listing } = input;
+  const photos = input.photoAnalysis;
   let score = 0;
   const parts: string[] = [];
 
-  if (listing.photoCount >= 6) {
+  const photoCount = photos?.count ?? listing.photoCount;
+
+  if (photoCount >= 6) {
     score += 4;
-    parts.push(`${listing.photoCount} zdjęć`);
-  } else if (listing.photoCount >= 3) {
+    parts.push(`${photoCount} zdjęć`);
+  } else if (photoCount >= 3) {
     score += 3;
-    parts.push(`${listing.photoCount} zdjęć`);
-  } else if (listing.photoCount >= 1) {
+    parts.push(`${photoCount} zdjęć`);
+  } else if (photoCount >= 1) {
     score += 1.5;
-    parts.push(`${listing.photoCount} zdjęć (mało)`);
+    parts.push(`${photoCount} zdjęć (mało)`);
   } else {
     parts.push("brak zdjęć");
+  }
+
+  if (photos) {
+    parts.push(`jakość zdjęć ${photos.qualityScore}/10`);
+    if (photos.qualityScore >= 7) score += 1;
+    else if (photos.qualityScore < 4) score -= 1;
   }
 
   const descLen = listing.description.length;
@@ -168,17 +178,35 @@ function scoreOnlineGap(_input: LeadInput, ctx: ScoreContext): { score: number; 
 
 function scoreDemoReady(input: LeadInput): { score: number; rationale: string } {
   const { listing } = input;
+  const photos = input.photoAnalysis;
   let score = 0;
   const parts: string[] = [];
 
-  if (listing.photoCount >= 4) {
+  const photoCount = photos?.count ?? listing.photoCount;
+  const galleryOk = photos?.suitableForGallery ?? photoCount >= 4;
+  const heroOk = photos?.suitableForHero ?? photoCount >= 1;
+
+  if (galleryOk) {
     score += 4;
     parts.push("wystarczająco zdjęć do galerii");
-  } else if (listing.photoCount >= 1) {
+  } else if (photoCount >= 1) {
     score += 2;
     parts.push("kilka zdjęć — demo możliwe, ale słabsze");
   } else {
     parts.push("mało zdjęć do portfolio");
+  }
+
+  if (photos) {
+    if (photos.suitableForHero) {
+      score += 1;
+      parts.push("zdjęcie nadaje się na hero");
+    }
+    if (photos.flags.includes("niska_jakosc")) {
+      score -= 1;
+      parts.push("niska jakość zdjęć");
+    }
+  } else if (heroOk) {
+    score += 0.5;
   }
 
   if (listing.description.length >= 150) {
@@ -237,6 +265,8 @@ function scoreActivity(input: LeadInput): { score: number; rationale: string } {
 
 function scoreRedFlags(input: LeadInput, ctx: ScoreContext): { score: number; rationale: string } {
   const flags = [...input.research.redFlags];
+  if (input.photoAnalysis?.flags.includes("brak_zdjec")) flags.push("brak_zdjec");
+  if (input.photoAnalysis?.flags.includes("niska_jakosc")) flags.push("niska_jakosc_zdjec");
   const blockingDup = isBlockingDuplicate(ctx.duplicate);
   if (blockingDup) flags.push("duplikat_w_trackerze");
   if (!input.listing.phone) flags.push("brak_kontaktu");

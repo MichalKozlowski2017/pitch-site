@@ -102,6 +102,7 @@ Po wklejeniu linku odpowiedz **najpierw kwalifikacją**, potem dopiero „dział
 
 ## Przyszły skrypt (opcjonalnie)
 
-**Zaimplementowane:** `npm run lead:score` — [`docs/lead-scoring.md`](lead-scoring.md).
+**Zaimplementowane:**
 
-Agent nadal robi research w przeglądarce (OLX blokuje auto-fetch), wypełnia `data/leads/<slug>.json`, skrypt liczy wynik i werdykt.
+- `npm run lead:ingest -- --url <OLX> --save` — fetch + zdjęcia + analiza + scoring ([`docs/lead-scoring.md`](lead-scoring.md))
+- `npm run lead:score -- --file data/leads/<slug>.json` — ponowna ocena po researchu www/Maps

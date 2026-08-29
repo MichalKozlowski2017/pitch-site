@@ -65,7 +65,10 @@ function researchIsEmpty(input: ReturnType<typeof loadInput>): boolean {
 
   // Listing wypełniony z ogłoszenia = można ocenić (research „nic nie znalazł” też jest OK)
   const listingReady =
-    Boolean(l.phone) && l.photoCount > 0 && l.description.length >= 20 && Boolean(l.city);
+    Boolean(l.phone) &&
+    (l.photoCount > 0 || Boolean(input.photoAnalysis?.count)) &&
+    l.description.length >= 20 &&
+    Boolean(l.city);
 
   return !listingReady;
 }

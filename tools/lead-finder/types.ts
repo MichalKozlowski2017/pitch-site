@@ -1,5 +1,36 @@
 import { z } from "zod";
 
+export const photoFileAnalysisSchema = z.object({
+  file: z.string(),
+  name: z.string(),
+  width: z.number(),
+  height: z.number(),
+  bytes: z.number(),
+  aspectRatio: z.number(),
+  longEdge: z.number(),
+  isPortrait: z.boolean(),
+});
+
+export const photoAnalysisSchema = z.object({
+  count: z.number().int().min(0),
+  avgWidth: z.number(),
+  avgHeight: z.number(),
+  avgLongEdge: z.number(),
+  minLongEdge: z.number(),
+  maxLongEdge: z.number(),
+  totalBytes: z.number(),
+  portraitCount: z.number().int().min(0),
+  qualityScore: z.number().min(0).max(10),
+  suitableForHero: z.boolean(),
+  suitableForGallery: z.boolean(),
+  flags: z.array(z.string()),
+  files: z.array(photoFileAnalysisSchema),
+  summary: z.string(),
+  assetsDir: z.string().optional(),
+});
+
+export type PhotoAnalysis = z.infer<typeof photoAnalysisSchema>;
+
 export const verdictSchema = z.enum(["pitch", "maybe", "skip"]);
 export type Verdict = z.infer<typeof verdictSchema>;
 
@@ -83,6 +114,7 @@ export const leadInputSchema = z.object({
   sourceUrl: z.string().url(),
   listing: listingSchema,
   research: researchSchema.default({}),
+  photoAnalysis: photoAnalysisSchema.optional(),
   industry: z.string().optional(),
   manualNotes: z.string().optional(),
 });

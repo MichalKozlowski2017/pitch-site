@@ -6,8 +6,12 @@ function googleSearchUrl(query: string): string {
 
 export function buildResearchQueries(input: LeadInput) {
   const { listing } = input;
-  const name = listing.sellerName ?? listing.title.split(/[–\-|]/)[0]?.trim() ?? listing.title;
-  const city = listing.city ?? "";
+  const rawName =
+    listing.sellerName ?? listing.title.split(/[–\-|]/)[0]?.trim() ?? listing.title;
+  const name = rawName.includes("css-") || rawName.length > 40
+    ? (rawName.match(/\b(Ludmila|Lena|[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{2,})\b/)?.[1] ?? listing.title.split(/[–\-/]/)[0]?.trim() ?? "salon")
+    : rawName;
+  const city = (listing.city ?? "").replace(/.*-\s*/, "").trim() || listing.city || "";
   const phone = listing.phone?.replace(/\s/g, "") ?? "";
 
   const queries: { label: string; query: string; url: string }[] = [

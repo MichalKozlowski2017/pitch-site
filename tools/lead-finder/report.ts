@@ -29,6 +29,27 @@ export function formatMarkdownReport(input: LeadInput, result: LeadScoreResult):
   lines.push(`| **Źródło** | ${result.sourceUrl} |`);
   lines.push("");
 
+  if (input.photoAnalysis) {
+    lines.push("## Analiza zdjęć");
+    lines.push("");
+    lines.push(`| Metryka | Wartość |`);
+    lines.push(`|---------|---------|`);
+    lines.push(`| Liczba | ${input.photoAnalysis.count} |`);
+    lines.push(`| Jakość | **${input.photoAnalysis.qualityScore}/10** |`);
+    lines.push(`| Rozdzielczość | ${input.photoAnalysis.minLongEdge}–${input.photoAnalysis.maxLongEdge}px (śr. ${input.photoAnalysis.avgLongEdge}) |`);
+    lines.push(`| Hero | ${input.photoAnalysis.suitableForHero ? "tak" : "nie"} |`);
+    lines.push(`| Galeria | ${input.photoAnalysis.suitableForGallery ? "tak" : "nie"} |`);
+    if (input.photoAnalysis.assetsDir) {
+      lines.push(`| Folder | \`${input.photoAnalysis.assetsDir}\` |`);
+    }
+    if (input.photoAnalysis.flags.length > 0) {
+      lines.push(`| Flagi | ${input.photoAnalysis.flags.join(", ")} |`);
+    }
+    lines.push("");
+    lines.push(input.photoAnalysis.summary);
+    lines.push("");
+  }
+
   lines.push("## Wymiary");
   lines.push("");
   lines.push("| Wymiar | Wynik | Waga | Uzasadnienie |");
@@ -91,7 +112,7 @@ export function formatBriefMarkdown(input: LeadInput): string {
   const lines: string[] = [];
   lines.push(`# Brief researchu: ${input.listing.title}`);
   lines.push("");
-  lines.push("OLX blokuje automatyczny fetch — agent wypełnia dane z przeglądarki.");
+  lines.push("Użyj auto-ingest: `npm run lead:ingest -- --url <OLX> --save`");
   lines.push("");
   lines.push("## Z ogłoszenia (wklej do JSON)");
   lines.push("");
@@ -133,4 +154,16 @@ export function formatBriefMarkdown(input: LeadInput): string {
     lines.push(`- **${q.label}:** [${q.query}](${q.url})`);
   }
   return lines.join("\n");
+}
+
+export function formatIngestReport(
+  input: LeadInput,
+  result: LeadScoreResult,
+  assetsDir?: string,
+): string {
+  const report = formatMarkdownReport(input, result);
+  const header = assetsDir
+    ? `> Zdjęcia pobrane do \`${assetsDir}\`\n\n`
+    : "";
+  return header + report;
 }
