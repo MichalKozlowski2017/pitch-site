@@ -35,6 +35,11 @@
     "headline": "Manicure i pedicure na Pereca",
     "subheadline": "Hybryda, żel, pedicure — umów się telefonicznie lub przez WhatsApp. Bez skomplikowanej rezerwacji.",
     "image": "/images/lena-manicure-wroclaw/neon-orange.webp",
+    "trustBadges": [
+      "Wrocław, ul. Pereca",
+      "Cennik od 70 zł",
+      "Telefon i WhatsApp"
+    ],
     "ctaPrimary": {
       "label": "Zadzwoń — 735 211 196",
       "href": "tel:+48735211196"
@@ -50,7 +55,8 @@
     "items": [
       {
         "title": "Manicure hybrydowy",
-        "description": "Trwały kolor z połyskiem — idealny na co dzień i na wyjątkowe okazje."
+        "description": "Trwały kolor z połyskiem — idealny na co dzień i na wyjątkowe okazje.",
+        "highlight": true
       },
       {
         "title": "Manicure klasyczny",
@@ -264,7 +270,7 @@
   "variants": {
     "header": "transparent",
     "hero": "fullBleedPhoto",
-    "services": "grid",
+    "services": "bentoFull",
     "pricing": "cards",
     "usp": "list",
     "reviews": "cards",
@@ -285,6 +291,15 @@
       "Jeden link do wysłania na WhatsApp lub w wiadomości OLX",
       "Wdrożenie na Twojej domenie w 24h po akceptacji"
     ],
-    "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."
+    "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie.",
+    "ctaPrimary": {
+      "label": "Zadzwoń — 501 762 085",
+      "href": "tel:+48501762085"
+    },
+    "ctaSecondary": {
+      "label": "WhatsApp",
+      "href": "https://wa.me/48501762085"
+    },
+    "contactNote": "Możesz też po prostu odpowiedzieć na wiadomość OLX, w której dostałaś ten link — omówimy szczegóły i cenę."
   }
 }

@@ -1,12 +1,14 @@
 import Image from "next/image";
 import type { SectionProps } from "@/lib/client-config";
 import { Container, CtaPair } from "@/components/shared/ui";
+import { HeroTrustStrip } from "@/components/hero/HeroTrustStrip";
 
 export function HeroSplit({ client }: SectionProps) {
   const { business, hero } = client;
 
   return (
-    <section id="top" className="bg-[var(--color-background)] pt-24 sm:pt-28">
+    <>
+      <section id="top" className="bg-[var(--color-background)] pt-24 sm:pt-28">
       <Container className="grid items-center gap-10 pb-16 lg:grid-cols-2 lg:gap-14 lg:pb-24">
         <div>
           <p
@@ -53,5 +55,9 @@ export function HeroSplit({ client }: SectionProps) {
         </div>
       </Container>
     </section>
+      {hero.trustBadges && hero.trustBadges.length > 0 ? (
+        <HeroTrustStrip badges={hero.trustBadges} />
+      ) : null}
+    </>
   );
 }

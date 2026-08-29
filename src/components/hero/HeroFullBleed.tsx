@@ -1,12 +1,14 @@
 import Image from "next/image";
 import type { SectionProps } from "@/lib/client-config";
 import { Container, CtaPair } from "@/components/shared/ui";
+import { HeroTrustStrip } from "@/components/hero/HeroTrustStrip";
 
 export function HeroFullBleed({ client }: SectionProps) {
   const { business, hero } = client;
 
   return (
-    <section id="top" className="relative min-h-[88vh] overflow-hidden">
+    <>
+      <section id="top" className="relative min-h-[88vh] overflow-hidden">
       {hero.image ? (
         <div data-hero-media className="absolute inset-0 will-change-transform">
           <Image
@@ -50,5 +52,9 @@ export function HeroFullBleed({ client }: SectionProps) {
         </div>
       </Container>
     </section>
+      {hero.trustBadges && hero.trustBadges.length > 0 ? (
+        <HeroTrustStrip badges={hero.trustBadges} />
+      ) : null}
+    </>
   );
 }

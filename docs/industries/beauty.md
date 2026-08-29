@@ -23,6 +23,8 @@ header (transparent) → hero (fullBleedPhoto) → services → gallery → pric
 | header | `transparent` | Hero na zdjęciu — premium |
 | hero | `fullBleedPhoto` | Zdjęcie stylizacji / dłoni |
 | services | `grid` | 4–6 usług bez cen w opisie |
+| services | `bento` | Asymetryczna siatka — jedna karta `highlight: true` większa |
+| services | `bentoFull` | 50/50: featured + dolna karta | 2×2 na pełną wysokość (6 pozycji) |
 | gallery | `fullBleedShowcase` | 16:9, filmstrip, cover-fade — **nie** `featuredSlider` (za „ramowe”) |
 | pricing | `cards` | Ceny z ogłoszenia; jedna karta `highlight` opcjonalnie |
 | usp | `list` | Higiena, doświadczenie, atmosfera — jasne tło |

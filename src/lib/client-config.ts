@@ -9,6 +9,7 @@ export const navItemSchema = z.object({
 export const serviceSchema = z.object({
   title: z.string(),
   description: z.string(),
+  highlight: z.boolean().optional(),
 });
 
 export const uspItemSchema = z.object({
@@ -58,7 +59,7 @@ export const themeSchema = z.object({
 export const variantsSchema = z.object({
   header: z.enum(["solid", "transparent"]),
   hero: z.enum(["fullBleedPhoto", "split"]),
-  services: z.enum(["grid"]),
+  services: z.enum(["grid", "bento", "bentoFull"]),
   pricing: z.enum(["cards"]),
   usp: z.enum(["list"]),
   reviews: z.enum(["cards"]),
@@ -91,6 +92,7 @@ export const clientConfigSchema = z.object({
     headline: z.string(),
     subheadline: z.string(),
     image: z.string().optional(),
+    trustBadges: z.array(z.string()).optional(),
     ctaPrimary: z.object({
       label: z.string(),
       href: z.string(),
@@ -156,6 +158,21 @@ export const clientConfigSchema = z.object({
     offerBody: z.string().optional(),
     offerBullets: z.array(z.string()).optional(),
     priceNote: z.string().optional(),
+    /** Krótka informacja obok CTA — np. odpowiedź na wiadomość OLX. */
+    contactNote: z.string().optional(),
+    /** CTA sprzedawcy (Ty) — nie telefon klienta z `business`. */
+    ctaPrimary: z
+      .object({
+        label: z.string(),
+        href: z.string(),
+      })
+      .optional(),
+    ctaSecondary: z
+      .object({
+        label: z.string(),
+        href: z.string(),
+      })
+      .optional(),
   }),
 });
 

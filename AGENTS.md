@@ -55,6 +55,8 @@ Uwagi: …
 | hero | `fullBleedPhoto` | Mocne zdjęcie |
 | hero | `split` | Słabsze zdjęcie / więcej tekstu |
 | services | `grid` | Siatka usług |
+| services | `bento` | Asymetryczna siatka bento — karta `highlight` większa (beauty) |
+| services | `bentoFull` | Bento 50/50 — prawa kolumna 2×2 na pełną wysokość (6 usług) |
 | pricing | `cards` | Cennik (beauty / stałe ceny); bez `pricing` w JSON = ukryte |
 | usp | `list` | Lista USP |
 | reviews | `cards` | Opinie Google |
