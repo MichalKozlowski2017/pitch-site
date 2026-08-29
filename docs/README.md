@@ -9,6 +9,7 @@ Agent i człowiek powinni tu wracać **przed** nowym zleceniem i **po** oddaniu 
 |------|----------------|
 | [`workflow.md`](workflow.md) | Nowe zlecenie, branch, deploy, handover |
 | [`lead-qualification.md`](lead-qualification.md) | **Zanim pitch** — werdykt po wklejeniu linku |
+| [`lead-scoring.md`](lead-scoring.md) | Scoring 0–100 + CLI `npm run lead:score` |
 | [`conventions.md`](conventions.md) | Zawsze — technika, treść, etyka |
 | [`industries/`](industries/) | Dobór wariantów i copy pod branżę |
 | [`outreach.md`](outreach.md) | Wiadomość do klienta + checklista przed wysyłką |

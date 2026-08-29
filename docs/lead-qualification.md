@@ -102,5 +102,6 @@ Po wklejeniu linku odpowiedz **najpierw kwalifikacją**, potem dopiero „dział
 
 ## Przyszły skrypt (opcjonalnie)
 
-`tools/lead-finder/score-url.ts` — to samo w kodzie: input URL → JSON z werdyktem.  
-Na razie **agent robi to ręcznie** według tego dokumentu; skrypt może przyspieszyć powtarzalne kroki później.
+**Zaimplementowane:** `npm run lead:score` — [`docs/lead-scoring.md`](lead-scoring.md).
+
+Agent nadal robi research w przeglądarce (OLX blokuje auto-fetch), wypełnia `data/leads/<slug>.json`, skrypt liczy wynik i werdykt.

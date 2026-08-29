@@ -11,7 +11,7 @@ alwaysApply: true
 # Pitch Site
 
 - Przed nowym leadem: sprawdź `data/outreach-tracker.csv` (telefon, firma, OLX) — nie pitchuj dwa razy.
-- Po wklejeniu linku: **najpierw kwalifikacja** (`docs/lead-qualification.md`) — werdykt `pitch`/`maybe`/`skip`; bez `pitch` nie buduj `client.json`.
+- Po wklejeniu linku: **najpierw kwalifikacja** (`docs/lead-qualification.md` + `npm run lead:score`) — werdykt `pitch`/`maybe`/`skip`; bez `pitch` nie buduj `client.json`. Research w przeglądarce → `data/leads/<slug>.json`.
 - Po demo / wysyłce: zaktualizuj tracker (`docs/outreach-tracker.md`).
 - Dane klienta i wybór layoutu: tylko `content/client.json` (Zod w `src/lib/client-config.ts`).
 - Sekcje renderuj przez `src/components/registry.ts` — nie omijaj registry hardcodem w `page.tsx`.

@@ -1,0 +1,28 @@
+{
+  "sourceUrl": "https://www.olx.pl/d/oferta/manicure-pedicure-CID4371-IDYemMg.html",
+  "industry": "beauty / paznokcie",
+  "listing": {
+    "title": "Manicure / Pedicure — Lena",
+    "description": "Stylizacja paznokci we Wrocławiu, ul. Pereca. Manicure hybrydowy, pedicure, przedłużanie. Umów wizytę telefonicznie.",
+    "phone": "+48735211196",
+    "city": "Wrocław",
+    "sellerName": "Lena",
+    "photoCount": 8,
+    "views": 120,
+    "lastOnline": "2026-08-28",
+    "isPrivate": true,
+    "category": "paznokcie",
+    "priceText": "od 80 zł",
+    "hasHoursInText": false,
+    "linksInDescription": []
+  },
+  "research": {
+    "website": { "found": false },
+    "googleMaps": { "found": false, "reviewCount": 0 },
+    "booksy": { "found": false },
+    "instagram": { "found": false },
+    "facebook": { "found": false },
+    "redFlags": [],
+    "notes": "Przykład — uzupełnij po researchu w przeglądarce."
+  }
+}
