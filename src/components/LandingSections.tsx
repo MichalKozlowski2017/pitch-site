@@ -1,6 +1,8 @@
 import type { ClientConfig } from "@/lib/client-config";
 import { renderLandingSlots } from "@/components/registry";
+import { BooksyBookingStrip } from "@/components/booksy/BooksyBookingStrip";
 import { LandingMotion } from "@/components/motion/LandingMotion";
+import { Fragment } from "react";
 
 export function LandingSections({ client }: { client: ClientConfig }) {
   const slots = renderLandingSlots(client);
@@ -9,7 +11,12 @@ export function LandingSections({ client }: { client: ClientConfig }) {
     <>
       <LandingMotion />
       {slots.map(({ slot, Component }) => (
-        <Component key={slot} client={client} />
+        <Fragment key={slot}>
+          <Component client={client} />
+          {slot === "hero" && client.booksy ? (
+            <BooksyBookingStrip client={client} />
+          ) : null}
+        </Fragment>
       ))}
     </>
   );

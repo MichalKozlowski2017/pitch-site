@@ -4,10 +4,11 @@ import {
   pricingPatternStyle,
   resolvePricingPattern,
 } from "@/lib/section-layout";
+import { BooksyBookButton } from "@/components/booksy/BooksyBookButton";
 import { Container, PrimaryButton, SectionHeading } from "@/components/shared/ui";
 
 export function PricingCards({ client }: SectionProps) {
-  const { pricing, hero, business } = client;
+  const { pricing, hero, business, booksy } = client;
   if (!pricing || pricing.items.length === 0) return null;
 
   const patternId = resolvePricingPattern(
@@ -48,8 +49,8 @@ export function PricingCards({ client }: SectionProps) {
               data-pricing-highlight={item.highlight ? "" : undefined}
               className={`group relative flex h-full flex-col overflow-hidden rounded-xl border p-6 sm:p-7 ${
                 item.highlight
-                  ? "border-[var(--color-accent)]/80 bg-[var(--color-accent)] text-[var(--color-foreground)]"
-                  : "border-white/12 bg-white/[0.04]"
+                  ? "border-[var(--color-accent)]/80 bg-[var(--color-accent)] text-white"
+                  : "border-white/12 bg-white/[0.04] text-white"
               } ${count === 3 ? "min-h-[15rem]" : ""}`}
             >
               <span
@@ -66,21 +67,11 @@ export function PricingCards({ client }: SectionProps) {
                 aria-hidden
               />
 
-              <h3
-                className={`font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight ${
-                  item.highlight ? "text-[var(--color-foreground)]" : "text-white"
-                }`}
-              >
+              <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-white">
                 {item.name}
               </h3>
               {item.description ? (
-                <p
-                  className={`mt-2 flex-1 text-sm leading-relaxed ${
-                    item.highlight
-                      ? "text-[var(--color-foreground)]/70"
-                      : "text-white/65"
-                  }`}
-                >
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">
                   {item.description}
                 </p>
               ) : (
@@ -88,14 +79,20 @@ export function PricingCards({ client }: SectionProps) {
               )}
               <p
                 data-pricing-price
-                className={`mt-6 font-[family-name:var(--font-display)] text-xl font-semibold tabular-nums ${
-                  item.highlight
-                    ? "text-[var(--color-foreground)]"
-                    : "text-[var(--color-accent)]"
-                }`}
+                className="mt-6 font-[family-name:var(--font-display)] text-xl font-semibold tabular-nums text-white"
               >
                 {item.price}
               </p>
+              {booksy ? (
+                <div className="relative z-[2] mt-4">
+                  <BooksyBookButton
+                    booksy={booksy}
+                    label="Umów →"
+                    variant="inline"
+                    className="text-white hover:brightness-110"
+                  />
+                </div>
+              ) : null}
             </article>
           ))}
         </div>
@@ -109,13 +106,22 @@ export function PricingCards({ client }: SectionProps) {
           </p>
         ) : null}
 
-        <div data-reveal className="mt-10 flex justify-center">
+        <div data-reveal className="mt-10 flex flex-wrap justify-center gap-3">
           <PrimaryButton
             href={hero.ctaPrimary.href}
             label={hero.ctaPrimary.label}
             magnetic
             className="min-w-[12rem]"
           />
+          {booksy ? (
+            <BooksyBookButton
+              booksy={booksy}
+              label={booksy.buttonLabel ?? "Rezerwuj na Booksy"}
+              variant="secondary"
+              magnetic
+              className="min-w-[12rem] border-white/25 text-white hover:bg-white/10"
+            />
+          ) : null}
         </div>
       </Container>
     </section>

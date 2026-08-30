@@ -44,7 +44,8 @@ export function HeaderTransparent({ client }: SectionProps) {
         </nav>
         <a
           href={ctaHref}
-          className="shrink-0 rounded-md bg-[var(--color-accent)] px-3 py-2 text-sm font-semibold text-[var(--color-foreground)]"
+          data-header-cta
+          className="shrink-0 cursor-pointer rounded-md bg-[var(--color-accent)] px-3 py-2 text-sm font-semibold text-white"
           {...(!phoneHref ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         >
           {ctaLabel}

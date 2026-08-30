@@ -109,3 +109,14 @@ Można wkleić do `client.json` i dopasować do salonu:
 - Logo: monogram „L” + wordmark SVG (brak znaku u klientki)
 - 8 zdjęć portfolio z ogłoszenia OLX
 - WhatsApp dodany (brak w ogłoszeniu, ale standardowy kanał)
+
+### Pitch: Katarzyna Strzebińczyk (Gliwice–Szobiszowice)
+
+- Branch: `pitch/katarzyna-strzebinczyk-gliwice`
+- Kąt `complement` — Booksy + IG już działają; strona jako hub + SEO
+- 12 zdjęć z Instagrama (`tools/download-ig-photos.ts` + Playwright) + 8 z OLX
+- Opinie: 9 recenzji z Booksy (4,9/44) — `source: "Booksy"`, brak Google Maps
+- Cennik z Booksy (8 pozycji), CTA secondary → rezerwacja Booksy
+- Theme: fuksja `#D4567A` z portfolio IG; usługi `bento`, cennik `waves`
+- Adres: ul. Sztabu Powstańczego 21a (nie tylko „Szobiszowice” z OLX)
+- Booksy: blok `booksy` w JSON → pasek `#rezerwacja`, modal iframe widget, sticky mobile dual CTA, „Umów →” na cenniku

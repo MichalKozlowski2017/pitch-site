@@ -1,6 +1,7 @@
 import type { SectionProps } from "@/lib/client-config";
 import { getPhoneHref } from "@/lib/client-config";
-import { Container, CtaPair } from "@/components/shared/ui";
+import { ContactCtaRow } from "@/components/contact/ContactCtaRow";
+import { Container } from "@/components/shared/ui";
 
 export function ContactSimple({ client }: SectionProps) {
   const { business, contact, hero } = client;
@@ -35,12 +36,7 @@ export function ContactSimple({ client }: SectionProps) {
                 </p>
               ) : null}
             </div>
-            <CtaPair
-              primary={hero.ctaPrimary}
-              secondary={hero.ctaSecondary}
-              magnetic
-              className="mt-10"
-            />
+            <ContactCtaRow client={client} />
           </div>
 
           <dl

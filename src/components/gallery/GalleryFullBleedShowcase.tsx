@@ -10,6 +10,7 @@ import {
 } from "react";
 import gsap from "gsap";
 import type { SectionProps } from "@/lib/client-config";
+import { lightSectionPatternStyle } from "@/lib/section-layout";
 import { Container } from "@/components/shared/ui";
 
 function prefersReducedMotion() {
@@ -204,9 +205,14 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
       id="realizacje"
       data-reveal-group
       data-gallery-showcase
-      className="border-b border-black/[0.06] bg-[var(--color-background)] py-12 text-[var(--color-foreground)] sm:py-16"
+      className="relative overflow-hidden border-b border-black/[0.06] bg-[var(--color-muted)]/55 py-12 text-[var(--color-foreground)] sm:py-16"
     >
-      <Container>
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={lightSectionPatternStyle("dots")}
+        aria-hidden
+      />
+      <Container className="relative z-[1]">
         <div
           data-reveal
           className="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-end sm:justify-between"
@@ -361,11 +367,11 @@ export function GalleryFullBleedShowcase({ client }: SectionProps) {
 
           <div className="relative">
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-5 bg-gradient-to-r from-[var(--color-background)] to-transparent sm:w-8"
+              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-5 bg-gradient-to-r from-[var(--color-muted)] to-transparent sm:w-8"
               aria-hidden
             />
             <div
-              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-5 bg-gradient-to-l from-[var(--color-background)] to-transparent sm:w-8"
+              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-5 bg-gradient-to-l from-[var(--color-muted)] to-transparent sm:w-8"
               aria-hidden
             />
 

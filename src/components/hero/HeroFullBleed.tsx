@@ -1,7 +1,8 @@
 import Image from "next/image";
 import type { SectionProps } from "@/lib/client-config";
-import { Container, CtaPair } from "@/components/shared/ui";
+import { Container } from "@/components/shared/ui";
 import { HeroTrustStrip } from "@/components/hero/HeroTrustStrip";
+import { HeroCtaRow } from "@/components/hero/HeroCtaRow";
 
 export function HeroFullBleed({ client }: SectionProps) {
   const { business, hero } = client;
@@ -43,12 +44,7 @@ export function HeroFullBleed({ client }: SectionProps) {
           {hero.subheadline}
         </p>
         <div data-hero-item>
-          <CtaPair
-            primary={hero.ctaPrimary}
-            secondary={hero.ctaSecondary}
-            magnetic
-            className="mt-8 text-white"
-          />
+          <HeroCtaRow client={client} />
         </div>
       </Container>
     </section>

@@ -100,6 +100,52 @@ export function pricingPatternStyle(id: PricingPatternId): import("react").CSSPr
   };
 }
 
+/** Delikatne wzory na jasnych sekcjach — rozdziela bloki o tym samym tle. */
+export type LightSectionPatternId = "dots" | "waves" | "rings" | "crosshatch";
+
+const lightPatternSizes: Record<LightSectionPatternId, string> = {
+  dots: "22px 22px",
+  waves: "80px 40px",
+  rings: "64px 64px",
+  crosshatch: "32px 32px",
+};
+
+export function lightSectionPatternStyle(
+  id: LightSectionPatternId,
+): import("react").CSSProperties {
+  const accentSoft = "color-mix(in srgb, var(--color-accent) 11%, transparent)";
+  const inkStroke = encodeURIComponent("#2A2224");
+
+  switch (id) {
+    case "dots":
+      return {
+        backgroundImage: `radial-gradient(circle at 1px 1px, ${accentSoft} 1px, transparent 0)`,
+        backgroundSize: lightPatternSizes.dots,
+      };
+    case "waves":
+      return {
+        backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
+          `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'><path d='M0 20 Q20 8 40 20 T80 20' stroke='${decodeURIComponent(inkStroke)}' stroke-width='0.55' fill='none' opacity='0.07'/><path d='M0 28 Q20 16 40 28 T80 28' stroke='${decodeURIComponent(inkStroke)}' stroke-width='0.4' fill='none' opacity='0.04'/></svg>`,
+        )}")`,
+        backgroundSize: lightPatternSizes.waves,
+      };
+    case "rings":
+      return {
+        backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
+          `<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><circle cx='32' cy='32' r='28' stroke='${decodeURIComponent(inkStroke)}' stroke-width='0.45' fill='none' opacity='0.06'/><circle cx='32' cy='32' r='18' stroke='${decodeURIComponent(inkStroke)}' stroke-width='0.35' fill='none' opacity='0.04'/></svg>`,
+        )}")`,
+        backgroundSize: lightPatternSizes.rings,
+      };
+    case "crosshatch":
+      return {
+        backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
+          `<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path d='M0 32L32 0M-8 8L8 -8M24 40L40 24' stroke='${decodeURIComponent(inkStroke)}' stroke-width='0.4' fill='none' opacity='0.05'/></svg>`,
+        )}")`,
+        backgroundSize: lightPatternSizes.crosshatch,
+      };
+  }
+}
+
 /** Klasy siatki cennika — wyśrodkowanie i rozciągnięcie przy małej liczbie pozycji. */
 export function pricingGridClass(count: number): string {
   const base = "mx-auto grid gap-4";

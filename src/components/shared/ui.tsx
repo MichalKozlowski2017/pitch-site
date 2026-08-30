@@ -18,7 +18,7 @@ export function PrimaryButton({
     <a
       href={href}
       data-magnetic={magnetic ? "" : undefined}
-      className={`inline-flex items-center justify-center rounded-md bg-[var(--color-accent)] px-5 py-3 text-sm font-semibold text-[var(--color-foreground)] transition hover:brightness-95 ${className}`}
+      className={`inline-flex cursor-pointer items-center justify-center rounded-md bg-[var(--color-accent)] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-95 ${className}`}
     >
       {label}
     </a>
@@ -40,7 +40,7 @@ export function SecondaryButton({
     <a
       href={href}
       data-magnetic={magnetic ? "" : undefined}
-      className={`inline-flex items-center justify-center rounded-md border border-current/20 bg-transparent px-5 py-3 text-sm font-semibold transition hover:bg-black/5 ${className}`}
+      className={`inline-flex cursor-pointer items-center justify-center rounded-md border border-current/20 bg-transparent px-5 py-3 text-sm font-semibold transition hover:bg-black/5 ${className}`}
     >
       {label}
     </a>

@@ -1,170 +1,358 @@
 {
   "business": {
-    "name": "Nazwa firmy",
-    "tagline": "Krótki opis usługi",
-    "description": "2–3 zdania o firmie — z ogłoszenia OLX, ton naturalny, bez marketingowego bełkotu.",
-    "location": "Miasto i obszar",
-    "phone": "+48 000 000 000",
-    "email": "kontakt@example.pl",
-    "whatsapp": "+48000000000",
-    "hours": "Godziny pracy lub „po umówieniu”"
+    "name": "Katarzyna Strzebińczyk",
+    "tagline": "Stylizacja paznokci · Gliwice",
+    "description": "Certyfikowana stylistka paznokci w Gliwicach–Szobiszowicach. Manicure hybrydowy i żelowy, przedłużanie, uzupełnienia, zdobienia oraz pedicure — na wysokiej jakości produktach, z zachowaniem zasad higieny i sterylizacji narzędzi.",
+    "location": "Gliwice, ul. Sztabu Powstańczego 21a (Szobiszowice)",
+    "phone": "+48 661 104 831",
+    "whatsapp": "+48661104831",
+    "hours": "Po umówieniu — rezerwacja online lub telefon",
+    "logo": "/images/katarzyna-strzebinczyk-gliwice/logo.svg"
   },
   "seo": {
-    "title": "Nazwa firmy — Miasto | Główna usługa",
-    "description": "Meta opis z miastem, usługą i telefonem. 150–160 znaków."
+    "title": "Katarzyna Strzebińczyk — Manicure i paznokcie żelowe Gliwice",
+    "description": "Manicure hybrydowy, żelowy i pedicure w Gliwicach–Szobiszowicach. Portfolio, cennik i opinie. Zadzwoń: 661 104 831 lub rezerwuj online."
   },
   "theme": {
-    "primary": "#0B3D2E",
-    "primaryForeground": "#F4F7F5",
-    "accent": "#E8A317",
-    "background": "#EEF2F0",
-    "foreground": "#14201A",
-    "muted": "#DFE6E2",
-    "mutedForeground": "#5A655E",
+    "primary": "#2A2224",
+    "primaryForeground": "#FDF8F9",
+    "accent": "#D4567A",
+    "background": "#FDF8F9",
+    "foreground": "#2A2224",
+    "muted": "#F3E8EC",
+    "mutedForeground": "#6B5A60",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
-    { "label": "Realizacje", "href": "#realizacje" },
+    { "label": "Portfolio", "href": "#realizacje" },
     { "label": "Cennik", "href": "#cennik" },
-    { "label": "Dlaczego my", "href": "#dlaczego" },
+    { "label": "Rezerwacja", "href": "#rezerwacja" },
+    { "label": "Opinie", "href": "#opinie" },
+    { "label": "Dlaczego Kasia", "href": "#dlaczego" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
+  "booksy": {
+    "businessId": "301279",
+    "profileUrl": "https://booksy.com/pl-pl/301279_stylizacja-paznokci-katarzyna-strzebinczyk_paznokcie_12795_gliwice",
+    "rating": 4.9,
+    "reviewCount": 44,
+    "buttonLabel": "Umów wizytę online",
+    "country": "pl",
+    "lang": "pl"
+  },
   "hero": {
-    "headline": "Nagłówek z korzyścią dla klienta",
-    "subheadline": "Rozwinięcie — co robisz, gdzie, dlaczego warto zadzwonić. Jedno–dwa zdania.",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+    "headline": "Stylizacja paznokci w Gliwicach",
+    "subheadline": "Manicure hybrydowy, żelowy i pedicure — certyfikowana stylistka, miła atmosfera i portfolio, które mówi samo za siebie.",
+    "image": "/images/katarzyna-strzebinczyk-gliwice/ig-09.jpg",
+    "trustBadges": [
+      "Gliwice–Szobiszowice",
+      "Certyfikowana stylistka paznokci"
+    ],
     "ctaPrimary": {
-      "label": "Zadzwoń",
-      "href": "tel:+48000000000"
+      "label": "Zadzwoń — 661 104 831",
+      "href": "tel:+48661104831"
     },
     "ctaSecondary": {
-      "label": "WhatsApp",
-      "href": "https://wa.me/48000000000"
+      "label": "Rezerwuj na Booksy",
+      "href": "https://booksy.com/pl-pl/301279_stylizacja-paznokci-katarzyna-strzebinczyk_paznokcie_12795_gliwice"
     }
   },
   "services": {
     "title": "Usługi",
-    "subtitle": "Skopiuj z ogłoszenia — 4–6 pozycji.",
+    "subtitle": "Od klasycznej pielęgnacji po przedłużanie i zdobienia — dopasowane do Twojego stylu.",
     "items": [
       {
-        "title": "Usługa 1",
-        "description": "Krótki opis."
+        "title": "Manicure hybrydowy",
+        "description": "Trwały kolor z połyskiem — idealny na co dzień i na wyjątkowe okazje.",
+        "highlight": true
       },
       {
-        "title": "Usługa 2",
-        "description": "Krótki opis."
+        "title": "Przedłużanie paznokci żelem",
+        "description": "Budowa długości i kształtu — od naturalnego looku po wyrazisty styl."
       },
       {
-        "title": "Usługa 3",
-        "description": "Krótki opis."
+        "title": "Uzupełnienie stylizacji",
+        "description": "Regularna korekta żelu lub hybrydy — paznokcie zawsze w formie."
       },
       {
-        "title": "Usługa 4",
-        "description": "Krótki opis."
+        "title": "Wzmocnienie naturalnej płytki",
+        "description": "Ochrona i wzmocnienie własnych paznokci bez pełnego przedłużenia."
+      },
+      {
+        "title": "Zdobienia",
+        "description": "French, ombre, cyrkonie i detale — dopasowane do Twojej stylizacji."
+      },
+      {
+        "title": "Pedicure",
+        "description": "Klasyczny i hybrydowy — kompleksowa pielęgnacja stóp z trwałym wykończeniem."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Portfolio",
+    "subtitle": "Wybrane stylizacje z Instagrama i realizacji — żel, hybryda, zdobienia i pedicure.",
+    "items": [
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-09.jpg",
+        "alt": "Manicure żelowy w intensywnym różu",
+        "title": "Fuksja żel",
+        "description": "Kwadratowy kształt z leopard print na spodzie — odważny, wyrazisty look.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-07.jpg",
+        "alt": "Paznokcie stiletto w kolorze lawendy",
+        "title": "Lawenda stiletto",
+        "description": "Długie paznokcie w miękkim fiolecie — elegancki, kobiecy efekt.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-05.jpg",
+        "alt": "Manicure hybrydowy z zdobieniami",
+        "title": "Hybryda z detalem",
+        "description": "Stylizacja z subtelnym zdobieniem — precyzyjne wykończenie i gładki połysk.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/olx-01.jpg",
+        "alt": "Stylizacja paznokci żelowych",
+        "title": "Żel klasyczny",
+        "description": "Gładka aplikacja i równy kształt — efekt salonowy na co dzień.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-03.jpg",
+        "alt": "Manicure w pastelowym odcieniu",
+        "title": "Pastel nude",
+        "description": "Delikatny odcień na naturalnej płytce — uniwersalny na każdą porę roku.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-11.jpg",
+        "alt": "Przedłużanie paznokci żelowych",
+        "title": "Przedłużenie żel",
+        "description": "Budowa długości z dbałością o linię skórek i symetrię kształtu.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/olx-05.jpg",
+        "alt": "Manicure hybrydowy w ciemnym kolorze",
+        "title": "Hybryda deep",
+        "description": "Głęboki kolor z lustrzanym połyskiem — wyrazisty manicure na wieczór.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-02.jpg",
+        "alt": "Stylizacja paznokci z brokatem",
+        "title": "Brokat i połysk",
+        "description": "Zdobienie z brokatem — efektowny detal bez przesady.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/olx-03.jpg",
+        "alt": "Uzupełnienie stylizacji żelowej",
+        "title": "Uzupełnienie żel",
+        "description": "Świeża stylizacja po korekcie — równa linia i trwały efekt.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-08.jpg",
+        "alt": "French manicure żelowy",
+        "title": "French żel",
+        "description": "Klasyczny French na przedłużeniu — ponadczasowa elegancja.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/olx-06.jpg",
+        "alt": "Pedicure hybrydowy",
+        "title": "Pedicure hybryda",
+        "description": "Pielęgnacja stóp z trwałym kolorem — gotowe na sandały.",
+        "place": "Gliwice"
+      },
+      {
+        "src": "/images/katarzyna-strzebinczyk-gliwice/ig-12.jpg",
+        "alt": "Manicure z cyrkoniami",
+        "title": "Zdobienia premium",
+        "description": "Detale i cyrkonie dopasowane do stylizacji — efekt na specjalne okazje.",
+        "place": "Gliwice"
       }
     ]
   },
   "pricing": {
     "title": "Cennik",
-    "subtitle": "Orientacyjne ceny z ogłoszenia — dopasuj do klienta.",
-    "note": "Dokładna wycena po kontakcie.",
+    "subtitle": "Orientacyjne ceny z Booksy — pełna oferta i rezerwacja online.",
+    "note": "Ceny promocyjne Booksy mogą się różnić. Dokładny termin i wycena przy rezerwacji.",
+    "pattern": "waves",
     "items": [
       {
-        "name": "Usługa podstawowa",
-        "price": "od 100 zł",
-        "description": "Krótki opis."
-      },
-      {
-        "name": "Usługa popularna",
-        "price": "od 200 zł",
-        "description": "Krótki opis.",
+        "name": "Manicure hybrydowy",
+        "price": "130 zł",
+        "description": "Opracowanie + trwały kolor hybrydowy.",
         "highlight": true
       },
       {
-        "name": "Pakiet / usługa premium",
-        "price": "od 350 zł",
-        "description": "Krótki opis."
+        "name": "Uzupełnienie krótkie",
+        "price": "140 zł",
+        "description": "Korekta żelu/hybrydy — krótsza długość."
+      },
+      {
+        "name": "Uzupełnienie długie",
+        "price": "150 zł",
+        "description": "Korekta stylizacji — dłuższa płytka."
+      },
+      {
+        "name": "Przedłużanie krótkie",
+        "price": "180 zł",
+        "description": "Budowa długości na formie — krótki kształt."
+      },
+      {
+        "name": "Przedłużanie długie",
+        "price": "200 zł",
+        "description": "Pełne przedłużenie żelowe — dłuższy kształt."
+      },
+      {
+        "name": "Pedicure hybrydowy",
+        "price": "150 zł",
+        "description": "Pielęgnacja stóp + hybryda w kolorze."
+      },
+      {
+        "name": "Pedicure klasyczny",
+        "price": "120 zł",
+        "description": "Opracowanie podeszwy, skórek i paznokci."
+      },
+      {
+        "name": "Mani + pedi hybryda",
+        "price": "230 zł",
+        "description": "Pakiet: manicure i pedicure hybrydowy."
       }
     ]
   },
   "usp": {
-    "title": "Dlaczego my",
-    "subtitle": "3–5 konkretnych powodów z ogłoszenia lub opinii.",
+    "title": "Dlaczego Kasia",
+    "subtitle": "To, co klientki podkreślają w opiniach i wracają po kolejne wizyty.",
     "items": [
       {
-        "title": "Korzyść 1",
-        "description": "Opis."
+        "title": "Certyfikowana stylistka",
+        "description": "Profesjonalne szkolenia i stała praca nad techniką — efekt, który trzyma się tygodniami."
       },
       {
-        "title": "Korzyść 2",
-        "description": "Opis."
+        "title": "Higiena i sterylizacja",
+        "description": "Sterylne narzędzi i dezynfekcja stanowiska po każdej wizycie — bezpieczeństwo na pierwszym miejscu."
       },
       {
-        "title": "Korzyść 3",
-        "description": "Opis."
+        "title": "Miła atmosfera",
+        "description": "Spokojne, przyjazne przyjęcie — bez pośpiechu, z czasem na dopasowanie stylizacji."
+      },
+      {
+        "title": "Rezerwacja online",
+        "description": "Booksy lub telefon — wybierz termin, który Ci pasuje, bez długiego czekania na odpowiedź."
       }
     ]
   },
   "reviews": {
-    "title": "Opinie",
-    "subtitle": "Tylko prawdziwe recenzje — bez wypełniaczy.",
-    "items": []
-  },
-  "gallery": {
-    "title": "Realizacje",
-    "subtitle": "Zdjęcia z ogłoszenia / portfolio klienta.",
+    "title": "Opinie klientek",
+    "subtitle": "Prawdziwe recenzje z Booksy — 4,9 ★ na podstawie 44 opinii.",
     "items": [
       {
-        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Opis zdjęcia",
-        "title": "Tytuł realizacji",
-        "description": "Krótki opis pracy.",
-        "place": "Miasto"
+        "author": "Monika",
+        "rating": 5,
+        "text": "Polecam z całego serca! Kasia zrobiła mi przepiękne paznokcie — wszystko wykonane bardzo dokładnie, estetycznie i z ogromnym wyczuciem stylu. Paznokcie wyglądają elegancko i trzymają się perfekcyjnie. Do tego super atmosfera i pełen profesjonalizm. Na pewno wrócę.",
+        "source": "Booksy",
+        "date": "cze 2026"
       },
       {
-        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Druga realizacja",
-        "title": "Tytuł realizacji 2",
-        "description": "Krótki opis.",
-        "place": "Miasto"
+        "author": "Aleksandra",
+        "rating": 5,
+        "text": "Paznokcie przepiękne! Kształt, trwałość i wykonanie na najwyższym poziomie. Stylizacja wygląda bardzo dobrze do kolejnej wizyty. Zachowana higiena i sterylność narzędzi. Polecam.",
+        "source": "Booksy",
+        "date": "cze 2026"
       },
       {
-        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Trzecia realizacja",
-        "title": "Tytuł realizacji 3",
-        "description": "Krótki opis.",
-        "place": "Miasto"
+        "author": "Ewelina",
+        "rating": 5,
+        "text": "Przyjazna atmosfera i pełen profesjonalizm. Wcześniejsze paznokcie trzymały się ponad miesiąc!",
+        "source": "Booksy",
+        "date": "cze 2026"
+      },
+      {
+        "author": "Monika",
+        "rating": 5,
+        "text": "Bardzo miła obsługa. Pani Kasia starannie wykonywała zabieg. Jestem bardzo zadowolona i polecam!",
+        "source": "Booksy",
+        "date": "cze 2026"
+      },
+      {
+        "author": "Aleksandra",
+        "rating": 5,
+        "text": "Super salon, z miłą atmosferą. Paznokcie zrobione bardzo dokładnie i pięknie. Polecam.",
+        "source": "Booksy",
+        "date": "mar 2026"
+      },
+      {
+        "author": "Julia",
+        "rating": 5,
+        "text": "Wszystko super, piękne paznokcie, polecam!",
+        "source": "Booksy",
+        "date": "lip 2026"
+      },
+      {
+        "author": "Nili",
+        "rating": 5,
+        "text": "Przepiękne paznokcie i przyjemna atmosfera.",
+        "source": "Booksy",
+        "date": "mar 2026"
+      },
+      {
+        "author": "Bernadeta",
+        "rating": 5,
+        "text": "Robiłam manicure i polecam. Paznokcie są odżywione.",
+        "source": "Booksy",
+        "date": "cze 2026"
+      },
+      {
+        "author": "Karolina",
+        "rating": 5,
+        "text": "Wszystko super — piękny efekt i miła wizyta od początku do końca.",
+        "source": "Booksy",
+        "date": "cze 2026"
       }
     ]
   },
-  "area": {
-    "title": "Obszar działania",
-    "subtitle": "Miasta / dzielnice z ogłoszenia.",
-    "places": ["Miasto 1", "Miasto 2", "Okolice"]
-  },
   "faq": {
     "title": "Najczęstsze pytania",
-    "subtitle": "5–7 pytań, które klienci naprawdę zadają w branży.",
+    "subtitle": "Krótko o wizycie, trwałości i rezerwacji.",
     "items": [
       {
         "question": "Jak umówić wizytę?",
-        "answer": "Zadzwoń lub napisz — podaj termin i krótko opisz problem. Odpowiadamy zwykle tego samego dnia."
+        "answer": "Najszybciej przez Booksy (link w kontakcie) albo telefonicznie pod numerem 661 104 831. Wybierz usługę i termin, który Ci pasuje."
       },
       {
-        "question": "Czy wycena jest bezpłatna?",
-        "answer": "Tak — przed startem prac mówimy, ile to będzie kosztować. Bez niespodzianek na fakturze."
+        "question": "Ile trzyma się hybryda lub żel?",
+        "answer": "Przy prawidłowej pielęgnacji stylizacja wytrzymuje zwykle 2–4 tygodnie. Klientki w opiniach zaznaczają trwałość nawet ponad miesiąc."
       },
       {
-        "question": "W jakim obszarze działacie?",
-        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w kontakcie lub FAQ."
+        "question": "Czy niszczy naturalną płytkę?",
+        "answer": "Przy profesjonalnej aplikacji i zdjęciu stylizacji paznokcie nie są niszczone. Oferuję też wzmocnienie naturalnej płytki bez pełnego przedłużenia."
+      },
+      {
+        "question": "Jak przygotować się do wizyty?",
+        "answer": "Przyjdź bez lakieru na paznokciach (lub umów zdjęcie stylizacji). Unikaj kremów tuż przed wizytą — ułatwia to opracowanie skórek."
+      },
+      {
+        "question": "Czy mogę zrobić manicure i pedicure w jednej wizycie?",
+        "answer": "Tak — w Booksy jest pakiet Manicure + Pedicure hybrydowy (ok. 2,5 h). Możesz też umówić usługi osobno."
+      },
+      {
+        "question": "Gdzie znajduje się salon?",
+        "answer": "ul. Sztabu Powstańczego 21a, Gliwice (Szobiszowice). Dokładny adres i mapa w profilu Booksy."
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Zadzwoń lub napisz — najszybszy sposób na umówienie terminu."
+    "subtitle": "Zadzwoń, napisz na WhatsApp albo zarezerwuj termin online."
   },
   "variants": {
     "header": "transparent",
@@ -182,13 +370,13 @@
   "pitch": {
     "enabled": true,
     "badgeText": "Demo strony — podgląd oferty",
-    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
-    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
+    "offerHeadline": "Twoja strona obok Booksy i Instagrama",
+    "offerBody": "Masz już Booksy i profil na IG — przygotowałem stronę, która zbiera portfolio, cennik i opinie w jednym miejscu. Łatwiej znajdą Cię w Google niż przez samo ogłoszenie OLX.",
     "offerBullets": [
-      "Wyglądasz profesjonalnie obok konkurencji z OLX",
-      "Klienci widzą ofertę i łatwo do Ciebie dzwonią",
-      "Działa na telefonie — tam szuka większość zleceń",
-      "Wdrożenie w 24h po akceptacji"
+      "Portfolio i opinie w jednym linku — nie tylko w Booksy",
+      "Lepsza widoczność w Google niż sam profil na OLX",
+      "Telefon i rezerwacja Booksy od razu pod ręką",
+      "Działa na telefonie — tam szukają salonów"
     ],
     "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."
   }
