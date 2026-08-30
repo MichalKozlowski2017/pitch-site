@@ -8,7 +8,7 @@ Checklist przed uzupełnieniem `client.json`. Celem jest **różnicowanie projek
 
 | Sygnał w materiałach | Accent | Przykład |
 |---------------------|--------|----------|
-| Róż / fuksja / czerwień paznokci | `#D4567A` – `#E879A0` | Łapko-cure |
+| Róż / fuksja / czerwień paznokci | `#D4567A` – `#E879A0` | mobilny manicure, fuksja na zdjęciach |
 | Beż / nude / ciepły salon | `#B8956A` – `#C4A574` | Effect Nails |
 | Ciemny luksus / black nails | `#C9A962` (złoto) lub `#8B7355` | — |
 | Zieleń / sage (tylko gdy brand tak wygląda) | `#5B8A8A` | Lena (jeśli zdjęcia zielone) |

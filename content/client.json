@@ -1,221 +1,175 @@
 {
   "business": {
-    "name": "Łapko-cure",
-    "tagline": "Manicure hybrydowy z dojazdem · Łódź",
-    "description": "Mobilny manicure hybrydowy na naturalnej płytce — przyjadę do Ciebie w całej Łodzi. Higiena na poziomie medycznym, paragon fiskalny, szybkie terminy. Umów wizytę SMS-em lub telefonicznie.",
-    "location": "Łódź — dojazd do klientki (całe miasto)",
-    "phone": "+48 516 437 467",
-    "whatsapp": "+48516437467",
-    "hours": "Terminy po umówieniu — kontakt SMS lub telefon",
-    "logo": "/images/lapko-cure-lodz/logo.svg"
+    "name": "Nazwa firmy",
+    "tagline": "Krótki opis usługi",
+    "description": "2–3 zdania o firmie — z ogłoszenia OLX, ton naturalny, bez marketingowego bełkotu.",
+    "location": "Miasto i obszar",
+    "phone": "+48 000 000 000",
+    "email": "kontakt@example.pl",
+    "whatsapp": "+48000000000",
+    "hours": "Godziny pracy lub „po umówieniu”"
   },
   "seo": {
-    "title": "Łapko-cure — Manicure hybrydowy z dojazdem Łódź | Agnieszka Miszczak",
-    "description": "Mobilny manicure hybrydowy w Łodzi — dojazd gratis. Od 80 zł, zdobienia od 10 zł. Higiena medyczna, paragon fiskalny. SMS: 516 437 467."
+    "title": "Nazwa firmy — Miasto | Główna usługa",
+    "description": "Meta opis z miastem, usługą i telefonem. 150–160 znaków."
   },
   "theme": {
-    "primary": "#2A2428",
-    "primaryForeground": "#FFF8FA",
-    "accent": "#D4567A",
-    "background": "#FFF8FA",
-    "foreground": "#2A2428",
-    "muted": "#F3E4EA",
-    "mutedForeground": "#6B5A62",
+    "primary": "#0B3D2E",
+    "primaryForeground": "#F4F7F5",
+    "accent": "#E8A317",
+    "background": "#EEF2F0",
+    "foreground": "#14201A",
+    "muted": "#DFE6E2",
+    "mutedForeground": "#5A655E",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
-    { "label": "Portfolio", "href": "#realizacje" },
+    { "label": "Realizacje", "href": "#realizacje" },
     { "label": "Cennik", "href": "#cennik" },
     { "label": "Dlaczego my", "href": "#dlaczego" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "headline": "Manicure hybrydowy u Ciebie w domu",
-    "subheadline": "Nie musisz wychodzić — przyjadę w całej Łodzi. Szybkie terminy, dojazd gratis. Napisz SMS lub zadzwoń.",
-    "image": "/images/lapko-cure-lodz/03.jpg",
-    "trustBadges": [
-      "Dojazd gratis — cała Łódź",
-      "Od 80 zł · paragon fiskalny",
-      "SMS i telefon"
-    ],
+    "headline": "Nagłówek z korzyścią dla klienta",
+    "subheadline": "Rozwinięcie — co robisz, gdzie, dlaczego warto zadzwonić. Jedno–dwa zdania.",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
     "ctaPrimary": {
-      "label": "Zadzwoń — 516 437 467",
-      "href": "tel:+48516437467"
+      "label": "Zadzwoń",
+      "href": "tel:+48000000000"
     },
     "ctaSecondary": {
       "label": "WhatsApp",
-      "href": "https://wa.me/48516437467"
+      "href": "https://wa.me/48000000000"
     }
   },
   "services": {
     "title": "Usługi",
-    "subtitle": "Mobilny manicure hybrydowy — w komforcie Twojego domu.",
+    "subtitle": "Skopiuj z ogłoszenia — 4–6 pozycji.",
     "items": [
       {
-        "title": "Manicure hybrydowy",
-        "description": "Stylizacja na naturalnej płytce — trwały kolor, precyzyjne opracowanie i wykończenie.",
-        "highlight": true
+        "title": "Usługa 1",
+        "description": "Krótki opis."
       },
       {
-        "title": "Zdobienia artystyczne",
-        "description": "French, ombre, cat-eye, quail egg i inne wzory — dopasowane do Twojego stylu."
+        "title": "Usługa 2",
+        "description": "Krótki opis."
       },
       {
-        "title": "Cyrkonie, pyłki i ozdoby",
-        "description": "Duży wybór dodatków — od subtelnego blasku po wyraziste akcenty."
+        "title": "Usługa 3",
+        "description": "Krótki opis."
       },
       {
-        "title": "Dojazd do klientki",
-        "description": "Przyjadę pod wskazany adres w granicach Łodzi — bez dodatkowych kosztów."
-      },
-      {
-        "title": "Higiena medyczna",
-        "description": "Sterylizacja sprzętu klasy medycznej i jednorazowe przybory przy każdej wizycie."
-      },
-      {
-        "title": "Szybkie terminy",
-        "description": "Krótki czas oczekiwania — napisz SMS z preferowanym terminem, odpowiem najszybciej jak mogę."
-      }
-    ]
-  },
-  "gallery": {
-    "title": "Portfolio",
-    "subtitle": "Realizacje hybrydowe — od klasycznych po zdobienia artystyczne.",
-    "items": [
-      {
-        "src": "/images/lapko-cure-lodz/03.jpg",
-        "alt": "Manicure hybrydowy różowy z efektem cat-eye",
-        "title": "Cat-eye róż",
-        "description": "Hybryda z magnetycznym efektem cat-eye na jasnym różu — połysk i głębia koloru.",
-        "place": "Łódź"
-      },
-      {
-        "src": "/images/lapko-cure-lodz/02.jpg",
-        "alt": "Manicure quail egg — jasna baza z cętkami",
-        "title": "Quail egg",
-        "description": "Modny efekt jajka przepiórczego — delikatne cętki na jasnej, chłodnej bazie.",
-        "place": "Łódź"
-      },
-      {
-        "src": "/images/lapko-cure-lodz/01.jpg",
-        "alt": "Manicure neon pink chrome",
-        "title": "Neon chrome",
-        "description": "Soczysty róż z chromowanym wykończeniem — wyrazisty, nowoczesny look.",
-        "place": "Łódź"
-      },
-      {
-        "src": "/images/lapko-cure-lodz/04.jpg",
-        "alt": "Manicure taupe cat-eye",
-        "title": "Taupe cat-eye",
-        "description": "Elegancki brąz z perłowym efektem cat-eye — uniwersalny na co dzień.",
-        "place": "Łódź"
+        "title": "Usługa 4",
+        "description": "Krótki opis."
       }
     ]
   },
   "pricing": {
     "title": "Cennik",
-    "subtitle": "Przejrzyste ceny — dojazd w cenie usługi.",
-    "note": "Zdobienia wyceniam indywidualnie przy umawianiu. Wizyta trwa ok. 2 h.",
-    "pattern": "waves",
+    "subtitle": "Orientacyjne ceny z ogłoszenia — dopasuj do klienta.",
+    "note": "Dokładna wycena po kontakcie.",
     "items": [
       {
-        "name": "Manicure hybrydowy",
-        "price": "80 zł",
-        "description": "Standardowa stylizacja na naturalnej płytce.",
+        "name": "Usługa podstawowa",
+        "price": "od 100 zł",
+        "description": "Krótki opis."
+      },
+      {
+        "name": "Usługa popularna",
+        "price": "od 200 zł",
+        "description": "Krótki opis.",
         "highlight": true
       },
       {
-        "name": "Zdobienia i ozdoby",
-        "price": "10–20 zł",
-        "description": "Cyrkonie, pyłki, french, ombre — w zależności od wybranych zdobień."
-      },
-      {
-        "name": "Dojazd do klientki",
-        "price": "GRATIS",
-        "description": "Cała Łódź — bez dopłaty za dojazd."
+        "name": "Pakiet / usługa premium",
+        "price": "od 350 zł",
+        "description": "Krótki opis."
       }
     ]
   },
   "usp": {
-    "title": "Dlaczego Łapko-cure",
-    "subtitle": "Mobilny manicure bez kompromisów w jakości.",
+    "title": "Dlaczego my",
+    "subtitle": "3–5 konkretnych powodów z ogłoszenia lub opinii.",
     "items": [
       {
-        "title": "Manicure w Twoim domu",
-        "description": "Oszczędzasz czas — nie musisz szukać parkingu ani siedzieć w korkach. Przygotuj wygodne miejsce, resztą zajmę się ja."
+        "title": "Korzyść 1",
+        "description": "Opis."
       },
       {
-        "title": "Higiena jak w gabinecie",
-        "description": "Sprzęt klasy medycznej, sterylizacja i jednorazowe przybory — bezpiecznie i profesjonalnie."
+        "title": "Korzyść 2",
+        "description": "Opis."
       },
       {
-        "title": "Legalna działalność",
-        "description": "Zarejestrowana firma — otrzymasz paragon fiskalny po każdej wizycie."
-      },
-      {
-        "title": "Szybki kontakt SMS",
-        "description": "Preferujesz SMS? Napisz numer i termin — odpowiem najszybciej, jak mogę."
+        "title": "Korzyść 3",
+        "description": "Opis."
       }
     ]
   },
   "reviews": {
     "title": "Opinie",
-    "subtitle": "Opinie klientek — tylko prawdziwe recenzje.",
+    "subtitle": "Tylko prawdziwe recenzje — bez wypełniaczy.",
     "items": []
   },
-  "area": {
-    "title": "Obszar dojazdu",
-    "subtitle": "Dojeżdżam w granicach Łodzi — wszystkie dzielnice.",
-    "places": [
-      "Polesie",
-      "Bałuty",
-      "Górna",
-      "Widzew",
-      "Śródmieście",
-      "Retkinia",
-      "Feliksów"
+  "gallery": {
+    "title": "Realizacje",
+    "subtitle": "Zdjęcia z ogłoszenia / portfolio klienta.",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Opis zdjęcia",
+        "title": "Tytuł realizacji",
+        "description": "Krótki opis pracy.",
+        "place": "Miasto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Druga realizacja",
+        "title": "Tytuł realizacji 2",
+        "description": "Krótki opis.",
+        "place": "Miasto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Trzecia realizacja",
+        "title": "Tytuł realizacji 3",
+        "description": "Krótki opis.",
+        "place": "Miasto"
+      }
     ]
+  },
+  "area": {
+    "title": "Obszar działania",
+    "subtitle": "Miasta / dzielnice z ogłoszenia.",
+    "places": ["Miasto 1", "Miasto 2", "Okolice"]
   },
   "faq": {
     "title": "Najczęstsze pytania",
-    "subtitle": "Zanim umówisz wizytę u siebie w domu.",
+    "subtitle": "5–7 pytań, które klienci naprawdę zadają w branży.",
     "items": [
       {
         "question": "Jak umówić wizytę?",
-        "answer": "Napisz SMS na 516 437 467 lub zadzwoń. Podaj dzielnicę, preferowany termin i rodzaj stylizacji — wrócę z propozycją wolnego terminu."
+        "answer": "Zadzwoń lub napisz — podaj termin i krótko opisz problem. Odpowiadamy zwykle tego samego dnia."
       },
       {
-        "question": "Czy dojeżdżasz poza Łódź?",
-        "answer": "Nie — działam wyłącznie na terenie Łodzi. Nie dojeżdżam do miast ościennych (Pabianice, Aleksandrów Ł. itd.)."
+        "question": "Czy wycena jest bezpłatna?",
+        "answer": "Tak — przed startem prac mówimy, ile to będzie kosztować. Bez niespodzianek na fakturze."
       },
       {
-        "question": "Ile trwa wizyta?",
-        "answer": "Standardowy manicure hybrydowy to ok. 2 godziny. Przy bardziej rozbudowanych zdobieniach wizyta może potrwać dłużej — ustalimy to przy umawianiu."
-      },
-      {
-        "question": "Co przygotować w domu?",
-        "answer": "Wygodne miejsce przy stole z dostępem do prądu, dobre oświetlenie i czyste dłonie bez kremu tuż przed wizytą. Resztę zabiorę ze sobą."
-      },
-      {
-        "question": "Ile trzyma się hybryda?",
-        "answer": "Przy prawidłowej pielęgnacji zwykle 2–3 tygodnie. Unikaj agresywnych detergentów bez rękawiczek i nie obgryzaj stylizacji."
-      },
-      {
-        "question": "Czy wystawiasz paragon?",
-        "answer": "Tak — legalnie zarejestrowana działalność. Po wizycie otrzymasz paragon fiskalny."
+        "question": "W jakim obszarze działacie?",
+        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w kontakcie lub FAQ."
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "SMS lub telefon — najszybszy sposób na umówienie terminu."
+    "subtitle": "Zadzwoń lub napisz — najszybszy sposób na umówienie terminu."
   },
   "variants": {
     "header": "transparent",
     "hero": "fullBleedPhoto",
-    "services": "cards",
+    "services": "grid",
     "pricing": "cards",
     "usp": "list",
     "reviews": "cards",
@@ -228,23 +182,14 @@
   "pitch": {
     "enabled": true,
     "badgeText": "Demo strony — podgląd oferty",
-    "offerHeadline": "Masz cennik i portfolio — dodaj link, który sprzedaje lepiej niż OLX",
-    "offerBody": "Przygotowałam podgląd strony z Twoimi realizacjami, cennikiem i dojazdem. Klientka od razu widzi efekt i dzwoni — bez przeklikiwania ogłoszenia.",
+    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
+    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
     "offerBullets": [
-      "Galeria stylizacji zamiast małych miniaturek w OLX",
-      "Cennik z dojazdem gratis — czytelny na telefonie",
-      "Jeden link do SMS-a, WhatsAppa lub wiadomości OLX",
-      "Wdrożenie na Twojej domenie w 24h po akceptacji"
+      "Wyglądasz profesjonalnie obok konkurencji z OLX",
+      "Klienci widzą ofertę i łatwo do Ciebie dzwonią",
+      "Działa na telefonie — tam szuka większość zleceń",
+      "Wdrożenie w 24h po akceptacji"
     ],
-    "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie.",
-    "ctaPrimary": {
-      "label": "Zadzwoń — 501 762 085",
-      "href": "tel:+48501762085"
-    },
-    "ctaSecondary": {
-      "label": "WhatsApp",
-      "href": "https://wa.me/48501762085"
-    },
-    "contactNote": "Możesz też po prostu odpowiedzieć na wiadomość OLX, w której dostałaś ten link — omówimy szczegóły i cenę."
+    "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."
   }
 }
