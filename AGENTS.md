@@ -42,7 +42,7 @@ Uwagi: …
 - `seo` — title / description
 - `theme` — kolory (CSS variables)
 - `navigation` — linki w headerze
-- `hero` / `services` / `usp` / `reviews` / `gallery` / `area` / `faq` / `contact` — treść sekcji
+- `hero` / `services` / `about` / `usp` / `reviews` / `gallery` / `area` / `faq` / `contact` — treść sekcji
 - `variants` — który komponent w danym slocie
 - `pitch.enabled` — badge demo (wyłącz na produkcji)
 
@@ -60,6 +60,7 @@ Uwagi: …
 | services | `cards` | Karty bez numeracji — layout dopasowany do liczby usług (3 wyśrodkowane) |
 | services | `spotlight` | Master-detail — lista + panel opisu; pill scroll mobile (trend 2025) |
 | services | `rail` | Flex-rail — rozszerzające się taby desktop, akordeon mobile |
+| about | `split` | Zdjęcie + bio + bullet highlights (beauty / personal brand) |
 | pricing | `cards` | Cennik; siatka dopasowana do liczby pozycji; `pricing.pattern` — wzór tła |
 | usp | `list` | Lista USP |
 | reviews | `cards` | Opinie Google |

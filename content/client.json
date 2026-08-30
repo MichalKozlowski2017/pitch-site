@@ -1,175 +1,336 @@
 {
   "business": {
-    "name": "Nazwa firmy",
-    "tagline": "Krótki opis usługi",
-    "description": "2–3 zdania o firmie — z ogłoszenia OLX, ton naturalny, bez marketingowego bełkotu.",
-    "location": "Miasto i obszar",
-    "phone": "+48 000 000 000",
-    "email": "kontakt@example.pl",
-    "whatsapp": "+48000000000",
-    "hours": "Godziny pracy lub „po umówieniu”"
+    "name": "Manifaktura",
+    "tagline": "Barbara Franek · stylizacja paznokci",
+    "description": "Stylistka paznokci w Markach — manicure hybrydowy, żelowy, nail art i pedicure. Wieloletnie doświadczenie, pasja do detalu i indywidualne zdobienia dopasowane do Twojego stylu.",
+    "location": "Marki, ul. Piłsudskiego 164 (lokal na piętrze)",
+    "phone": "+48 730 960 700",
+    "whatsapp": "+48730960700",
+    "hours": "Po umówieniu — telefon, Facebook lub Instagram",
+    "logo": "/images/manifaktura-barbara-franek-marki/logo.svg"
   },
   "seo": {
-    "title": "Nazwa firmy — Miasto | Główna usługa",
-    "description": "Meta opis z miastem, usługą i telefonem. 150–160 znaków."
+    "title": "Manifaktura — Barbara Franek | Manicure i nail art Marki",
+    "description": "Stylizacja paznokci w Markach, ul. Piłsudskiego 164 — hybryda, żel, nail art i pedicure. Portfolio Barbary Franek. Tel. 730 960 700."
   },
   "theme": {
-    "primary": "#0B3D2E",
-    "primaryForeground": "#F4F7F5",
-    "accent": "#E8A317",
-    "background": "#EEF2F0",
-    "foreground": "#14201A",
-    "muted": "#DFE6E2",
-    "mutedForeground": "#5A655E",
+    "primary": "#2A2426",
+    "primaryForeground": "#FAF7F5",
+    "accent": "#A67B8C",
+    "background": "#FAF7F5",
+    "foreground": "#2A2426",
+    "muted": "#EDE6E0",
+    "mutedForeground": "#6B5F63",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
-    { "label": "Realizacje", "href": "#realizacje" },
-    { "label": "Cennik", "href": "#cennik" },
-    { "label": "Dlaczego my", "href": "#dlaczego" },
+    { "label": "Portfolio", "href": "#realizacje" },
+    { "label": "Opinie", "href": "#opinie" },
+    { "label": "Dlaczego Manifaktura", "href": "#dlaczego" },
     { "label": "FAQ", "href": "#faq" },
+    { "label": "O mnie", "href": "#o-mnie" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "headline": "Nagłówek z korzyścią dla klienta",
-    "subheadline": "Rozwinięcie — co robisz, gdzie, dlaczego warto zadzwonić. Jedno–dwa zdania.",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+    "headline": "Stylizacja paznokci w Markach",
+    "subheadline": "Manicure hybrydowy, żelowy i nail art — od klasycznej elegancji po autorskie zdobienia. Umów wizytę telefonicznie lub przez social media.",
+    "image": "/images/manifaktura-barbara-franek-marki/ig-01.jpg",
+    "trustBadges": [
+      "Marki · ul. Piłsudskiego 164",
+      "100% poleca na Facebooku (10 opinii)"
+    ],
     "ctaPrimary": {
-      "label": "Zadzwoń",
-      "href": "tel:+48000000000"
+      "label": "Zadzwoń — 730 960 700",
+      "href": "tel:+48730960700"
     },
     "ctaSecondary": {
-      "label": "WhatsApp",
-      "href": "https://wa.me/48000000000"
+      "label": "Facebook Manifaktura",
+      "href": "https://www.facebook.com/nailartistbfranek"
     }
   },
   "services": {
     "title": "Usługi",
-    "subtitle": "Skopiuj z ogłoszenia — 4–6 pozycji.",
+    "subtitle": "Od klasycznej hybrydy po autorski nail art — każda stylizacja dopasowana do Ciebie.",
     "items": [
       {
-        "title": "Usługa 1",
-        "description": "Krótki opis."
-      },
-      {
-        "title": "Usługa 2",
-        "description": "Krótki opis."
-      },
-      {
-        "title": "Usługa 3",
-        "description": "Krótki opis."
-      },
-      {
-        "title": "Usługa 4",
-        "description": "Krótki opis."
-      }
-    ]
-  },
-  "pricing": {
-    "title": "Cennik",
-    "subtitle": "Orientacyjne ceny z ogłoszenia — dopasuj do klienta.",
-    "note": "Dokładna wycena po kontakcie.",
-    "items": [
-      {
-        "name": "Usługa podstawowa",
-        "price": "od 100 zł",
-        "description": "Krótki opis."
-      },
-      {
-        "name": "Usługa popularna",
-        "price": "od 200 zł",
-        "description": "Krótki opis.",
+        "title": "Manicure hybrydowy",
+        "description": "Opracowanie płytki, skórek i trwały kolor hybrydowy. Klasyczne odcienie i french.",
         "highlight": true
       },
       {
-        "name": "Pakiet / usługa premium",
-        "price": "od 350 zł",
-        "description": "Krótki opis."
+        "title": "Manicure żelowy",
+        "description": "Wzmocnienie i przedłużenie paznokci żelem — trwałość i naturalny efekt."
+      },
+      {
+        "title": "Nail art i zdobienia",
+        "description": "Malunki, kwiaty, ombre, french kolorowy — autorskie wzory na zamówienie."
+      },
+      {
+        "title": "Pedicure hybrydowy",
+        "description": "Pielęgnacja stóp z trwałym kolorem — idealne na lato i okazje."
+      },
+      {
+        "title": "Pielęgnacja i stylizacja klasyczna",
+        "description": "Manicure kosmetyczny, pielęgnacja płytki i regeneracja przed kolejną stylizacją."
       }
     ]
   },
+  "about": {
+    "title": "O mnie",
+    "subtitle": "Barbara Franek — za Manifakturą stoi pasja do nail artu i detalu.",
+    "image": "/images/manifaktura-barbara-franek-marki/barbara-franek.png",
+    "imageAlt": "Barbara Franek — stylistka paznokci Manifaktura",
+    "paragraphs": [
+      "Nazywam się Barbara Franek — jestem stylistką paznokci z siedmioletnim doświadczeniem. Pracuję w Markach, przy ul. Piłsudskiego 164. Do pracy podchodzę z pasją i zaangażowaniem — dla mnie paznokcie to małe dzieła sztuki, które mają cieszyć na co dzień.",
+      "Specjalizuję się w manicure hybrydowym i żelowym oraz autorskim nail arcie: od delikatnych kwiatów i frencha po bardziej wymagające malunki na zamówienie. Każda klientka wychodzi z przemyślaną stylizacją dopasowaną do jej stylu.",
+      "Zapisy prowadzę przez Facebooka i Instagrama (@b.franek_nailart) oraz telefonicznie. Wkrótce planuję też szkolenia i kursy online — obserwuj profile, żeby być na bieżąco."
+    ],
+    "highlights": [
+      "Siedmioletnie doświadczenie w stylizacji paznokci",
+      "Nail art malowany ręcznie — nie z naklejek",
+      "100% poleca na Facebooku (10 opinii klientek)",
+      "Marki, Piłsudskiego 164 · umówienie telefonem lub social media"
+    ]
+  },
   "usp": {
-    "title": "Dlaczego my",
-    "subtitle": "3–5 konkretnych powodów z ogłoszenia lub opinii.",
+    "title": "Dlaczego Manifaktura",
+    "subtitle": "Pasja, precyzja i styl, który widać w każdym detalu.",
     "items": [
       {
-        "title": "Korzyść 1",
-        "description": "Opis."
+        "title": "7 lat doświadczenia",
+        "description": "Stylistka paznokci z pasją — od klasycznych stylizacji po wymagający nail art."
       },
       {
-        "title": "Korzyść 2",
-        "description": "Opis."
+        "title": "Autorski nail art",
+        "description": "Malunki, kwiaty, motywy sezonowe — wzory dopasowane do Twojego stylu, nie z katalogu."
       },
       {
-        "title": "Korzyść 3",
-        "description": "Opis."
+        "title": "100% poleca na Facebooku",
+        "description": "10 opinii klientek — pełna rekomendacja na profilu Manifaktura."
+      },
+      {
+        "title": "Marki i okolice",
+        "description": "Salon na ul. Piłsudskiego 164 w Markach — dogodnie dla klientek z Ząbek, Zielonki i wschodniej Warszawy."
       }
     ]
   },
   "reviews": {
     "title": "Opinie",
-    "subtitle": "Tylko prawdziwe recenzje — bez wypełniaczy.",
-    "items": []
-  },
-  "gallery": {
-    "title": "Realizacje",
-    "subtitle": "Zdjęcia z ogłoszenia / portfolio klienta.",
+    "subtitle": "100% poleca na Facebooku — 10 opinii klientek.",
     "items": [
       {
-        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Opis zdjęcia",
-        "title": "Tytuł realizacji",
-        "description": "Krótki opis pracy.",
-        "place": "Miasto"
+        "author": "Barbara Stepniewska",
+        "rating": 5,
+        "text": "Rewelacyjna stylizacja paznokci! Jestem mega zadowolona. Paznokcie wyglądają przepięknie, starannie wykonane, dokładnie tak, jak chciałam. Profesjonalnie, miło i z wyczuciem stylu – po prostu idealnie!",
+        "source": "Facebook"
       },
       {
-        "src": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Druga realizacja",
-        "title": "Tytuł realizacji 2",
-        "description": "Krótki opis.",
-        "place": "Miasto"
+        "author": "Kasia Nun",
+        "rating": 5,
+        "text": "Basia to prawdziwa artystka, tworzy piękne dzieła na paznokciach! Przy czym jest bardzo dokładna. Polecam!",
+        "source": "Facebook",
+        "date": "gru 2025"
       },
       {
-        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
-        "alt": "Trzecia realizacja",
-        "title": "Tytuł realizacji 3",
-        "description": "Krótki opis.",
-        "place": "Miasto"
+        "author": "Magdalena Sch",
+        "rating": 5,
+        "text": "Długo szukałam stylistki, która umie namalować różności na palcu, która nie boi się kolorów i co najważniejsze ma fantazję i potrafi doradzić tak, że powstanie arcydzieło. Polecam zdecydowanie.",
+        "source": "Facebook",
+        "date": "wrz 2025"
+      },
+      {
+        "author": "Larysa Rudzewicz",
+        "rating": 5,
+        "text": "Nie stylistka paznokci, a prawdziwa artystka. Polecam z całego serca.",
+        "source": "Facebook",
+        "date": "maj 2025"
+      },
+      {
+        "author": "Renata Lem",
+        "rating": 5,
+        "text": "Profesjonalizm, perfekcyjność. Po prostu jest zdolna i ma duże doświadczenie.",
+        "source": "Facebook",
+        "date": "lip 2021"
+      },
+      {
+        "author": "Marta Górczyńska",
+        "rating": 5,
+        "text": "Polecam Basie w 100% — robi piękne pazurki z ręcznie malowanymi zdobieniami.",
+        "source": "Facebook",
+        "date": "lip 2019"
+      },
+      {
+        "author": "Edyta Zwierzyńska",
+        "rating": 5,
+        "text": "Pani Basia to artystyczna dusza. Umie wyczarować najpiękniejsze rysunki na pazurkach. Polecam — 100% zadowolenia.",
+        "source": "Facebook",
+        "date": "sty 2019"
+      },
+      {
+        "author": "Aleksandra Kozyra",
+        "rating": 5,
+        "text": "Zdolna dziewczyna, artystka — namaluje na paznokciach co tylko Wam przyjdzie do głowy. Długo szukałam takiej osoby.",
+        "source": "Facebook",
+        "date": "sie 2018"
+      },
+      {
+        "author": "Paulina Maleszewska",
+        "rating": 5,
+        "text": "Zawsze wychodzę zadowolona z przecudnymi malunkami. Wiele koleżanek mi pozazdrościło i już zapisują się do Basi.",
+        "source": "Facebook",
+        "date": "sie 2018"
+      },
+      {
+        "author": "Elżbieta Kozłowska",
+        "rating": 5,
+        "text": "Za każdym razem jestem zachwycona tym, co można wyczarować cieniutkim pędzelkiem na płytce paznokcia. Podziwiam i polecam.",
+        "source": "Facebook",
+        "date": "sie 2018"
       }
     ]
   },
-  "area": {
-    "title": "Obszar działania",
-    "subtitle": "Miasta / dzielnice z ogłoszenia.",
-    "places": ["Miasto 1", "Miasto 2", "Okolice"]
+  "gallery": {
+    "title": "Portfolio",
+    "subtitle": "Portfolio z Instagrama i Facebooka — hybrydy, żel i nail art.",
+    "items": [
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-01.jpg",
+        "alt": "Manicure hybrydowy w pastelowych odcieniach z kwiatowymi zdobieniami",
+        "title": "Pastelowe kwiaty",
+        "description": "Delikatne zdobienia na miękkim różu i zieleni.",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-02.jpg",
+        "alt": "Stylizacja paznokci lawendowa z detalem",
+        "title": "Lawenda i błękit",
+        "description": "Subtelna kolorystyka z autorskim detalem.",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-03.jpg",
+        "alt": "Manicure z motywem kwiatowym",
+        "title": "Kwiatowy nail art",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-04.jpg",
+        "alt": "Kolorowe paski na paznokciach",
+        "title": "Citrus stripes",
+        "description": "Odważna, letnia stylizacja w żywych kolorach.",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-05.jpg",
+        "alt": "Manicure hybrydowy w ciepłym odcieniu",
+        "title": "Ciepły nude",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-06.jpg",
+        "alt": "Stylizacja paznokci z detalem",
+        "title": "Minimalistyczny detal",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-07.jpg",
+        "alt": "Manicure french z ozdobą",
+        "title": "French z akcentem",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-08.jpg",
+        "alt": "Hybryda w różowych tonach",
+        "title": "Róż i biel",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-09.jpg",
+        "alt": "Nail art na paznokciach",
+        "title": "Autorski wzór",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-10.jpg",
+        "alt": "Stylizacja tematyczna nail art",
+        "title": "Stylizacja tematyczna",
+        "description": "Indywidualne projekty na specjalne okazje.",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-11.jpg",
+        "alt": "Manicure hybrydowy",
+        "title": "Klasyczna elegancja",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/ig-12.jpg",
+        "alt": "Stylizacja paznokci zdobiona",
+        "title": "Zdobienia na zamówienie",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/fb-01.jpg",
+        "alt": "Kolaż realizacji manicure — kwiaty, motyle, french",
+        "title": "Portfolio Manifaktura",
+        "description": "Różnorodne stylizacje — od klasyki po nail art.",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/fb-02.jpg",
+        "alt": "French manicure z czarnymi kokardkami i kropkami",
+        "title": "French z detalem",
+        "description": "Klasyczny french z autorskim zdobieniem — cienka linia i kokardki.",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/fb-03.jpg",
+        "alt": "French manicure z malowanymi jagodami na paznokciach",
+        "title": "French z jagodami",
+        "description": "Subtelny french z ręcznie malowanymi jagodami i listkami.",
+        "place": "Marki"
+      },
+      {
+        "src": "/images/manifaktura-barbara-franek-marki/fb-04.jpg",
+        "alt": "Czarne paznokcie z zielonym marmurkiem i błyskawicami",
+        "title": "Marmur i błyskawice",
+        "description": "Wyrazista stylizacja — czarna baza z zielonym marmurkiem.",
+        "place": "Marki"
+      }
+    ]
   },
   "faq": {
-    "title": "Najczęstsze pytania",
-    "subtitle": "5–7 pytań, które klienci naprawdę zadają w branży.",
+    "title": "FAQ",
+    "subtitle": "Najczęstsze pytania przed wizytą.",
     "items": [
       {
         "question": "Jak umówić wizytę?",
-        "answer": "Zadzwoń lub napisz — podaj termin i krótko opisz problem. Odpowiadamy zwykle tego samego dnia."
+        "answer": "Zadzwoń pod 730 960 700, napisz na Facebooku (Manifaktura) lub na Instagramie @b.franek_nailart — podaj preferowany termin i rodzaj stylizacji."
       },
       {
-        "question": "Czy wycena jest bezpłatna?",
-        "answer": "Tak — przed startem prac mówimy, ile to będzie kosztować. Bez niespodzianek na fakturze."
+        "question": "Czy robisz nail art na zamówienie?",
+        "answer": "Tak — malunki, kwiaty, ombre i motywy sezonowe. Wyślij inspirację zdjęciem, a dopasujemy wzór do Twoich paznokci."
       },
       {
-        "question": "W jakim obszarze działacie?",
-        "answer": "Dojeżdżamy do klientów w [miasto] i okolicach — szczegóły w kontakcie lub FAQ."
+        "question": "Ile trwa wizyta?",
+        "answer": "Manicure hybrydowy ok. 1,5–2 h; nail art i przedłużanie dłużej — dokładny czas ustalimy przy zapisie."
+      },
+      {
+        "question": "Gdzie znajduje się salon?",
+        "answer": "Marki, ul. Piłsudskiego 164 — lokal na piętrze. Przy zapisie podpowiemy dojazd i wejście do budynku."
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Zadzwoń lub napisz — najszybszy sposób na umówienie terminu."
+    "subtitle": "Zadzwoń, napisz na Facebooku lub Instagramie — chętnie ustalimy termin i rodzaj stylizacji."
   },
   "variants": {
     "header": "transparent",
     "hero": "fullBleedPhoto",
     "services": "grid",
+    "about": "split",
     "pricing": "cards",
     "usp": "list",
     "reviews": "cards",
@@ -181,15 +342,15 @@
   },
   "pitch": {
     "enabled": true,
-    "badgeText": "Demo strony — podgląd oferty",
-    "offerHeadline": "Twoja wizytówka online — gotowa do wdrożenia w 24h",
-    "offerBody": "Przygotowaliśmy spersonalizowaną stronę na podstawie Twojego ogłoszenia. Jeśli Ci się podoba, wdrażamy ją na Twojej domenie w ciągu doby.",
+    "badgeText": "Demo strony — podgląd dla Barbary",
+    "offerHeadline": "Twoja strona obok Facebooka i Instagrama",
+    "offerBody": "Masz mocne portfolio i opinie na FB — przygotowałam stronę, która zbiera realizacje i usługi w jednym eleganckim linku. Łatwiej polecać salon znajomym niż przez sam profil społecznościowy.",
     "offerBullets": [
-      "Wyglądasz profesjonalnie obok konkurencji z OLX",
-      "Klienci widzą ofertę i łatwo do Ciebie dzwonią",
-      "Działa na telefonie — tam szuka większość zleceń",
-      "Wdrożenie w 24h po akceptacji"
+      "Portfolio w jednym linku — nie tylko w feedzie",
+      "Profesjonalny wizerunek obok samych social mediów",
+      "Przyciski do FB i IG od razu pod ręką",
+      "Działa na telefonie — tam szukają salonów"
     ],
-    "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie."
+    "priceNote": "Projekt rodzinny — wdrożenie na własnej domenie po akceptacji."
   }
 }

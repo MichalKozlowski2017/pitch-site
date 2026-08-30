@@ -1,4 +1,5 @@
 import type { SectionProps } from "@/lib/client-config";
+import { lightSectionPatternStyle } from "@/lib/section-layout";
 import { Container, SectionHeading, StarRating } from "@/components/shared/ui";
 
 export function ReviewsCards({ client }: SectionProps) {
@@ -9,9 +10,18 @@ export function ReviewsCards({ client }: SectionProps) {
     <section
       id="opinie"
       data-reveal-group
-      className="bg-[var(--color-background)] py-16 sm:py-24"
+      className="relative overflow-hidden bg-[var(--color-muted)]/50 py-16 sm:py-24"
     >
-      <Container>
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={lightSectionPatternStyle("waves")}
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-black/[0.06] to-transparent"
+        aria-hidden
+      />
+      <Container className="relative z-[1]">
         <SectionHeading title={reviews.title} subtitle={reviews.subtitle} />
         <div className="grid gap-5 md:grid-cols-3">
           {reviews.items.map((review) => (

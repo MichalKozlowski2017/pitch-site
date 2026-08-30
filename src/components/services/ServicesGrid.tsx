@@ -16,9 +16,13 @@ export function ServicesGrid({ client }: SectionProps) {
       id="uslugi"
       data-reveal-group
       data-services-section
-      className="bg-[var(--color-background)] py-16 sm:py-24"
+      className="relative overflow-hidden bg-[var(--color-surface)] py-16 sm:py-24"
     >
-      <Container>
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-black/[0.07] to-transparent"
+        aria-hidden
+      />
+      <Container className="relative z-[1]">
         <SectionHeading title={services.title} subtitle={services.subtitle} />
         <div
           data-services-grid

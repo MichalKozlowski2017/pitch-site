@@ -17,6 +17,7 @@ import { ReviewsCards } from "@/components/reviews/ReviewsCards";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { GalleryFeaturedSlider } from "@/components/gallery/GalleryFeaturedSlider";
 import { GalleryFullBleedShowcase } from "@/components/gallery/GalleryFullBleedShowcase";
+import { AboutSplit } from "@/components/about/AboutSplit";
 import { AreaChips } from "@/components/area/AreaChips";
 import { FaqAccordion } from "@/components/faq/FaqAccordion";
 import { ContactSimple } from "@/components/contact/ContactSimple";
@@ -42,6 +43,9 @@ export const registry: RegistryMap = {
     cards: ServicesCards,
     spotlight: ServicesSpotlight,
     rail: ServicesRail,
+  },
+  about: {
+    split: AboutSplit,
   },
   pricing: {
     cards: PricingCards,
@@ -81,6 +85,7 @@ export const slotOrder = [
   "reviews",
   "area",
   "faq",
+  "about",
   "contact",
   "footer",
 ] as const satisfies ReadonlyArray<keyof Variants>;
@@ -127,6 +132,10 @@ export const variantCatalog = {
       "Master-detail — lista + duży panel opisu; pill scroll na mobile. Trend tabbed spotlight (2025).",
     rail:
       "Rozszerzające się taby w poziomie (desktop) + akordeon (mobile). Filmowy flex-rail.",
+  },
+  about: {
+    split:
+      "Zdjęcie + bio — stylistka / osoba za marką. Bez bloku `about` w JSON = ukryte.",
   },
   pricing: {
     cards:

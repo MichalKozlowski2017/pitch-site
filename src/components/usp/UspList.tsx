@@ -1,4 +1,5 @@
 import type { SectionProps } from "@/lib/client-config";
+import { lightSectionPatternStyle } from "@/lib/section-layout";
 import { Container, SectionHeading } from "@/components/shared/ui";
 
 export function UspList({ client }: SectionProps) {
@@ -8,9 +9,18 @@ export function UspList({ client }: SectionProps) {
     <section
       id="dlaczego"
       data-reveal-group
-      className="bg-[var(--color-background)] py-16 sm:py-24"
+      className="relative overflow-hidden bg-[var(--color-background)] py-16 sm:py-24"
     >
-      <Container>
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-accent)]/20 to-transparent"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={lightSectionPatternStyle("rings")}
+        aria-hidden
+      />
+      <Container className="relative z-[1]">
         <SectionHeading title={usp.title} subtitle={usp.subtitle} />
         <ol className="mx-auto grid max-w-4xl gap-0 overflow-hidden border border-black/8 bg-[var(--color-surface)]">
           {usp.items.map((item, index) => (

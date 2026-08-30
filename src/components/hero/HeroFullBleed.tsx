@@ -16,6 +16,7 @@ export function HeroFullBleed({ client }: SectionProps) {
             alt=""
             fill
             priority
+            quality={92}
             className="object-cover"
             sizes="100vw"
           />

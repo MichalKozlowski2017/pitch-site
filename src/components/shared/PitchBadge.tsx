@@ -8,7 +8,7 @@ export function PitchBadge({ client }: SectionProps) {
     `Demo strony przygotowane dla ${client.business.name}`;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-lg rounded-2xl border border-black/10 bg-[var(--color-foreground)] px-4 py-3 text-center text-sm text-[var(--color-background)] shadow-lg md:left-auto md:right-6 md:mx-0">
+    <div className="fixed bottom-4 left-auto right-6 z-50 hidden max-w-sm rounded-2xl border border-black/10 bg-[var(--color-foreground)] px-4 py-3 text-center text-sm text-[var(--color-background)] shadow-lg md:block">
       <p>{text}</p>
       <a
         href="/pitch"

@@ -45,6 +45,25 @@ export const faqItemSchema = z.object({
   answer: z.string(),
 });
 
+export const aboutSchema = z.object({
+  title: z.string(),
+  subtitle: z.string().optional(),
+  image: z.string(),
+  imageAlt: z.string().optional(),
+  paragraphs: z.array(z.string()).min(1),
+  highlights: z.array(z.string()).optional(),
+});
+
+export const booksySchema = z.object({
+  businessId: z.string(),
+  profileUrl: z.string().url(),
+  rating: z.number().min(0).max(5).optional(),
+  reviewCount: z.number().int().min(0).optional(),
+  buttonLabel: z.string().optional(),
+  country: z.string().optional(),
+  lang: z.string().optional(),
+});
+
 export const themeSchema = z.object({
   primary: z.string(),
   primaryForeground: z.string(),
@@ -60,6 +79,7 @@ export const variantsSchema = z.object({
   header: z.enum(["solid", "transparent"]),
   hero: z.enum(["fullBleedPhoto", "split"]),
   services: z.enum(["grid", "bento", "bentoFull", "cards", "spotlight", "rail"]),
+  about: z.enum(["split"]),
   pricing: z.enum(["cards"]),
   usp: z.enum(["list"]),
   reviews: z.enum(["cards"]),
@@ -109,6 +129,7 @@ export const clientConfigSchema = z.object({
     subtitle: z.string().optional(),
     items: z.array(serviceSchema),
   }),
+  about: aboutSchema.optional(),
   pricing: z
     .object({
       title: z.string(),
@@ -153,6 +174,7 @@ export const clientConfigSchema = z.object({
     title: z.string(),
     subtitle: z.string().optional(),
   }),
+  booksy: booksySchema.optional(),
   variants: variantsSchema,
   pitch: z.object({
     enabled: z.boolean(),
