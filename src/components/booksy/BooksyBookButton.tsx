@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useId, useState } from "react";
+import { createPortal } from "react-dom";
 import type { ClientConfig } from "@/lib/client-config";
 import { booksyWidgetUrl } from "@/lib/booksy";
 
@@ -63,55 +64,58 @@ export function BooksyBookButton({
         {label}
       </button>
 
-      {open ? (
-        <div
-          className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-0 sm:items-center sm:p-4"
-          role="presentation"
-          onClick={close}
-        >
-          <div
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby={titleId}
-            className="relative flex h-[92dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-xl bg-[var(--color-surface)] shadow-2xl sm:h-[min(720px,90dvh)] sm:rounded-xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex shrink-0 items-center justify-between border-b border-black/8 px-4 py-3">
-              <p
-                id={titleId}
-                className="text-sm font-semibold text-[var(--color-foreground)]"
+      {open && typeof document !== "undefined"
+        ? createPortal(
+            <div
+              className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-0 sm:items-center sm:p-4"
+              role="presentation"
+              onClick={close}
+            >
+              <div
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby={titleId}
+                className="relative flex h-[92dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-xl bg-[var(--color-surface)] shadow-2xl sm:h-[min(720px,90dvh)] sm:rounded-xl"
+                onClick={(e) => e.stopPropagation()}
               >
-                Rezerwacja online — Booksy
-              </p>
-              <button
-                type="button"
-                onClick={close}
-                className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-[var(--color-muted-foreground)] transition hover:bg-black/5 hover:text-[var(--color-foreground)]"
-                aria-label="Zamknij"
-              >
-                ✕
-              </button>
-            </div>
-            <iframe
-              title="Rezerwacja Booksy"
-              src={widgetUrl}
-              className="min-h-0 flex-1 w-full border-0 bg-white"
-              allow="payment"
-            />
-            <p className="shrink-0 border-t border-black/6 px-4 py-2 text-center text-[10px] text-[var(--color-muted-foreground)]">
-              Powered by{" "}
-              <a
-                href={booksy.profileUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2"
-              >
-                Booksy
-              </a>
-            </p>
-          </div>
-        </div>
-      ) : null}
+                <div className="flex shrink-0 items-center justify-between border-b border-black/8 px-4 py-3">
+                  <p
+                    id={titleId}
+                    className="text-sm font-semibold text-[var(--color-foreground)]"
+                  >
+                    Rezerwacja online — Booksy
+                  </p>
+                  <button
+                    type="button"
+                    onClick={close}
+                    className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-[var(--color-muted-foreground)] transition hover:bg-black/5 hover:text-[var(--color-foreground)]"
+                    aria-label="Zamknij"
+                  >
+                    ✕
+                  </button>
+                </div>
+                <iframe
+                  title="Rezerwacja Booksy"
+                  src={widgetUrl}
+                  className="min-h-0 flex-1 w-full border-0 bg-white"
+                  allow="payment"
+                />
+                <p className="shrink-0 border-t border-black/6 px-4 py-2 text-center text-[10px] text-[var(--color-muted-foreground)]">
+                  Powered by{" "}
+                  <a
+                    href={booksy.profileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2"
+                  >
+                    Booksy
+                  </a>
+                </p>
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
     </>
   );
 }
