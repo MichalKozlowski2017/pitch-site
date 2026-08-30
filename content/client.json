@@ -341,16 +341,6 @@
     "footer": "simple"
   },
   "pitch": {
-    "enabled": true,
-    "badgeText": "Demo strony — podgląd dla Barbary",
-    "offerHeadline": "Twoja strona obok Facebooka i Instagrama",
-    "offerBody": "Masz mocne portfolio i opinie na FB — przygotowałam stronę, która zbiera realizacje i usługi w jednym eleganckim linku. Łatwiej polecać salon znajomym niż przez sam profil społecznościowy.",
-    "offerBullets": [
-      "Portfolio w jednym linku — nie tylko w feedzie",
-      "Profesjonalny wizerunek obok samych social mediów",
-      "Przyciski do FB i IG od razu pod ręką",
-      "Działa na telefonie — tam szukają salonów"
-    ],
-    "priceNote": "Projekt rodzinny — wdrożenie na własnej domenie po akceptacji."
+    "enabled": false
   }
 }
