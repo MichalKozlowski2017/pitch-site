@@ -59,7 +59,7 @@ export const themeSchema = z.object({
 export const variantsSchema = z.object({
   header: z.enum(["solid", "transparent"]),
   hero: z.enum(["fullBleedPhoto", "split"]),
-  services: z.enum(["grid", "bento", "bentoFull"]),
+  services: z.enum(["grid", "bento", "bentoFull", "cards", "spotlight", "rail"]),
   pricing: z.enum(["cards"]),
   usp: z.enum(["list"]),
   reviews: z.enum(["cards"]),
@@ -114,6 +114,9 @@ export const clientConfigSchema = z.object({
       title: z.string(),
       subtitle: z.string().optional(),
       note: z.string().optional(),
+      pattern: z
+        .enum(["diagonal", "dots", "waves", "crosshatch", "rings"])
+        .optional(),
       items: z.array(pricingItemSchema),
     })
     .optional(),

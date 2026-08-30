@@ -42,22 +42,8 @@ export function ServiceBentoCard({
         aria-hidden
       />
 
-      <span
-        data-service-num
-        className={`shrink-0 font-[family-name:var(--font-display)] font-semibold leading-none transition-colors duration-500 group-hover:text-[var(--color-accent)] ${
-          isFeatured
-            ? "text-5xl text-[var(--color-accent)]/30 sm:text-6xl"
-            : isWide
-              ? "text-4xl text-[var(--color-muted)] lg:text-5xl"
-              : "text-3xl text-[var(--color-muted)] sm:text-4xl"
-        }`}
-        aria-hidden
-      >
-        {String(index + 1).padStart(2, "0")}
-      </span>
-
       <div
-        className={`relative z-[2] ${isWide ? "pt-5 lg:pt-0" : "mt-auto pt-5 sm:pt-6"}`}
+        className={`relative z-[2] ${isWide ? "lg:pt-0" : "mt-auto"} ${isFeatured ? "pt-2 sm:pt-3" : "pt-5 sm:pt-6"}`}
       >
         <h3
           data-service-title

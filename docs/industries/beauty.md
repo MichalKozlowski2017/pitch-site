@@ -22,9 +22,12 @@ header (transparent) → hero (fullBleedPhoto) → services → gallery → pric
 |------|---------|----------|
 | header | `transparent` | Hero na zdjęciu — premium |
 | hero | `fullBleedPhoto` | Zdjęcie stylizacji / dłoni |
-| services | `grid` | 4–6 usług bez cen w opisie |
+| services | `grid` | 4 usługi — prosta siatka 2×2 |
 | services | `bento` | Asymetryczna siatka — jedna karta `highlight: true` większa |
 | services | `bentoFull` | 50/50: featured + dolna karta | 2×2 na pełną wysokość (6 pozycji) |
+| services | `cards` | Bez numeracji; layout dopasowany do liczby (3 wyśrodkowane) |
+| services | `spotlight` | Master-detail — jedna usługa na raz, duży opis; 5–8 pozycji |
+| services | `rail` | Flex-rail — rozszerzające się taby; akordeon na mobile |
 | gallery | `fullBleedShowcase` | 16:9, filmstrip, cover-fade — **nie** `featuredSlider` (za „ramowe”) |
 | pricing | `cards` | Ceny z ogłoszenia; jedna karta `highlight` opcjonalnie |
 | usp | `list` | Higiena, doświadczenie, atmosfera — jasne tło |
@@ -40,11 +43,11 @@ Usługi → Portfolio → Cennik → Dlaczego [brand] → FAQ → Kontakt
 
 ## Theme
 
-- Tło: ciepły off-white (`#FAF6F4`)
-- Primary: ciemny brąz/grafit (`#2C2426`)
-- Accent: dusty rose (`#C48B9F`) — nie neonowy róż
+- **Accent z materiałów** — patrz [`docs/pitch-design-algorithm.md`](../pitch-design-algorithm.md). Różowe zdjęcia → róż (`#D4567A`), nie default sage.
+- Tło: ciepły off-white dopasowany do accentu
+- Primary: ciemny brąz/grafit
 - Fonty: Syne + Manrope (domyślne startera) — przy pitchu można podmienić parę pod charakter salonu
-- **Logo:** większość leadów bez znaku → wordmark lub monogram (np. inicjał imienia) w SVG, kolory z palety powyżej
+- **Logo:** większość leadów bez znaku → wordmark lub monogram (np. inicjał imienia) w SVG, kolory z palety accentu
 
 ## Copy
 
@@ -106,3 +109,17 @@ Można wkleić do `client.json` i dopasować do salonu:
 - Logo: monogram „L” + wordmark SVG (brak znaku u klientki)
 - 8 zdjęć portfolio z ogłoszenia OLX
 - WhatsApp dodany (brak w ogłoszeniu, ale standardowy kanał)
+
+### Pitch: Łapko-cure (mobilny manicure, Łódź)
+
+- Branch: `pitch/lapko-cure-lodz`
+- **Mobilna usługa** — hero i USP pod dojazd, `area.chips` z dzielnicami Łodzi
+- Cennik prosty (3 karty): 80 zł / zdobienia 10–20 zł / dojazd GRATIS
+- Profil firmowy + paragon fiskalny → USP „legalna działalność”
+- Preferowany kontakt SMS — w copy hero i FAQ
+- 4 zdjęcia z OLX (`lead:ingest`), logo wordmark „Łapko-cure”
+- Theme: **róż `#D4567A`** z dominującego koloru zdjęć (nie sage)
+- `services.cards` — równa siatka 3×2 przy 6 pozycjach (bez spanu featured); rail/spotlight odrzucone
+- `pricing.pattern: waves` — inny wzór tła niż diagonal
+- Cennik 3 poz. — wyśrodkowana siatka (`section-layout.ts`)
+- `reviews.items: []` — brak Google Maps

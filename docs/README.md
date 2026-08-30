@@ -11,6 +11,7 @@ Agent i człowiek powinni tu wracać **przed** nowym zleceniem i **po** oddaniu 
 | [`lead-qualification.md`](lead-qualification.md) | **Zanim pitch** — werdykt po wklejeniu linku |
 | [`lead-scoring.md`](lead-scoring.md) | Scoring 0–100 + CLI `npm run lead:score` |
 | [`conventions.md`](conventions.md) | Zawsze — technika, treść, etyka |
+| [`pitch-design-algorithm.md`](pitch-design-algorithm.md) | **Przed client.json** — kolor z foto, rotacja layoutów, wzór cennika |
 | [`industries/`](industries/) | Dobór wariantów i copy pod branżę |
 | [`outreach.md`](outreach.md) | Wiadomość do klienta + checklista przed wysyłką |
 

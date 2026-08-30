@@ -21,4 +21,5 @@ alwaysApply: true
 - Playbooki branż i learnings: `docs/industries/` — aktualizuj po każdym pitchu.
 - Demo pitch: `pitch.enabled` + `/pitch`; na produkcji wyłącz badge.
 - Przed oddaniem pitcha: sprawdź telefon/CTA, mobile, SEO title/description.
+- Przed `client.json`: [`docs/pitch-design-algorithm.md`](docs/pitch-design-algorithm.md) — accent z foto, rotacja wariantów (nie ten sam bento), cennik 3 poz. wyśrodkowany, inny `pricing.pattern` niż poprzedni pitch.
 - Brak logo u klienta: zaprojektuj prosty wordmark/monogram (SVG) + dopasuj theme i fonty — patrz `docs/conventions.md` (Branding).

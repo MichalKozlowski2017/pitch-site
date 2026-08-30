@@ -8,6 +8,9 @@ import { HeroSplit } from "@/components/hero/HeroSplit";
 import { ServicesGrid } from "@/components/services/ServicesGrid";
 import { ServicesBento } from "@/components/services/ServicesBento";
 import { ServicesBentoFull } from "@/components/services/ServicesBentoFull";
+import { ServicesCards } from "@/components/services/ServicesCards";
+import { ServicesSpotlight } from "@/components/services/ServicesSpotlight";
+import { ServicesRail } from "@/components/services/ServicesRail";
 import { PricingCards } from "@/components/pricing/PricingCards";
 import { UspList } from "@/components/usp/UspList";
 import { ReviewsCards } from "@/components/reviews/ReviewsCards";
@@ -36,6 +39,9 @@ export const registry: RegistryMap = {
     grid: ServicesGrid,
     bento: ServicesBento,
     bentoFull: ServicesBentoFull,
+    cards: ServicesCards,
+    spotlight: ServicesSpotlight,
+    rail: ServicesRail,
   },
   pricing: {
     cards: PricingCards,
@@ -115,10 +121,16 @@ export const variantCatalog = {
       "Asymetryczna siatka bento — większa karta na usługę z `highlight: true` (beauty, premium).",
     bentoFull:
       "Bento 50/50 — featured + dolna karta po lewej, 2×2 po prawej na pełną wysokość (6 usług).",
+    cards:
+      "Karty bez numeracji — layout dopasowany do liczby usług (3 wyśrodkowane, 6 siatka). Inny look niż bento.",
+    spotlight:
+      "Master-detail — lista + duży panel opisu; pill scroll na mobile. Trend tabbed spotlight (2025).",
+    rail:
+      "Rozszerzające się taby w poziomie (desktop) + akordeon (mobile). Filmowy flex-rail.",
   },
   pricing: {
     cards:
-      "Cennik w kartach (beauty / usługi ze stałymi cenami). Puste items = sekcja ukryta.",
+      "Cennik w kartach. Siatka dopasowana do liczby pozycji (3 = wyśrodkowane). Wzór tła: `pricing.pattern`.",
   },
   usp: {
     list: "Lista benefitów / USP.",

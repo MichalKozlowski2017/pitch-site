@@ -18,7 +18,7 @@ Landing dla lokalnych wykonawców. Treść i wybór layoutu żyją w **`content/
 2. **Kwalifikacja** — `npm run lead:ingest -- --url <OLX> --phone <tel> --save` ([`docs/lead-scoring.md`](docs/lead-scoring.md)): auto-fetch, zdjęcia, analiza, werdykt. Bez `pitch` → nie buduj demo.
 3. **Sprawdź** [`data/outreach-tracker.csv`](data/outreach-tracker.csv) — duplikat telefonu / firmy / URL.
 4. Research: opinie Google (tylko prawdziwe), zdjęcia, jakość istniejącej strony (jeśli jest).
-5. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch` — kąt w copy `/pitch`).
+5. Uzupełnij `content/client.json` (`business`, sekcje, `theme`, `variants`, `pitch` — kąt w copy `/pitch`). **Design:** [`docs/pitch-design-algorithm.md`](docs/pitch-design-algorithm.md) — kolor z foto, rotacja wariantów, wzór cennika.
 6. Zdjęcia: `public/images/` albo remote (host w `next.config.ts`).
 7. `npm run dev` → sprawdź desktop/mobile; ewent. zmień `variants`.
 8. Deploy preview + wiadomość z [`docs/outreach.md`](docs/outreach.md).
@@ -57,7 +57,10 @@ Uwagi: …
 | services | `grid` | Siatka usług |
 | services | `bento` | Asymetryczna siatka bento — karta `highlight` większa (beauty) |
 | services | `bentoFull` | Bento 50/50 — prawa kolumna 2×2 na pełną wysokość (6 usług) |
-| pricing | `cards` | Cennik (beauty / stałe ceny); bez `pricing` w JSON = ukryte |
+| services | `cards` | Karty bez numeracji — layout dopasowany do liczby usług (3 wyśrodkowane) |
+| services | `spotlight` | Master-detail — lista + panel opisu; pill scroll mobile (trend 2025) |
+| services | `rail` | Flex-rail — rozszerzające się taby desktop, akordeon mobile |
+| pricing | `cards` | Cennik; siatka dopasowana do liczby pozycji; `pricing.pattern` — wzór tła |
 | usp | `list` | Lista USP |
 | reviews | `cards` | Opinie Google |
 | gallery | `grid` | Szybka siatka realizacji |

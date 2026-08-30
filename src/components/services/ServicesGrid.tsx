@@ -43,14 +43,11 @@ export function ServicesGrid({ client }: SectionProps) {
               />
 
               <span
-                data-service-num
-                className="font-[family-name:var(--font-display)] text-4xl font-semibold leading-none text-[var(--color-muted)] transition-colors duration-500 group-hover:text-[var(--color-accent)]"
+                className="mb-4 block h-1 w-8 rounded-full bg-[var(--color-accent)]/30 transition-colors duration-500 group-hover:bg-[var(--color-accent)]/70"
                 aria-hidden
-              >
-                {String(index + 1).padStart(2, "0")}
-              </span>
+              />
 
-              <div className="relative z-[2] mt-auto pt-6">
+              <div className="relative z-[2] mt-auto">
                 <h3
                   data-service-title
                   className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-[var(--color-foreground)]"

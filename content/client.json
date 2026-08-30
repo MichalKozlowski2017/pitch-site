@@ -1,219 +1,162 @@
 {
   "business": {
-    "name": "Lena",
-    "tagline": "Manicure i pedicure · Wrocław",
-    "description": "Stylizacja paznokci dłoni i stóp — manicure klasyczny i hybrydowy, przedłużanie żelowe, pedicure oraz zdobienia. Przyjmuję na ul. Pereca we Wrocławiu. Umów wizytę telefonicznie.",
-    "location": "Wrocław, ul. Pereca (Stare Miasto)",
-    "phone": "+48 735 211 196",
-    "whatsapp": "+48735211196",
-    "hours": "Po umówieniu telefonicznym",
-    "logo": "/images/lena-manicure-wroclaw/logo.svg"
+    "name": "Łapko-cure",
+    "tagline": "Manicure hybrydowy z dojazdem · Łódź",
+    "description": "Mobilny manicure hybrydowy na naturalnej płytce — przyjadę do Ciebie w całej Łodzi. Higiena na poziomie medycznym, paragon fiskalny, szybkie terminy. Umów wizytę SMS-em lub telefonicznie.",
+    "location": "Łódź — dojazd do klientki (całe miasto)",
+    "phone": "+48 516 437 467",
+    "whatsapp": "+48516437467",
+    "hours": "Terminy po umówieniu — kontakt SMS lub telefon",
+    "logo": "/images/lapko-cure-lodz/logo.svg"
   },
   "seo": {
-    "title": "Lena — Manicure i pedicure Wrocław | ul. Pereca",
-    "description": "Manicure hybrydowy, żelowy i pedicure we Wrocławiu na ul. Pereca. Cennik od 70 zł. Zadzwoń: 735 211 196."
+    "title": "Łapko-cure — Manicure hybrydowy z dojazdem Łódź | Agnieszka Miszczak",
+    "description": "Mobilny manicure hybrydowy w Łodzi — dojazd gratis. Od 80 zł, zdobienia od 10 zł. Higiena medyczna, paragon fiskalny. SMS: 516 437 467."
   },
   "theme": {
-    "primary": "#2C2426",
-    "primaryForeground": "#FAF6F4",
-    "accent": "#C48B9F",
-    "background": "#FAF6F4",
-    "foreground": "#2C2426",
-    "muted": "#EDE4E0",
-    "mutedForeground": "#6B5E60",
+    "primary": "#2A2428",
+    "primaryForeground": "#FFF8FA",
+    "accent": "#D4567A",
+    "background": "#FFF8FA",
+    "foreground": "#2A2428",
+    "muted": "#F3E4EA",
+    "mutedForeground": "#6B5A62",
     "surface": "#FFFFFF"
   },
   "navigation": [
     { "label": "Usługi", "href": "#uslugi" },
     { "label": "Portfolio", "href": "#realizacje" },
     { "label": "Cennik", "href": "#cennik" },
-    { "label": "Dlaczego Lena", "href": "#dlaczego" },
+    { "label": "Dlaczego my", "href": "#dlaczego" },
     { "label": "FAQ", "href": "#faq" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "headline": "Manicure i pedicure na Pereca",
-    "subheadline": "Hybryda, żel, pedicure — umów się telefonicznie lub przez WhatsApp. Bez skomplikowanej rezerwacji.",
-    "image": "/images/lena-manicure-wroclaw/neon-orange.webp",
+    "headline": "Manicure hybrydowy u Ciebie w domu",
+    "subheadline": "Nie musisz wychodzić — przyjadę w całej Łodzi. Szybkie terminy, dojazd gratis. Napisz SMS lub zadzwoń.",
+    "image": "/images/lapko-cure-lodz/03.jpg",
     "trustBadges": [
-      "Wrocław, ul. Pereca",
-      "Cennik od 70 zł",
-      "Telefon i WhatsApp"
+      "Dojazd gratis — cała Łódź",
+      "Od 80 zł · paragon fiskalny",
+      "SMS i telefon"
     ],
     "ctaPrimary": {
-      "label": "Zadzwoń — 735 211 196",
-      "href": "tel:+48735211196"
+      "label": "Zadzwoń — 516 437 467",
+      "href": "tel:+48516437467"
     },
     "ctaSecondary": {
       "label": "WhatsApp",
-      "href": "https://wa.me/48735211196"
+      "href": "https://wa.me/48516437467"
     }
   },
   "services": {
     "title": "Usługi",
-    "subtitle": "Manicure, pedicure i stylizacje dopasowane do Twoich oczekiwań.",
+    "subtitle": "Mobilny manicure hybrydowy — w komforcie Twojego domu.",
     "items": [
       {
         "title": "Manicure hybrydowy",
-        "description": "Trwały kolor z połyskiem — idealny na co dzień i na wyjątkowe okazje.",
+        "description": "Stylizacja na naturalnej płytce — trwały kolor, precyzyjne opracowanie i wykończenie.",
         "highlight": true
       },
       {
-        "title": "Manicure klasyczny",
-        "description": "Opracowanie płytki, skórek i lakier klasyczny — szybka odświeżka dłoni."
+        "title": "Zdobienia artystyczne",
+        "description": "French, ombre, cat-eye, quail egg i inne wzory — dopasowane do Twojego stylu."
       },
       {
-        "title": "Przedłużanie i uzupełnienie żelowe",
-        "description": "Budowa długości i kształtu na formie — od naturalnego po bardziej wyrazisty look."
+        "title": "Cyrkonie, pyłki i ozdoby",
+        "description": "Duży wybór dodatków — od subtelnego blasku po wyraziste akcenty."
       },
       {
-        "title": "Pedicure hybrydowy",
-        "description": "Kompleksowa pielęgnacja stóp z trwałym wykończeniem paznokci."
+        "title": "Dojazd do klientki",
+        "description": "Przyjadę pod wskazany adres w granicach Łodzi — bez dodatkowych kosztów."
       },
       {
-        "title": "Pedicure klasyczny",
-        "description": "Higieniczne opracowanie stóp i paznokci z lakierem klasycznym."
+        "title": "Higiena medyczna",
+        "description": "Sterylizacja sprzętu klasy medycznej i jednorazowe przybory przy każdej wizycie."
       },
       {
-        "title": "Zdobienia i dodatki",
-        "description": "French, brokat, cyrkonie i masaż nawilżający — dopasowane do stylizacji."
+        "title": "Szybkie terminy",
+        "description": "Krótki czas oczekiwania — napisz SMS z preferowanym terminem, odpowiem najszybciej jak mogę."
       }
     ]
   },
   "gallery": {
     "title": "Portfolio",
-    "subtitle": "Wybrane stylizacje — baby boomer, French, żel i zdobienia.",
+    "subtitle": "Realizacje hybrydowe — od klasycznych po zdobienia artystyczne.",
     "items": [
       {
-        "src": "/images/lena-manicure-wroclaw/hero-baby-boomer.webp",
-        "alt": "Manicure baby boomer — delikatny gradient nude do bieli",
-        "title": "Baby boomer",
-        "description": "Miękki gradient od bazy do białego tipu — elegancki, uniwersalny efekt.",
-        "place": "Wrocław"
+        "src": "/images/lapko-cure-lodz/03.jpg",
+        "alt": "Manicure hybrydowy różowy z efektem cat-eye",
+        "title": "Cat-eye róż",
+        "description": "Hybryda z magnetycznym efektem cat-eye na jasnym różu — połysk i głębia koloru.",
+        "place": "Łódź"
       },
       {
-        "src": "/images/lena-manicure-wroclaw/pedicure-french.webp",
-        "alt": "Pedicure hybrydowy French na stopach",
-        "title": "Pedicure French",
-        "description": "Klasyczny French na paznokciach stóp — różowa baza i biały tip.",
-        "place": "Wrocław"
+        "src": "/images/lapko-cure-lodz/02.jpg",
+        "alt": "Manicure quail egg — jasna baza z cętkami",
+        "title": "Quail egg",
+        "description": "Modny efekt jajka przepiórczego — delikatne cętki na jasnej, chłodnej bazie.",
+        "place": "Łódź"
       },
       {
-        "src": "/images/lena-manicure-wroclaw/gel-pink.webp",
-        "alt": "Przedłużenie żelowe w kolorze magenta",
-        "title": "Żel — magenta",
-        "description": "Długie paznokcie żelowe w intensywnym różu z gładkim połyskiem.",
-        "place": "Wrocław"
+        "src": "/images/lapko-cure-lodz/01.jpg",
+        "alt": "Manicure neon pink chrome",
+        "title": "Neon chrome",
+        "description": "Soczysty róż z chromowanym wykończeniem — wyrazisty, nowoczesny look.",
+        "place": "Łódź"
       },
       {
-        "src": "/images/lena-manicure-wroclaw/galaxy-flakes.webp",
-        "alt": "Manicure z czarną bazą i holograficznymi płatkami",
-        "title": "Galaxy flakes",
-        "description": "Czarna baza z wielokolorowymi płatkami — efekt tęczy w świetle.",
-        "place": "Wrocław"
-      },
-      {
-        "src": "/images/lena-manicure-wroclaw/glitter-rhinestone.webp",
-        "alt": "Manicure z brokatem i cyrkoniami",
-        "title": "Brokat i cyrkonie",
-        "description": "Nude z srebrnym brokatem i subtelnymi cyrkoniami na każdym paznokciu.",
-        "place": "Wrocław"
-      },
-      {
-        "src": "/images/lena-manicure-wroclaw/holo-flakes.webp",
-        "alt": "Manicure milky pink z holograficznymi płatkami",
-        "title": "Holo flakes",
-        "description": "Mleczny róż z holograficznymi wstawkami — delikatny blask.",
-        "place": "Wrocław"
-      },
-      {
-        "src": "/images/lena-manicure-wroclaw/neon-orange.webp",
-        "alt": "Manicure w neonowej pomarańczy",
-        "title": "Neon orange",
-        "description": "Wyrazisty, soczysty kolor z lustrzanym top coat.",
-        "place": "Wrocław"
-      },
-      {
-        "src": "/images/lena-manicure-wroclaw/glitter-ombre.webp",
-        "alt": "Manicure glitter ombre z cyrkonem",
-        "title": "Glitter ombre",
-        "description": "Gradient brokatu od tipu z akcentem cyrkonu u nasady.",
-        "place": "Wrocław"
+        "src": "/images/lapko-cure-lodz/04.jpg",
+        "alt": "Manicure taupe cat-eye",
+        "title": "Taupe cat-eye",
+        "description": "Elegancki brąz z perłowym efektem cat-eye — uniwersalny na co dzień.",
+        "place": "Łódź"
       }
     ]
   },
   "pricing": {
     "title": "Cennik",
-    "subtitle": "Ceny z ogłoszenia — bez ukrytych dopłat.",
-    "note": "Dokładny czas i koszt zależą od stylizacji — zapytaj przy umawianiu wizyty.",
+    "subtitle": "Przejrzyste ceny — dojazd w cenie usługi.",
+    "note": "Zdobienia wyceniam indywidualnie przy umawianiu. Wizyta trwa ok. 2 h.",
+    "pattern": "waves",
     "items": [
       {
-        "name": "Manicure klasyczny",
-        "price": "70 zł",
-        "description": "Opracowanie + lakier klasyczny."
-      },
-      {
         "name": "Manicure hybrydowy",
-        "price": "100 zł",
-        "description": "Trwały kolor hybrydowy.",
+        "price": "80 zł",
+        "description": "Standardowa stylizacja na naturalnej płytce.",
         "highlight": true
       },
       {
-        "name": "Uzupełnienie żelowe",
-        "price": "120 zł",
-        "description": "Uzupełnienie istniejącej stylizacji żelowej."
+        "name": "Zdobienia i ozdoby",
+        "price": "10–20 zł",
+        "description": "Cyrkonie, pyłki, french, ombre — w zależności od wybranych zdobień."
       },
       {
-        "name": "Przedłużenie żelowe — dł. 1",
-        "price": "160 zł",
-        "description": "Budowa długości na formie."
-      },
-      {
-        "name": "Przedłużenie żelowe — dł. 2",
-        "price": "180 zł",
-        "description": "Średnia długość paznokci."
-      },
-      {
-        "name": "Przedłużenie żelowe — dł. 3",
-        "price": "200 zł",
-        "description": "Dłuższa stylizacja żelowa."
-      },
-      {
-        "name": "Pedicure klasyczny",
-        "price": "80 zł",
-        "description": "Pielęgnacja stóp + lakier klasyczny."
-      },
-      {
-        "name": "Pedicure hybrydowy",
-        "price": "120 zł",
-        "description": "Kompleksowy pedicure z hybrydą."
-      },
-      {
-        "name": "Dodatki",
-        "price": "od 5 zł",
-        "description": "French 15 zł · opracowanie stóp 10 zł · naprawa 5 zł · 1 paznokieć 10 zł · masaż 30 zł."
+        "name": "Dojazd do klientki",
+        "price": "GRATIS",
+        "description": "Cała Łódź — bez dopłaty za dojazd."
       }
     ]
   },
   "usp": {
-    "title": "Dlaczego Lena",
-    "subtitle": "Indywidualne podejście i stylizacje dopasowane do Ciebie.",
+    "title": "Dlaczego Łapko-cure",
+    "subtitle": "Mobilny manicure bez kompromisów w jakości.",
     "items": [
       {
-        "title": "Portfolio mówi samo za siebie",
-        "description": "Od baby boomera i Frencha po żel i zdobienia — zobacz efekty przed wizytą."
+        "title": "Manicure w Twoim domu",
+        "description": "Oszczędzasz czas — nie musisz szukać parkingu ani siedzieć w korkach. Przygotuj wygodne miejsce, resztą zajmę się ja."
       },
       {
-        "title": "Przejrzysty cennik",
-        "description": "Wiesz, ile zapłacisz — ceny podane w ogłoszeniu, bez niespodzianek."
+        "title": "Higiena jak w gabinecie",
+        "description": "Sprzęt klasy medycznej, sterylizacja i jednorazowe przybory — bezpiecznie i profesjonalnie."
       },
       {
-        "title": "Dogodna lokalizacja",
-        "description": "Gabinet na ul. Pereca — łatwy dojazd ze Starego Miasta i centrum Wrocławia."
+        "title": "Legalna działalność",
+        "description": "Zarejestrowana firma — otrzymasz paragon fiskalny po każdej wizycie."
       },
       {
-        "title": "Szybki kontakt",
-        "description": "Umówisz wizytę telefonem lub WhatsAppem — bez skomplikowanych formularzy."
+        "title": "Szybki kontakt SMS",
+        "description": "Preferujesz SMS? Napisz numer i termin — odpowiem najszybciej, jak mogę."
       }
     ]
   },
@@ -223,54 +166,56 @@
     "items": []
   },
   "area": {
-    "title": "Lokalizacja",
-    "subtitle": "Przyjmuję na ul. Pereca — blisko centrum Wrocławia.",
+    "title": "Obszar dojazdu",
+    "subtitle": "Dojeżdżam w granicach Łodzi — wszystkie dzielnice.",
     "places": [
-      "Wrocław Stare Miasto",
+      "Polesie",
+      "Bałuty",
+      "Górna",
+      "Widzew",
       "Śródmieście",
-      "Fabryczna",
-      "Krzyki",
-      "Psie Pole"
+      "Retkinia",
+      "Feliksów"
     ]
   },
   "faq": {
     "title": "Najczęstsze pytania",
-    "subtitle": "Zanim umówisz wizytę.",
+    "subtitle": "Zanim umówisz wizytę u siebie w domu.",
     "items": [
       {
         "question": "Jak umówić wizytę?",
-        "answer": "Zadzwoń pod numer 735 211 196 lub napisz na WhatsApp. Podaj preferowany termin i rodzaj stylizacji — odpowiem, kiedy mam wolne."
+        "answer": "Napisz SMS na 516 437 467 lub zadzwoń. Podaj dzielnicę, preferowany termin i rodzaj stylizacji — wrócę z propozycją wolnego terminu."
       },
       {
-        "question": "Ile trzyma się manicure hybrydowy?",
-        "answer": "Przy prawidłowej pielęgnacji hybryda zwykle wytrzymuje 2–3 tygodnie. Żel i przedłużenia mogą trzymać się dłużej — zależy od tempa wzrostu paznokcia i stylu życia."
+        "question": "Czy dojeżdżasz poza Łódź?",
+        "answer": "Nie — działam wyłącznie na terenie Łodzi. Nie dojeżdżam do miast ościennych (Pabianice, Aleksandrów Ł. itd.)."
       },
       {
-        "question": "Czy hybryda niszczy paznokcie?",
-        "answer": "Przy prawidłowym nałożeniu i ściągnięciu paznokcie pozostają zdrowe. Ważne jest regularne uzupełnianie i unikanie samodzielnego obgryzania stylizacji."
+        "question": "Ile trwa wizyta?",
+        "answer": "Standardowy manicure hybrydowy to ok. 2 godziny. Przy bardziej rozbudowanych zdobieniach wizyta może potrwać dłużej — ustalimy to przy umawianiu."
       },
       {
-        "question": "Jak przygotować się do wizyty?",
-        "answer": "Przyjdź z czystymi dłońmi lub stopami. Unikaj kremów tuż przed wizytą — utrudniają opracowanie płytki. Jeśli masz starą stylizację, daj znać przy umawianiu."
+        "question": "Co przygotować w domu?",
+        "answer": "Wygodne miejsce przy stole z dostępem do prądu, dobre oświetlenie i czyste dłonie bez kremu tuż przed wizytą. Resztę zabiorę ze sobą."
       },
       {
-        "question": "Czy mogę przynieść zdjęcie inspiracji?",
-        "answer": "Tak — pokaż zdjęcie stylizacji, którą chcesz uzyskać. Dobierzemy kolor, kształt i zdobienia do Twoich paznokci."
+        "question": "Ile trzyma się hybryda?",
+        "answer": "Przy prawidłowej pielęgnacji zwykle 2–3 tygodnie. Unikaj agresywnych detergentów bez rękawiczek i nie obgryzaj stylizacji."
       },
       {
-        "question": "Gdzie dokładnie przyjmujesz?",
-        "answer": "Na ul. Pereca we Wrocławiu (Stare Miasto). Dokładny adres podam przy umawianiu wizyty telefonicznie."
+        "question": "Czy wystawiasz paragon?",
+        "answer": "Tak — legalnie zarejestrowana działalność. Po wizycie otrzymasz paragon fiskalny."
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Zadzwoń lub napisz — najszybszy sposób na umówienie terminu."
+    "subtitle": "SMS lub telefon — najszybszy sposób na umówienie terminu."
   },
   "variants": {
     "header": "transparent",
     "hero": "fullBleedPhoto",
-    "services": "bentoFull",
+    "services": "cards",
     "pricing": "cards",
     "usp": "list",
     "reviews": "cards",
@@ -283,12 +228,12 @@
   "pitch": {
     "enabled": true,
     "badgeText": "Demo strony — podgląd oferty",
-    "offerHeadline": "Masz już tysiące wyświetleń na OLX — dodaj link, który sprzedaje styl",
-    "offerBody": "Przygotowałem podgląd strony z Twoim portfolio i cennikiem. Klientka widzi efekty od razu i dzwoni jednym kliknięciem — bez przeklikiwania ogłoszenia.",
+    "offerHeadline": "Masz cennik i portfolio — dodaj link, który sprzedaje lepiej niż OLX",
+    "offerBody": "Przygotowałam podgląd strony z Twoimi realizacjami, cennikiem i dojazdem. Klientka od razu widzi efekt i dzwoni — bez przeklikiwania ogłoszenia.",
     "offerBullets": [
-      "Galeria Twoich realizacji zamiast małych miniaturek OLX",
-      "Cennik czytelny na telefonie — klientka wie, ile zapłaci",
-      "Jeden link do wysłania na WhatsApp lub w wiadomości OLX",
+      "Galeria stylizacji zamiast małych miniaturek w OLX",
+      "Cennik z dojazdem gratis — czytelny na telefonie",
+      "Jeden link do SMS-a, WhatsAppa lub wiadomości OLX",
       "Wdrożenie na Twojej domenie w 24h po akceptacji"
     ],
     "priceNote": "Pakiet startowy: strona + domena + hosting — szczegóły w rozmowie.",
