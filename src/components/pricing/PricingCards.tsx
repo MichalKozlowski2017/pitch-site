@@ -1,9 +1,12 @@
 import type { SectionProps } from "@/lib/client-config";
+import { pricingGridClass } from "@/lib/section-layout";
 import { Container, PrimaryButton, SectionHeading } from "@/components/shared/ui";
 
 export function PricingCards({ client }: SectionProps) {
   const { pricing, hero } = client;
   if (!pricing || pricing.items.length === 0) return null;
+
+  const count = pricing.items.length;
 
   return (
     <section
@@ -40,16 +43,16 @@ export function PricingCards({ client }: SectionProps) {
 
         <div
           data-pricing-grid
-          className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          className={pricingGridClass(count)}
           style={{ perspective: "1200px" }}
         >
-          {pricing.items.map((item, index) => (
+          {pricing.items.map((item) => (
             <article
               key={item.name}
               data-reveal
               data-pricing-card
               data-pricing-highlight={item.highlight ? "" : undefined}
-              className={`group relative flex flex-col overflow-hidden border p-6 sm:p-7 ${
+              className={`group relative flex h-full flex-col overflow-hidden rounded-xl border p-6 sm:p-7 ${
                 item.highlight
                   ? "border-[var(--color-accent)]/80 bg-[var(--color-accent)] text-[var(--color-foreground)]"
                   : "border-white/12 bg-white/[0.04]"
@@ -69,18 +72,8 @@ export function PricingCards({ client }: SectionProps) {
                 aria-hidden
               />
 
-              <span
-                className={`font-[family-name:var(--font-display)] text-[11px] font-medium tracking-[0.22em] uppercase ${
-                  item.highlight
-                    ? "text-[var(--color-foreground)]/55"
-                    : "text-white/35"
-                }`}
-              >
-                {String(index + 1).padStart(2, "0")}
-              </span>
-
               <h3
-                className={`mt-4 font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight ${
+                className={`font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight ${
                   item.highlight ? "text-[var(--color-foreground)]" : "text-white"
                 }`}
               >
@@ -101,7 +94,7 @@ export function PricingCards({ client }: SectionProps) {
               )}
               <p
                 data-pricing-price
-                className={`mt-6 font-[family-name:var(--font-display)] font-semibold tabular-nums ${
+                className={`mt-6 font-[family-name:var(--font-display)] text-xl font-semibold tabular-nums ${
                   item.highlight
                     ? "text-[var(--color-foreground)]"
                     : "text-[var(--color-accent)]"

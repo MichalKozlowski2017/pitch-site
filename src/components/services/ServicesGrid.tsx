@@ -25,12 +25,12 @@ export function ServicesGrid({ client }: SectionProps) {
           className={`grid gap-3 lg:gap-4 ${cols}`}
           style={{ perspective: "1100px" }}
         >
-          {services.items.map((service, index) => (
+          {services.items.map((service) => (
             <article
               key={service.title}
               data-reveal
               data-service-card
-              className="group relative flex min-h-[12rem] flex-col overflow-hidden border border-black/[0.07] bg-[var(--color-surface)] p-6 sm:min-h-[13rem] sm:p-7"
+              className="group relative flex min-h-[12rem] flex-col overflow-hidden rounded-2xl border border-black/[0.07] bg-[var(--color-surface)] p-6 sm:min-h-[13rem] sm:p-7"
             >
               <span
                 data-service-sheen
@@ -43,14 +43,11 @@ export function ServicesGrid({ client }: SectionProps) {
               />
 
               <span
-                data-service-num
-                className="font-[family-name:var(--font-display)] text-4xl font-semibold leading-none text-[var(--color-muted)] transition-colors duration-500 group-hover:text-[var(--color-accent)]"
+                className="mb-4 block h-1 w-8 rounded-full bg-[var(--color-accent)]/30 transition-colors duration-500 group-hover:bg-[var(--color-accent)]/70"
                 aria-hidden
-              >
-                {String(index + 1).padStart(2, "0")}
-              </span>
+              />
 
-              <div className="relative z-[2] mt-auto pt-6">
+              <div className="relative z-[2] mt-auto">
                 <h3
                   data-service-title
                   className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-[var(--color-foreground)]"

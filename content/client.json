@@ -270,7 +270,7 @@
   "variants": {
     "header": "transparent",
     "hero": "fullBleedPhoto",
-    "services": "bentoFull",
+    "services": "grid",
     "pricing": "cards",
     "usp": "list",
     "reviews": "cards",

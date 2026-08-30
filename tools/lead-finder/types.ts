@@ -110,10 +110,20 @@ export const researchSchema = z.object({
   notes: z.string().optional(),
 });
 
+const emptyResearch = {
+  website: { found: false },
+  googleMaps: { found: false },
+  booksy: { found: false },
+  instagram: { found: false },
+  facebook: { found: false },
+  otherProfiles: [] as { platform: string; url: string; notes?: string }[],
+  redFlags: [] as string[],
+};
+
 export const leadInputSchema = z.object({
   sourceUrl: z.string().url(),
   listing: listingSchema,
-  research: researchSchema.default({}),
+  research: researchSchema.default(emptyResearch),
   photoAnalysis: photoAnalysisSchema.optional(),
   industry: z.string().optional(),
   manualNotes: z.string().optional(),
